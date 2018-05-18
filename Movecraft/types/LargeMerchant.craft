@@ -97,7 +97,7 @@ forbiddenBlocks:
     - 7
 
 canCruise: true
-cruiseSkipBlocks:
+cruiseSkipBlocks: 4
 #depends mostly on the ship
 canFly: false
 sinkPercent: 99.0

@@ -9,6 +9,8 @@ do
 	fi
 done
 find . -path './Movecraft/types/*.craft' -exec git add -f '{}' \;
+git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt'
+
 git add -f update.sh download.sh
 
 git commit && git push
