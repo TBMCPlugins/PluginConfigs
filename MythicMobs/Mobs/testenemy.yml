@@ -1,0 +1,22 @@
+SkeletalSoldier:
+  Mobtype: skeleton
+  Display: '&7Skeletal Soldier'
+  Health: 75
+  Damage: 2.5
+  Equipment:
+  - RobotHead:4
+  - iron_chestplate:3
+  - iron_leggings:2
+  - iron_boots:1
+  - iron_sword:0
+  Drops:
+  - iron_chestplate 1 0.5
+  - iron_leggings 1 0.5
+  - iron_boots 1 0.5
+  Options:
+    FollowRange: 10
+    AlwaysShowName: false
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=IceBolt} @target ~onTimer:100

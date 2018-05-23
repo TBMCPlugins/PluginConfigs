@@ -10,6 +10,7 @@ do
 done
 find . -path './Movecraft/types/*.craft' -exec git add -f '{}' \;
 git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt'
+git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 
 git add -f update.sh download.sh
 
