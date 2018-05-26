@@ -235,12 +235,22 @@ town:
     shop_tax: '0.0'
     # Default amount of embassy tax of a new town.
     embassy_tax: '0.0'
+    # Default amount for town's plottax costs.
+    plot_tax: '0.0'
     # Default status of new town's taxpercentage. True means that the default_tax is treated as a percentage instead of a fixed amount.
     taxpercentage: 'false'
+    # A required minimum tax amount for the default_tax, will not change any towns which already have a tax set.
+    # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
+    minimumtax: '0.0'
   # Limits the maximum amount of bonus blocks a town can buy.
   max_purchased_blocks: '5'
   # maximum number of plots any single resident can own
   max_plots_per_resident: '400'
+  # maximum number used in /town claim/unclaim # commands.
+  # set to 0 to disable limiting of claim radius value check.
+  # keep in mind that the default value of 4 is a radius, 
+  # and it will allow claiming 9x9 (80 plots) at once.
+  max_claim_radius_value: '16'
   # Maximum number of towns allowed on the server.
   town_limit: '3000'
  
@@ -334,6 +344,8 @@ new_world_settings:
       # Regeneration will only work if the plot was
       # claimed under version 0.76.2, or
       # later with this feature enabled
+      # Unlike the rest of this config section, the speed setting is not
+      # set per-world. What you set for speed will be used in all worlds.
       #
       # If you allow players to break/build in the wild the snapshot will
       # include any changes made before the plot was claimed.
@@ -385,6 +397,32 @@ global_town_settings:
   # Enables the [~Home] message.
   # If false it will make it harder for enemies to find the home block during a war
   show_town_notifications: 'true'
+  # The required number of residents in a town to join a nation
+  # If the number is 0, towns will not require a certain amount of residents to join a nation
+  required_number_residents_join_nation: '0'
+  # The required number of residents in a town to create a nation
+  # If the number is 0, towns will not require a certain amount of residents to create a nation
+  required_number_residents_create_nation: '0'
+  # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
+  refund_disband_low_residents: 'true'
+  # The maximum number of townblocks a town can be away from a nation capital,
+  # Automatically precludes towns from one world joining a nation in another world.
+  # If the number is 0, towns will not a proximity to a nation.
+  nation_requires_proximity: '0.0'
+  # List of blocks which can be modified on farm plots, as long as player is also allowed in the plot's '/plot perm' line.
+  farm_plot_allow_blocks: LONG_GRASS,DOUBLE_PLANT,YELLOW_FLOWER,RED_ROSE,PUMPKIN_STEM,MELON_STEM,BEETROOT_BLOCK,CARROT,POTATO,CROPS,MELON_BLOCK,PUMPKIN,BEETROOT_BLOCK,CHORUS_PLANT,CHORUS_FLOWER
+  # List of animals which can be kiled on farm plots by town residents.
+  farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM
+  # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
+  max_residents_per_town: '0'
+  # If Towny should show players the townboard when they login
+  display_board_onlogin: 'true'
+  # If set to true, Towny will prevent a town from toggling PVP while an outsider is within the town's boundaries.
+  # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
+  outsiders_prevent_pvp_toggle: 'false'
+  # The amount of residents a town needs to claim an outpost,
+  # Setting this value to 0, means a town can claim outposts no matter how many residents
+  minimum_amount_of_residents_in_town_for_outpost: '0'
  
  
   ############################################################
@@ -408,6 +446,7 @@ plugin:
       table_prefix: towny_
       username: root
       password: ''
+      ssl: 'false'
  
     # Flatfile backup settings.
     daily_backups: 'true'
@@ -440,6 +479,9 @@ plugin:
       accept: accept
       # The command to refuse invitations.
       deny: deny
+      # When set for more than 0m, the amount of time (in minutes) which must have passed between
+      # a player's first log in and when they can be invited to a town.
+      cooldowntime: 0m
  
     # True to attempt to use GroupManager, PEX, bPermissions, Permissions2/3 or BukkitPerms
     # False to disable permission checks and rely on Towny settings.
@@ -511,19 +553,20 @@ protection:
   # 368 - ender pearl
   # 374 - glass bottle
   # 385 - fire charge
-  item_use_ids: FLINT_AND_STEEL,BUCKET,WATER_BUCKET,LAVA_BUCKET,MINECART,STORAGE_MINECART,INK_SACK,SHEARS,ENDER_PEARL,GLASS_BOTTLE,FIREBALL,ARMOR_STAND
+  item_use_ids: FLINT_AND_STEEL,BUCKET,WATER_BUCKET,LAVA_BUCKET,MINECART,STORAGE_MINECART,INK_SACK,SHEARS,ENDER_PEARL,GLASS_BOTTLE,FIREBALL,ARMOR_STAND,SKULL_ITEM
  
   # Items which can be blocked or enabled via town/plot flags
   # 25 - noteblock
   # 54 - chest ...etc
-  switch_ids: DISPENSER,NOTE_BLOCK,CHEST,FURNACE,BURNING_FURNACE,WOODEN_DOOR,LEVER,STONE_PLATE,IRON_DOOR_BLOCK,WOOD_PLATE,STONE_BUTTON,TRAP_DOOR,JUKEBOX,DIODE_BLOCK_OFF,DIODE_BLOCK_ON,FENCE_GATE,TRAPPED_CHEST,GOLD_PLATE,IRON_PLATE,REDSTONE_COMPARATOR_OFF,REDSTONE_COMPARATOR_ON,BEACON,HOPPER,DROPPER,MINECART,STORAGE_MINECART,POWERED_MINECART,CARROT_STICK,EXPLOSIVE_MINECART,HOPPER_MINECART
+  switch_ids: DISPENSER,NOTE_BLOCK,CHEST,FURNACE,BURNING_FURNACE,WOODEN_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR,LEVER,STONE_PLATE,IRON_DOOR_BLOCK,WOOD_PLATE,STONE_BUTTON,TRAP_DOOR,JUKEBOX,DIODE_BLOCK_OFF,DIODE_BLOCK_ON,FENCE_GATE,SPRUCE_FENCE_GATE,BIRCH_FENCE_GATE,JUNGLE_FENCE_GATE,DARK_OAK_FENCE_GATE,ACACIA_FENCE_GATE,TRAPPED_CHEST,GOLD_PLATE,IRON_PLATE,REDSTONE_COMPARATOR_OFF,REDSTONE_COMPARATOR_ON,BEACON,HOPPER,DROPPER,MINECART,STORAGE_MINECART,POWERED_MINECART,CARROT_STICK,EXPLOSIVE_MINECART,HOPPER_MINECART,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,SILVER_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX
  
-  # permitted entities http://jd.bukkit.org/apidocs/org/bukkit/entity/package-summary.html
+  # permitted entities hhttps://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig, 
-  # PigZombie, Sheep, Skeleton, Slime, Spider, Squid, WaterMob, Wolf, Zombie
+  # PigZombie, Sheep, Skeleton, Slime, Spider, Squid, WaterMob, Wolf, Zombie, Shulker
+  # Husk, Stray, SkeletonHorse, ZombieHorse, Vex, Vindicator, Evoker, Endermite, PolarBear
  
   # Remove living entities within a town's boundaries, if the town has the mob removal flag set.
-  town_mob_removal_entities: Monster,WaterMob,Flying,Slime
+  town_mob_removal_entities: Monster,WaterMob,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse
  
   # Prevent the spawning of villager babies in towns.
   town_prevent_villager_breeding: 'false'
@@ -612,8 +655,12 @@ notification:
     outpostblock: '&b[Outpost]'
     forsale: '&e[For Sale: %s]'
     type: '&6[%s]'
- 
- 
+  # If set to true MC's Title and Subtitle feature will be used when crossing into a town.
+  # Could be seen as intrusive/distracting, so false by default.
+  using_titles: 'false'
+
+
+
   ############################################################
   # +------------------------------------------------------+ #
   # |             Default Town/Plot flags                  | #
@@ -796,6 +843,8 @@ economy:
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
     town_plotbased_upkeep: 'false'
+    # If set to true, the plot-based-upkeep system will be modified by the Town Levels' upkeep modifiers.
+    town_plotbased_upkeep_affected_by_town_level_modifier: 'false'
     # If enabled and you set a negative upkeep for the town
     # any funds the town gains via upkeep at a new day
     # will be shared out between the plot owners.
@@ -810,7 +859,11 @@ economy:
  
 jail:
   #If true attacking players who die on enemy-town land will be placed into the defending town's jail if it exists.
+  #Requires town_respawn to be true in order to work.
   is_jailing_attacking_enemies: 'false'
+  #If true attacking players who are considered an outlaw, that are killed inside town land will be placed into the defending town's jail if it exists.
+  #Requires town_respawn to be true in order to work.
+  is_jailing_attacking_outlaws: 'false'
   #If true jailed players can use Ender Pearls but are still barred from using other methods of teleporting.
   jail_allows_ender_pearls: 'false'
   #If false jailed players can use /town leave, and escape a jail.
@@ -832,6 +885,8 @@ jail:
 war:
   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
   nation_can_be_neutral: 'true'
+  #By setting this to true, nations will receive a questioner prompt for alliances and alliances will show on both nations.
+  disallow_one_way_alliance: 'false'
  
  
   ############################################################
@@ -877,11 +932,21 @@ war:
     warning_delay: '30'
     #If false all towns not in nations can be attacked during a war event.
     towns_are_neutral: 'true'
+    enemy:
+      # If true, enemy's can only attack the edge plots of a town in war.
+      only_attack_borders: 'true'
+    plots:
+      # If true, nation members and allies can regen health on plots during war.
+      healable: 'true'
+      # If true, fireworks will be launched at plots being attacked or healed in war every war tick.
+      firework_on_attacked: 'true'
  
     # If true and the monarch/king dies the nation is removed from the war.
     remove_on_monarch_death: 'false'
-    # If enabled players will be able to break/place blocks in enemy plots during a war.
-    allow_block_griefing: 'true'
+    # If enabled players will be able to break/place any blocks in enemy plots during a war.
+    # This setting SHOULD NOT BE USED unless you want the most chaotic war possible.
+    # The editable_materials list in the Warzone Block Permission section should be used instead.
+    allow_block_griefing: 'false'
  
     # A townblock takes damage every 5 seconds that an enemy is stood in it.
     block_hp:
@@ -895,6 +960,9 @@ war:
       wartime_town_block_loss_price: '25.0'
       # This amount is taken from the player if they die during the event
       price_death_wartime: '200.0'
+    # If set to true when a town drops an enemy townblock's HP to 0, the attacking town gains a bonus townblock,
+    # and the losing town gains a negative (-1) bonus townblock.
+    costs_townblocks: 'false'
  
     points:
       points_townblock: '1'
@@ -908,9 +976,12 @@ war:
   ############################################################
   # +------------------------------------------------------+ #
   # |                   Flag war settings                  | #
+  # |                                                      | #
+  # |               Separate from Event War                | #
+  # |                 Unsupported / Buggy                  | #
   # +------------------------------------------------------+ #
   ############################################################
- 
+
   enemy:
     # If false, players won't be able to place war flags, effectively disabling warzones.
     allow_attacks: 'false'
@@ -940,6 +1011,8 @@ war:
   ############################################################
   # +------------------------------------------------------+ #
   # |              Warzone Block Permissions               | #
+  # |                                                      | #
+  # |              Used in Flag & Event Wars               | #
   # +------------------------------------------------------+ #
   ############################################################
  
@@ -955,6 +1028,9 @@ war:
     fire: 'true'
     explosions: 'true'
     explosions_break_blocks: 'true'
-    # TODO: Blocks will not regen as of yet. Stay tuned for later changes.
     # Only under affect when explosions_break_blocks is true.
     explosions_regen_blocks: 'true'
+    # A list of blocks that will not be exploded, mostly because they won't regenerate properly.
+    # These blocks will also protect the block below them, so that blocks like doors do not dupe themselves.
+    # Only under affect when explosions_break_blocks is true.
+    explosions_ignore_list: WOODEN_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR,IRON_DOOR,CHEST,TRAPPED_CHEST,FURNACE,BURNING_FURNACE,DROPPER,DISPENSER,HOPPER,ENDER_CHEST,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,SILVER_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,NOTE_BLOCK,LEVER,STONE_PLATE,IRON_DOOR_BLOCK,WOOD_PLATE,JUKEBOX,DIODE_BLOCK_OFF,DIODE_BLOCK_ON,FENCE_GATE,GOLD_PLATE,IRON_PLATE,REDSTONE_COMPARATOR_OFF,REDSTONE_COMPARATOR_ON,BEACON
