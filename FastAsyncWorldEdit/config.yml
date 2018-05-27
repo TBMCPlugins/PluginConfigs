@@ -1,15 +1,18 @@
 # These first 6 aren't configurable
 issues: "https://github.com/boy0001/FastAsyncWorldedit/issues"
 wiki: "https://github.com/boy0001/FastAsyncWorldedit/wiki/"
-date: "29 May 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1096"
-commit: "https://github.com/boy0001/FastAsyncWorldedit/commit/d32bcaa"
+date: "25 Jun 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/1138"
+commit: "https://github.com/boy0001/FastAsyncWorldedit/commit/4049014"
 platform: "bukkit"
 # Options: de, ru, tr
 # Create a PR to contribute a translation: https://github.com/boy0001/FastAsyncWorldedit/new/master/core/src/main/resources
 language: ''
 # Enable or disable automatic updates
-update: false
+#  - true = update automatically in the background
+#  - confirm = prompt an admin to confirm each update
+#  - false = do not update the plugin
+update: "false"
 # Send anonymous usage statistics
 metrics: true
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
@@ -99,7 +102,7 @@ experimental:
   #  - Set your server view distance to 1 (spigot.yml, server.properties)
   #  - Based on tps and player movement
   #  - Please provide feedback
-  dynamic-chunk-rendering: false
+  dynamic-chunk-rendering: -1
   # [SAFE] Allows brushes to be persistent
   persistent-brushes: false
   # [SAFE] Enable CUI without needing the mod installed (Requires ProtocolLib)
