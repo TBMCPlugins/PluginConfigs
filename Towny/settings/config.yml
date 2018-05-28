@@ -566,7 +566,7 @@ protection:
   # Husk, Stray, SkeletonHorse, ZombieHorse, Vex, Vindicator, Evoker, Endermite, PolarBear
  
   # Remove living entities within a town's boundaries, if the town has the mob removal flag set.
-  town_mob_removal_entities: Monster,WaterMob,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse
+  town_mob_removal_entities: Monster,WaterMob,Flying,Slime,Shulker,ZombieHorse
  
   # Prevent the spawning of villager babies in towns.
   town_prevent_villager_breeding: 'false'
