@@ -243,7 +243,7 @@ town:
     # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
     minimumtax: '0.0'
   # Limits the maximum amount of bonus blocks a town can buy.
-  max_purchased_blocks: '5'
+  max_purchased_blocks: '2,147,483,647'
   # maximum number of plots any single resident can own
   max_plots_per_resident: '400'
   # maximum number used in /town claim/unclaim # commands.
@@ -268,7 +268,7 @@ town:
  
   # The maximum townblocks available to a town is (numResidents * ratio).
   # Setting this value to 0 will instead use the level based jump values determined in the town level config.
-  town_block_ratio: '32'
+  town_block_ratio: '48'
   # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
   # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
   # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
@@ -789,7 +789,7 @@ economy:
     # How much it costs a player to buy extra blocks.
     price_purchased_bonus_townblock: '75'
     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
-    price_purchased_bonus_townblock_increase: '1.0'
+    price_purchased_bonus_townblock_increase: '1.5'
  
   death:
     # Either fixed or percentage.
