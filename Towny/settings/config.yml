@@ -243,7 +243,7 @@ town:
     # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
     minimumtax: '0.0'
   # Limits the maximum amount of bonus blocks a town can buy.
-  max_purchased_blocks: '2,147,483,647'
+  max_purchased_blocks: '2147483647'
   # maximum number of plots any single resident can own
   max_plots_per_resident: '400'
   # maximum number used in /town claim/unclaim # commands.
