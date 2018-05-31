@@ -88,7 +88,7 @@ extent:
   #  - You'll see a message in console if you need to change this option
   allowed-plugins: []
   # Should debug messages be sent when third party extents are used?
-  debug: true
+  debug: false
 
 # Experimental options, use at your own risk
 #  - UNSAFE = Can cause permanent damage to the server
@@ -123,7 +123,7 @@ queue:
     #  - false = disabled
     #  - title = Display progress titles
     #  - chat = Display progress in chat
-    display: "false"
+    display: "title"
     # How often edit progress is displayed
     interval: 1
     # Delay sending progress in milliseconds (so quick edits don't spam)

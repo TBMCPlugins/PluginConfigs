@@ -445,7 +445,7 @@ plugin:
       dbname: towny
       table_prefix: towny_
       username: root
-      password: ''
+      password: 'NOPE'
       ssl: 'false'
  
     # Flatfile backup settings.

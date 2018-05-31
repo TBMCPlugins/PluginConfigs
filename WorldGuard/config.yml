@@ -163,7 +163,7 @@ blacklist:
             enable: false
             dsn: jdbc:mysql://localhost:3306/minecraft
             user: root
-            pass: ''
+            pass: 'NOPE'
             table: blacklist_events
         file:
             enable: false

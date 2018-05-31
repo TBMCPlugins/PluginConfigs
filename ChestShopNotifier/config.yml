@@ -17,9 +17,9 @@ debugging:
 database:
   host: 'localhost'
   port: 3306
-  dbname: 'database1'
-  username: 'dbadmin'
-  password: '123456'
+  dbname: 'chestshop_notifier'
+  username: 'chestshop'
+  password: 'NOPE'
 
 clean-on-startup:
   enabled: false
@@ -36,3 +36,4 @@ messages:
   history-footer-clear: "&c- To remove all old entries, type /csn clear"
   history-clear: "&cHistory cleared! New sales will continue to be recorded."
   history-marked-read: "&cUnread entries marked read!"
+
