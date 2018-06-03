@@ -13,7 +13,7 @@ storage:
   method: sqlite
 # Requires Mysql.
 mysql-username: root
-mysql-password: ''
+mysql-password: 'NOPE'
 mysql-hostname: localhost:3306
 mysql-database: minecraft
 mysql-table-prefix: jobs_

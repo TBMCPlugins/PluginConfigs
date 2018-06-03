@@ -4,7 +4,7 @@ git rm  --cached -rfq '*/*' # Unstage everything in folders in case a plugin got
 readarray -t plugins < plugins.txt # -t removes trailing newlines
 for i in "${plugins[@]}"
 do
-	if [ -d $i -a $i != "DiscordPlugin" ]; then
+	if [ -d $i -a $i != "DiscordPlugin" -a $i != "OpenInv" ]; then
 		find $i -name "config.yml" -exec git add -f '{}' \; # All files are ignored, need to force add
 	fi
 done

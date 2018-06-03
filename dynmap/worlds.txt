@@ -5,7 +5,7 @@
 #   Definitions of a world made here will superecede any world definition with the same name in configuration.txt
 #   Deleting this file will result in a fresh copy being produced by dynmap.jar on the next startup.
 #
-worlds:
+#worlds:
   # Worlds can be handled by templates, based on world type
   # You can override the properties of the template by specifying them in this section
   #    for example 'Title: "My Awesome World"'
@@ -129,3 +129,12 @@ worlds:
   - name: world
     enabled: true
     template: normal-vlowres #Disabled by default
+
+    hiddenlimits:
+      - x0: 430
+        z0: 2850
+        x1: 600
+        z1: 3000
+    hidestyle: stone
+    extrazoomout: 2
+    bigworld: true
