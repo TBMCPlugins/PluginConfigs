@@ -144,7 +144,7 @@ flyblocks:
         - 2.5
         - 100.0
     61:
-        - 2.5
+        - 0.75
         - 100.0 
     [54,146]: # limit chests to make big airships important for merchant missions
         - 0.0
