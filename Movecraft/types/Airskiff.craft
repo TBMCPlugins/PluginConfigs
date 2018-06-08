@@ -115,7 +115,7 @@ flyblocks:
         - 2.5
         - 100.0
     61:
-        - 2.5
+        - 0.05
         - 100.0
     145: # anvils are OP armor, so limit it
         - 0.0
