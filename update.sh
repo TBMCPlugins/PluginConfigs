@@ -13,7 +13,7 @@ git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt'
 git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
 git add -f 'Towny/settings/townyperms.yml'
-git add -f 'PlotSquared/config/settings.yml'
+git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*'
 
 git add -f update.sh download.sh
 
