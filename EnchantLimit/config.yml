@@ -3,8 +3,8 @@
 
 #Should this plugin apply changes to enchantments on enchanting-tables, anvils and villager trades?
 Anvil_Limiter_Enabled: false
-Enchanting_Table_Limiter_Enabled: true
-Villager_Limiter_Enabled: true
+Enchanting_Table_Limiter_Enabled: false
+Villager_Limiter_Enabled: false
 
 #Should OP's have all beneficial enchantments by default?
 Default_OP_Permissions: false
