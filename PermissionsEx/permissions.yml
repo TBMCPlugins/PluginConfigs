@@ -63,7 +63,6 @@ groups:
     - multiverse.core.list.*
     - plots.use
     - plots.permpack.basic
-    - 
   member:
     inheritance:
     - default
@@ -83,6 +82,7 @@ groups:
     - towny.town.spawn.nation
     - towny.town.spawn.ally
     - towny.town.spawn.outpost
+    - plots.plot.1
     options:
       rank: '60'
   donator:
@@ -184,8 +184,7 @@ groups:
     options:
       rank: '10'
   members:
-    permissions: 
-    - plots.plot.1
+    permissions: []
   developer:
     permissions:
     - essentials.sethome.multiple.developer
