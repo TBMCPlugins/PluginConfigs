@@ -17,7 +17,7 @@ plot:
 buy:
   aliases:
   - buy
-  usage: /plot buy
+  usage: /plots buy
   description: Buy the plot you are standing on
   confirmation: false
 save:
@@ -31,7 +31,7 @@ load:
   aliases:
   - load
   - restore
-  usage: /plot restore
+  usage: /plots restore
   description: Load your plot
   confirmation: false
 confirm:
@@ -43,82 +43,82 @@ confirm:
 template:
   aliases:
   - template
-  usage: /plot template [import|export] <world> <template>
+  usage: /plots template [import|export] <world> <template>
   description: Create or use a world template
   confirmation: false
 download:
   aliases:
   - download
   - dl
-  usage: /plot download [schematic|bo3|world]
+  usage: /plots download [schematic|bo3|world]
   description: Download your plot
   confirmation: false
 changelog:
   aliases:
   - changelog
   - cl
-  usage: /plot changelog
+  usage: /plots changelog
   description: View the changelog
   confirmation: false
 setup:
   aliases:
   - setup
   - create
-  usage: /plot setup
+  usage: /plots setup
   description: Setup wizard for plot worlds
   confirmation: false
 area:
   aliases:
   - area
   - world
-  usage: /plot area <create|info|list|tp|regen>
+  usage: /plots area <create|info|list|tp|regen>
   description: Create a new PlotArea
   confirmation: true
 debugsavetest:
   aliases:
   - debugsavetest
-  usage: /plot debugsavetest
+  usage: /plots debugsavetest
   description: This command will force the recreation of all plots in the DB
   confirmation: false
 debugloadtest:
   aliases:
   - debugloadtest
-  usage: /plot debugloadtest
+  usage: /plots debugloadtest
   description: This debug command will force the reload of all plots in the DB
   confirmation: false
 createroadschematic:
   aliases:
   - createroadschematic
   - crs
-  usage: /plot createroadschematic
+  usage: /plots createroadschematic
   description: Add a road schematic to your world using the roads around your current
     plot
   confirmation: false
 debugallowunsafe:
   aliases:
   - debugallowunsafe
-  usage: /plot debugallowunsafe
+  usage: /plots debugallowunsafe
   description: Allow unsafe actions until toggled off
   confirmation: false
 regenallroads:
   aliases:
   - regenallroads
   - rgar
-  usage: /plot regenallroads <world> [height]
+  usage: /plots regenallroads <world> [height]
   description: Regenerate all roads in the map using the set road schematic
   confirmation: false
 claim:
   aliases:
   - claim
   - c
-  usage: /plot claim
+  usage: /plots claim
   description: Claim the current plot you're standing on
   confirmation: false
 auto:
   aliases:
   - auto
   - a
-  usage: /plot auto [length,width]
+  usage: /plots auto [length,width]
   description: Claim the nearest plot
   confirmation: false
 visit:
@@ -130,21 +130,21 @@ visit:
   - goto
   - home
   - h
-  usage: /plot visit [<player>|<alias>|<world>|<id>] [#]
+  usage: /plots visit [<player>|<alias>|<world>|<id>] [#]
   description: Visit someones plot
   confirmation: false
 set:
   aliases:
   - set
   - s
-  usage: /plot set <biome|alias|home|flag> <value...>
+  usage: /plots set <biome|alias|home|flag> <value...>
   description: Set a plot value
   confirmation: false
 clear:
   aliases:
   - clear
   - reset
-  usage: /plot clear
+  usage: /plots clear
   description: Clear a plot
   confirmation: true
 delete:
@@ -153,20 +153,20 @@ delete:
   - dispose
   - del
   - reset
-  usage: /plot delete
+  usage: /plots delete
   description: Delete a plot
   confirmation: true
 trust:
   aliases:
   - trust
   - t
-  usage: /plot trust <player>
+  usage: /plots trust <player>
   description: Allow a player to build in a plot
   confirmation: false
 add:
   aliases:
   - add
-  usage: /plot add <player>
+  usage: /plots add <player>
   description: Allow a user to build while you are online
   confirmation: false
 leave:
@@ -180,7 +180,7 @@ deny:
   - deny
   - d
   - ban
-  usage: /plot deny <player>
+  usage: /plots deny <player>
   description: Deny a user from a plot
   confirmation: false
 remove:
@@ -192,21 +192,21 @@ remove:
   - undeny
   - unban
   - ud
-  usage: /plot remove <player>
+  usage: /plots remove <player>
   description: Remove a player from a plot
   confirmation: false
 info:
   aliases:
   - info
   - i
-  usage: /plot info <id>
+  usage: /plots info <id>
   description: Display plot info
   confirmation: false
 near:
   aliases:
   - near
   - n
-  usage: /plot near
+  usage: /plots near
   description: Display nearby players
   confirmation: false
 list:
@@ -215,21 +215,21 @@ list:
   - l
   - find
   - search
-  usage: /plot list <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy
+  usage: /plots list <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy
     <search...>> [#]
   description: List plots
   confirmation: false
 debug:
   aliases:
   - debug
-  usage: /plot debug [msg]
+  usage: /plots debug [msg]
   description: Show debug information
   confirmation: false
 schematic:
   aliases:
   - schematic
   - sch
-  usage: /plot schematic <arg...>
+  usage: /plots schematic <arg...>
   description: Schematic command
   confirmation: false
 plugin:
@@ -242,14 +242,14 @@ plugin:
 purge:
   aliases:
   - purge
-  usage: /plot purge world:<world> area:<area> id:<id> owner:<owner> shared:<shared>
+  usage: /plots purge world:<world> area:<area> id:<id> owner:<owner> shared:<shared>
     unknown:[true|false]
   description: Purge all plots for a world
   confirmation: true
 reload:
   aliases:
   - reload
-  usage: /plot reload
+  usage: /plots reload
   description: Reload configurations
   confirmation: false
 relight:
@@ -262,14 +262,14 @@ merge:
   aliases:
   - merge
   - m
-  usage: /plot merge <all|n|e|s|w> [removeroads]
+  usage: /plots merge <all|n|e|s|w> [removeroads]
   description: Merge the plot you are standing on, with another plot
   confirmation: true
 debugpaste:
   aliases:
   - debugpaste
   - dp
-  usage: /plot debugpaste
+  usage: /plots debugpaste
   description: Upload settings.yml, worlds.yml, commands.yml and latest.log to www.hastebin.com
   confirmation: false
 unlink:
@@ -277,7 +277,7 @@ unlink:
   - unlink
   - u
   - unmerge
-  usage: /plot unlink
+  usage: /plots unlink
   description: Unlink a mega-plot
   confirmation: true
 kick:
@@ -291,7 +291,7 @@ rate:
   aliases:
   - rate
   - rt
-  usage: /plot rate [#|next|purge]
+  usage: /plots rate [#|next|purge]
   description: Rate the plot
   confirmation: false
 debugclaimtest:
@@ -304,7 +304,7 @@ debugclaimtest:
 inbox:
   aliases:
   - inbox
-  usage: /plot inbox [inbox] [delete <index>|clear|page]
+  usage: /plots inbox [inbox] [delete <index>|clear|page]
   description: Review the comments for a plot
   confirmation: false
 comment:
@@ -318,26 +318,26 @@ database:
   aliases:
   - database
   - convert
-  usage: /plot database [area] <sqlite|mysql|import>
+  usage: /plots database [area] <sqlite|mysql|import>
   description: Convert/Backup Storage
   confirmation: false
 swap:
   aliases:
   - swap
   - switch
-  usage: /plot swap <X;Z>
+  usage: /plots swap <X;Z>
   description: Swap two plots
   confirmation: false
 music:
   aliases:
   - music
-  usage: /plot music
+  usage: /plots music
   description: Player music in a plot
   confirmation: false
 debugroadregen:
   aliases:
   - debugroadregen
-  usage: /plot debugroadregen
+  usage: /plots debugroadregen
   description: Regenerate all roads based on the road schematic
   confirmation: false
 debugexec:
@@ -355,26 +355,26 @@ setflag:
   - flag
   - setf
   - setflag
-  usage: /plot flag <set|remove|add|list|info> <flag> <value>
+  usage: /plots flag <set|remove|add|list|info> <flag> <value>
   description: Set plot flags
   confirmation: false
 target:
   aliases:
   - target
-  usage: /plot target <<plot>|nearest>
+  usage: /plots target <<plot>|nearest>
   description: Target a plot with your compass
   confirmation: false
 debugfixflags:
   aliases:
   - debugfixflags
-  usage: /plot debugfixflags <world>
+  usage: /plots debugfixflags <world>
   description: Attempt to fix all flags for a world
   confirmation: false
 move:
   aliases:
   - move
   - debugmove
-  usage: /plot move <X;Z>
+  usage: /plots move <X;Z>
   description: Move a plot
   confirmation: false
 condense:
@@ -387,19 +387,19 @@ copy:
   aliases:
   - copy
   - copypaste
-  usage: /plot copy <X;Z>
+  usage: /plots copy <X;Z>
   description: Copy a plot
   confirmation: false
 chat:
   aliases:
   - chat
-  usage: /plot chat [on|off]
+  usage: /plots chat [on|off]
   description: Toggle plot chat on or off
   confirmation: false
 trim:
   aliases:
   - trim
-  usage: /plot trim <world> [regenerate]
+  usage: /plots trim <world> [regenerate]
   description: Delete unmodified portions of your plotworld
   confirmation: false
 done:
@@ -427,13 +427,13 @@ middle:
   - middle
   - center
   - centre
-  usage: /plot middle
+  usage: /plots middle
   description: Teleports you to the center of the plot
   confirmation: false
 grant:
   aliases:
   - grant
-  usage: /plot grant <check|add> [player]
+  usage: /plots grant <check|add> [player]
   description: ''
   confirmation: false
 setowner:
@@ -442,7 +442,7 @@ setowner:
   - owner
   - so
   - seto
-  usage: /plot setowner <player>
+  usage: /plots setowner <player>
   description: Set the plot owner
   confirmation: true
 setdescription:
@@ -462,7 +462,7 @@ setbiome:
   - sb
   - setb
   - b
-  usage: /plot biome [biome]
+  usage: /plots biome [biome]
   description: Set the plot biome
   confirmation: false
 setalias:
@@ -475,7 +475,7 @@ setalias:
   - setname
   - seta
   - nameplot
-  usage: /plot alias <set|remove> <alias>
+  usage: /plots alias <set|remove> <alias>
   description: Set the plot name
   confirmation: false
 sethome:
@@ -483,7 +483,7 @@ sethome:
   - sethome
   - sh
   - seth
-  usage: /plot sethome [none]
+  usage: /plots sethome [none]
   description: Set the plot home
   confirmation: false
 cluster:
@@ -550,20 +550,20 @@ help:
 uuidconvert:
   aliases:
   - uuidconvert
-  usage: /plot uuidconvert <lower|offline|online>
+  usage: /plots uuidconvert <lower|offline|online>
   description: Debug UUID conversion
   confirmation: false
 weanywhere:
   aliases:
   - weanywhere
   - wea
-  usage: /plot weanywhere
+  usage: /plots weanywhere
   description: Force bypass of WorldEdit
   confirmation: false
 trimchunks:
   aliases:
   - trimchunks
-  usage: /plot trimchunks <world> <boolean-delete-unowned>
+  usage: /plots trimchunks <world> <boolean-delete-unowned>
   description: Delete unmodified portions of your plotworld
   confirmation: false
 generatebiome:
