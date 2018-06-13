@@ -1,6 +1,5 @@
 #!/bin/bash
 git rm  --cached -rfq '*/*' # Unstage everything in folders in case a plugin got removed
-#readarray -t plugins < <(ls -a *.jar | cut -d "." -f 1 | cut -d "-" -f 1 | cut -d "_" -f 1
 readarray -t plugins < plugins.txt # -t removes trailing newlines
 for i in "${plugins[@]}"
 do
@@ -15,6 +14,7 @@ git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
 git add -f 'Towny/settings/townyperms.yml'
 git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*'
 git add -f 'PermissionsEx/permissions.yml'
+git add -f 'Multiverse-Core/worlds.yml'
 
 git add -f update.sh download.sh
 
