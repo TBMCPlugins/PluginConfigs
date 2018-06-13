@@ -290,35 +290,36 @@ worlds:
   plotworld:
     ==: MVWorld
     hidden: 'false'
-    alias: plotworld
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
+    alias: PlotWorld
+    color: GREEN
+    style: ITALIC
+    pvp: 'false'
     scale: '1.0'
     respawnWorld: ''
-    allowWeather: 'true'
-    difficulty: EASY
+    keepspawninmemory: 'false'
+    allowWeather: 'false'
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
-        spawn: 'true'
+        spawn: 'false'
         spawnrate: '-1'
         exceptions: []
       monsters:
         ==: MVSpawnSubSettings
-        spawn: 'true'
+        spawn: 'false'
         spawnrate: '-1'
         exceptions: []
     entryfee:
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
-    hunger: 'true'
+    hunger: 'false'
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
-    gameMode: SURVIVAL
+    gameMode: CREATIVE
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
