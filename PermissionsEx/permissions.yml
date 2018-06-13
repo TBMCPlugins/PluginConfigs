@@ -61,6 +61,9 @@ groups:
     - multiverse.core.coord
     - multiverse.core.info
     - multiverse.core.list.*
+    - plots.use
+    - plots.permpack.basic
+    - 
   member:
     inheritance:
     - default
@@ -119,6 +122,7 @@ groups:
     permissions:
     - essentials.powertool.*
     - worldedit.*
+    - plots.worldedit.bypass
     options:
       rank: '30'
   mod:
@@ -157,6 +161,7 @@ groups:
     - townychat.*
     - towny.*
     - coreprotect.*
+    - plots.admin.*
     options:
       rank: '20'
   admin:
@@ -179,7 +184,8 @@ groups:
     options:
       rank: '10'
   members:
-    permissions: []
+    permissions: 
+    - plots.plot.1
   developer:
     permissions:
     - essentials.sethome.multiple.developer
@@ -191,14 +197,22 @@ groups:
     permissions:
     - essentials.hat
     - tbmc.badge.gold
+    - plots.plot.12
   diamond:
     permissions:
     - tbmc.badge.diamond
+    - plots.plot.24
     inheritance:
     - gold
+  iron:
+    permissions:
+    - plots.plot.4
+    inheritance:
+    - coal  
   coal:
     permissions:
     - tbmc.rainbow
+    - plots.plot.2
 schema-version: 1
 users:
   6044fabf-cf2b-4579-8d44-bc52874b77f8:
