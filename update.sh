@@ -14,6 +14,7 @@ git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
 git add -f 'Towny/settings/townyperms.yml'
 git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*'
+git add -f 'PermissionsEx/permissions.yml'
 
 git add -f update.sh download.sh
 
