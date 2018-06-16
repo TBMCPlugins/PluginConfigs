@@ -5,6 +5,7 @@ groups:
       prefix: '[Newcomer]'
       rank: '100'
     permissions:
+    - multiverse.portal.access.Plotworld
     - essentials.motd
     - movecraft.movecraft.*
     - essentials.gamemode.survival
@@ -207,7 +208,7 @@ groups:
     permissions:
     - plots.plot.4
     inheritance:
-    - coal  
+    - coal
   coal:
     permissions:
     - tbmc.rainbow

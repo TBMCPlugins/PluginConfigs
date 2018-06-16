@@ -154,7 +154,7 @@ worlds:
     respawnWorld: ''
     allowWeather: 'true'
     difficulty: EASY
-    spawning: &id019
+    spawning: &id046
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -166,7 +166,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id020
+    entryfee: &id047
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -185,7 +185,7 @@ worlds:
       yaw: 91.80102
     autoLoad: 'true'
     bedRespawn: 'true'
-    worldBlacklist: &id021 []
+    worldBlacklist: &id048 []
     environment: NORMAL
     seed: '7008642968894271479'
     generator: TerrainControl
@@ -316,17 +316,17 @@ worlds:
       currency: '-1'
     hunger: 'false'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: CREATIVE
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 65.5
+      x: -99.94598490882755
       y: 65.0
-      z: 256.5
-      pitch: 0.0
-      yaw: 0.0
+      z: 361.22998653715314
+      pitch: 26.886911
+      yaw: 2.6845398
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
@@ -442,8 +442,8 @@ worlds:
     respawnWorld: ''
     allowWeather: 'true'
     difficulty: EASY
-    spawning: *id019
-    entryfee: *id020
+    spawning: *id046
+    entryfee: *id047
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -459,7 +459,7 @@ worlds:
       yaw: -269.4009
     autoLoad: 'true'
     bedRespawn: 'true'
-    worldBlacklist: *id021
+    worldBlacklist: *id048
     environment: NORMAL
     seed: '7008642968894271479'
     generator: TerrainControl
