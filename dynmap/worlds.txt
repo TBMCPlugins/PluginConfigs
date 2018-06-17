@@ -138,3 +138,7 @@ worlds:
     hidestyle: stone
     extrazoomout: 2
     bigworld: true
+
+  - name: plotworld
+    enabled: true
+    template: normal-vlowres #Disabled by default
