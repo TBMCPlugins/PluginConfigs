@@ -1,5 +1,5 @@
 #!/bin/bash
-git rm  --cached -rfq '*/*' # Unstage everything in folders in case a plugin got removed
+git rm  --cached -rfq '*/*' ':!:.github/*'  # Unstage everything in folders in case a plugin got removed
 readarray -t plugins < plugins.txt # -t removes trailing newlines
 for i in "${plugins[@]}"
 do
