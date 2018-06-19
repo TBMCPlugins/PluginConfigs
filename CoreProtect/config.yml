@@ -13,7 +13,7 @@ mysql-host: 127.0.0.1
 mysql-port: 3306
 mysql-database: database
 mysql-username: root
-mysql-password: 
+mysql-password: 'NOPE'
 
 # If enabled, CoreProtect will check for updates when your server starts up.
 # If an update is available, you'll be notified via your server console.

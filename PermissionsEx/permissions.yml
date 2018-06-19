@@ -64,6 +64,11 @@ groups:
     - multiverse.core.list.*
     - plots.use
     - plots.permpack.basic
+    worlds:
+      plotworld:
+        permissions:
+        - -essentials.gamemode
+        - -chestshop.shop.*
   member:
     inheritance:
     - default
@@ -86,6 +91,13 @@ groups:
     - plots.plot.1
     options:
       rank: '60'
+    worlds:
+      plotworld:
+        permissions:
+        - limitedcreative.nolimit.break
+        - limitedcreative.nolimit.use
+        - limitedcreative.nolimit.interact
+        - limitedcreative.nolimit.chest
   donator:
     inheritance:
     - member
@@ -117,6 +129,10 @@ groups:
     - multiverse.teleport.other.test
     options:
       rank: '40'
+    worlds:
+      plotworld:
+        permissions:
+        - -essentials.gamemode
   worldeditor:
     inheritance:
     - builder

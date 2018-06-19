@@ -3,19 +3,17 @@
 # to broadcast a message to the server when a user goes up a skill level.
 #   It also allows admins to set the maximum number of jobs a player can have at
 # any one time.
-
+# 
 # Default language.
 # Example: en, ru
 # File in locale folder with same name should exist. Example: messages_ru.yml
 locale-language: en
 storage:
-  # storage method, can be MySQL or sqlite
-  method: sqlite
-# Requires Mysql.
-mysql-username: root
-mysql-password: NOPE
+  method: SqLite
+mysql-username: jobsreborn
+mysql-password: 'NOPE'
 mysql-hostname: localhost:3306
-mysql-database: minecraft
+mysql-database: jobs
 mysql-table-prefix: jobs_
 verify-server-certificate: false
 use-ssl: false

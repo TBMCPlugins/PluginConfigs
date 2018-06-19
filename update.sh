@@ -16,6 +16,7 @@ git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*'
 git add -f 'PermissionsEx/permissions.yml'
 git add -f 'Multiverse-Core/worlds.yml'
 git add -f 'ServerRunner/config.yml' # Not a plugin
+git add -f 'DungeonsXL/dungeons' 'DungeonsXL/scripts'
 
 git add -f update.sh download.sh
 

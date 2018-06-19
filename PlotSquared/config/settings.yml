@@ -1,9 +1,9 @@
 # These first 4 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "12 Jul 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/2010"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/6ed6f60"
+date: "18 Jul 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/2012"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/d454602"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -161,6 +161,7 @@ auto-clear:
     required-plots: -1
     confirmation: true
     days: 7
+    skip-account-age-days: -1
     worlds: 
     - "*"
     # See: https://github.com/IntellectualSites/PlotSquared/wiki/Plot-analysis

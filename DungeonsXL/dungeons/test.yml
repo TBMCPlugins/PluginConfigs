@@ -1,0 +1,14 @@
+#The first floor the players enter. Needs at least lobby, ready, start and floor signs.
+startFloor: MyDungeon_floor_01
+#The last floor the players enter. Needs at least start and end signs.
+endFloor: MyDungeon_floor_12
+#A list of all other floors in the dungeon. Needs at least lobby, ready, start and floor signs.
+floors:
+  - MyDungeon_floor_02
+
+
+#How many floors shall be selected randomly from the list before the player gets teleported to the endFloor?
+floorCount: 1
+
+#If true, the floors will get removed from the list when finished sothat one floor cannot be selected multiple times.
+removeWhenPlayed: false

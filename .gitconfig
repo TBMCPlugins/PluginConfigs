@@ -1,3 +1,5 @@
 [filter "rempass"]
 	smudge = cat
-	clean = sed -E --expression=\"s/(.*)pass(\\S*)\\\\: '.*'/\\1pass\\2: 'NOPE'/g\"
+	clean = sed -E --expression=\"s/(^\\s*(.*[_-]){0,1})pass(\\S*)\\\\: .*/\\1pass\\3: 'NOPE'/g\"
+# sed doesn't support (?:) so we're ignoring the 2nd group
+

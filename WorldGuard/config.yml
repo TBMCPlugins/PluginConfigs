@@ -28,7 +28,7 @@ regions:
         use: false
         dsn: jdbc:mysql://localhost/worldguard
         username: worldguard
-        password: worldguard
+        password: 'NOPE'
         table-prefix: ''
     enable: true
     invincibility-removes-mobs: false
