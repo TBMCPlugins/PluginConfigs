@@ -1647,6 +1647,11 @@ Jobs:
         income: 0.2
         points: 0.2
         experience: 0.2
+# Slime Block commented out due to potential exploit
+#      '165':
+#        income: 1.0
+#        points: 1.0
+#        experience: 1.0
       '168':
         income: 3.0
         points: 3.0
