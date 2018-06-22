@@ -151,3 +151,4 @@ worlds:
          z: 40
          r: 250
     mapzoomin: 3
+    hidestyle: air
