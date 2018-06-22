@@ -146,3 +146,8 @@ worlds:
   - name: luna
     enabled: true
     template: normal-vlowres #Disabled by default
+    visibilitylimits:
+       - x: -60
+         z: 40
+         r: 250
+    mapzoomin: 3
