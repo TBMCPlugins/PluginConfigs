@@ -97,7 +97,6 @@ groups:
         - limitedcreative.nolimit.break
         - limitedcreative.nolimit.use
         - limitedcreative.nolimit.interact
-        - limitedcreative.nolimit.chest
   donator:
     inheritance:
     - member
@@ -637,3 +636,13 @@ users:
     - member
     options:
       name: Lodish
+  c7bd9ab4-c38d-4927-9d9c-19e7704e79d7:
+    group:
+    - member
+    options:
+      name: FinaBean
+  0de2ee9c-2e88-456a-b5ef-890b037c4f5d:
+    group:
+    - member
+    options:
+      name: AnonymousDev
