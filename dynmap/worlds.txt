@@ -142,3 +142,7 @@ worlds:
   - name: plotworld
     enabled: true
     template: normal-vlowres #Disabled by default
+
+  - name: luna
+    enabled: true
+    template: normal-vlowres #Disabled by default
