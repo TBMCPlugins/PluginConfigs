@@ -120,10 +120,8 @@ groups:
     - trusted
     permissions:
     - essentials.sethome.multiple.builder
-    - essentials.gamemode.survival
     - essentials.bigtree
     - essentials.fly
-    - essentials.gamemode
     - multiverse.teleport.self.test
     - multiverse.teleport.other.test
     options:
@@ -282,8 +280,7 @@ users:
   f48bf937-cb2f-4cae-ad75-c835ae563903:
     options:
       name: HasOkayInternet
-    group:
-    - builder
+    group: []
     permissions: []
   bd0c72e7-f5a6-49be-a407-ad69e72a3431:
     group:
@@ -646,3 +643,13 @@ users:
     - member
     options:
       name: AnonymousDev
+  440db08b-b3db-4ef3-9edc-359adcf09c95:
+    group:
+    - member
+    options:
+      name: Dreamsword96
+  fa0591b3-67d7-4c2c-9586-f0578e857f65:
+    group:
+    - member
+    options:
+      name: Raz0R_CP9

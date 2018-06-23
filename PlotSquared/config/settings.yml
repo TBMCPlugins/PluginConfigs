@@ -1,9 +1,9 @@
 # These first 4 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "20 Jul 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/2014"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/df6914f"
+date: "23 Jul 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/2017"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/79e1ea9"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
