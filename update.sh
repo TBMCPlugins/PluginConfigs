@@ -20,4 +20,5 @@ git add -f 'DungeonsXL/dungeons' 'DungeonsXL/scripts'
 
 git add -f update.sh download.sh
 
-git commit && git push
+sudo -H git commit && git push #sudo -H needed for GPG signing 
+
