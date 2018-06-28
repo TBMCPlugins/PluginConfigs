@@ -76,7 +76,7 @@ Optimizations:
 Logging:
   # With this set to true all players jobs actions will be logged to database for easy to see statistics
   # This is still in development and in feature it will expand
-  Use: false
+  Use: true
 broadcast:
   on-skill-up:
     # Do all players get a message when somone goes up a skill level?
