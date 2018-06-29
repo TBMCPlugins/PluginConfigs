@@ -270,6 +270,7 @@ users:
       name: iie
   86539ab7-5fbb-4cc2-8452-ca737fecae6f:
     group:
+    - member
     - mod
     options:
       name: creepachu
@@ -653,3 +654,8 @@ users:
     - member
     options:
       name: Raz0R_CP9
+  d7e3b322-d7d2-47e0-8774-7cd96ea92340:
+    group:
+    - member
+    options:
+      name: Jackster03

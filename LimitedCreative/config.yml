@@ -360,7 +360,7 @@ blockstate:
   # (like complete creative worlds) to save cpu and memory.
   # 
   # default: []
-  ignoredWorlds: []
+  ignoredWorlds: [plotworld]
   
   # BlockStateWorldEditIntegration
   # 
