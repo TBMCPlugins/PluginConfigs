@@ -170,8 +170,8 @@ remove-god-on-disconnect: false
 auto-afk: 300
 auto-afk-kick: 600
 freeze-afk-players: false
-disable-item-pickup-while-afk: false
-cancel-afk-on-interact: true
+disable-item-pickup-while-afk: true
+cancel-afk-on-interact: false
 cancel-afk-on-move: true
 afk-list-name: none
 death-messages: true
