@@ -158,7 +158,7 @@ Economy:
   DynamicPayment:
     # Do you want to use dinamic payment dependent on how many players already working for jobs
     # This can help automaticaly lift up payments for not so popular jobs and lower for most popular ones
-    use: false
+    use: true
     equation: ((totalworkers / totaljobs) - jobstotalplayers)/10.0
     MaxPenalty: 25.0
     MaxBonus: 100.0
