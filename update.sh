@@ -18,6 +18,7 @@ git add -f 'Multiverse-Core/worlds.yml'
 git add -f 'ServerRunner/config.yml' # Not a plugin
 git add -f 'DungeonsXL/dungeons' 'DungeonsXL/scripts'
 git add -f ':(glob)TerrainControl/*' 'TerrainControl/worlds/world/*'
+git add -f 'Server/*' # Files are hardlinked from one above
 
 git add -f update.sh download.sh
 
