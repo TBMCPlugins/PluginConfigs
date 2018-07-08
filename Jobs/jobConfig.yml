@@ -363,7 +363,7 @@ Jobs:
     # Catching fish
     Fish:
       '349':
-        income: 0.2
+        income: 20.0
         experience: 25.0
     # Repairing items
     Repair:
@@ -549,52 +549,52 @@ Jobs:
       Id: 17
       Data: 2
     Break:
-      17-0: #Oak Log
-        income: 7
+      17-0:
+        income: 2.5
         points: 2.5
         experience: 2.5
-      17-1: #Spruce Log
-        income: 7
+      17-1:
+        income: 2.0
         points: 2.5
         experience: 2.0
-      17-2: #Birch Log
-        income: 5
+      17-2:
+        income: 2.5
         points: 2.5
         experience: 2.5
-      17-3: #Jungle Log
-        income: 5
+      17-3:
+        income: 2.5
         points: 2.5
         experience: 2.5
-      18-0: #Oak leaves
-        income: 0.2
+      18-0:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      18-1: #Spruce Leaves
-        income: 0.2
+      18-1:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      18-2: #Birch Leaves
-        income: 0.2
+      18-2:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      18-3: #Jungle Leaves
-        income: 0.2
+      18-3:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      161-0: #Acacia Leaves
-        income: 0.2
+      161-0:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      161-1: #Dark Oak Leaves
-        income: 0.2
+      161-1:
+        income: 0.5
         points: 0.5
         experience: 0.5
-      162-0: #Acacia Wood
-        income: 5
+      162-0:
+        income: 2.5
         points: 2.5
         experience: 2.5
-      162-1: #Dark Oak Wood
-        income: 7
+      162-1:
+        income: 2.5
         points: 2.5
         experience: 2.5
     Kill:
@@ -658,47 +658,47 @@ Jobs:
         points: 1
         experience: 1
       COAL_ORE:
-        income: 6
+        income: 3
         points: 2
         experience: 2
       SANDSTONE:
-        income: 0.30
+        income: 0.15
         points: 0.15
         experience: 0.2
       SANDSTONE-1:
-        income: 0.30
+        income: 0.15
         points: 0.15
         experience: 0.2
       SANDSTONE-2:
-        income: 0.30
+        income: 0.15
         points: 0.15
         experience: 0.2
       GLOWING_REDSTONE_ORE:
-        income: 5
+        income: 2.5
         points: 2
         experience: 2
       IRON_ORE:
-        income: 7
+        income: 3.5
         points: 3
         experience: 2
       GOLD_ORE:
-        income: 10
+        income: 5
         points: 4
         experience: 2
       LAPIS_ORE:
-        income: 15
+        income: 7.5
         points: 6
         experience: 2
       DIAMOND_ORE:
-        income: 20
+        income: 10
         points: 10
         experience: 10
       EMERALD_ORE:
-        income: 30
+        income: 15
         points: 15
         experience: 30
       QUARTZ_ORE:
-        income: 5
+        income: 2.5
         points: 2.5
         experience: 2.5
       OBSIDIAN:
@@ -706,19 +706,19 @@ Jobs:
         points: 5
         experience: 5
       MOSSY_COBBLESTONE:
-        income: 5
+        income: 2.5
         points: 2.5
         experience: 2.5
       NETHER_BRICK:
-        income: 5
+        income: 1.0
         points: 1
         experience: 1.0
       NETHER_BRICK_STAIRS:
-        income: 6
+        income: 3
         points: 3
         experience: 3
       NETHER_FENCE:
-        income: 2
+        income: 1
         points: 1
         experience: 1
       NETHERRACK:
@@ -731,19 +731,7 @@ Jobs:
         experience: 2.5
     Place:
       RAILS:
-        income: 1.0
-        points: 2.0
-        experience: 2.0
-      27: #Powered Rail
-        income: 1.0
-        points: 2.0
-        experience: 2.0
-      28: #Detector Rail
-        income: 1.0
-        points: 2.0
-        experience: 2.0
-      157: #Activator Rail
-        income: 1.0
+        income: 2.0
         points: 2.0
         experience: 2.0
       IRON_ORE:
@@ -1162,20 +1150,20 @@ Jobs:
         points: 5.0
         experience: 5.0
       Horse: 
-        income: 10.0
+        income: 5.0
         points: 5.0
         experience: 5.0
     Breed:
       Wolf:
-        income: 2.0
+        income: 4.0
         points: 4.0
         experience: 5.0
       Ocelot:
-        income: 2.0
+        income: 4.0
         points: 4.0
         experience: 5.0
       Pig:
-        income: 2.0
+        income: 4.0
         points: 4.0
         experience: 5.0
       Cow:
@@ -1183,11 +1171,11 @@ Jobs:
         points: 4.0
         experience: 5.0
       Horse:
-        income: 8.0
+        income: 4.0
         points: 4.0
         experience: 5.0
       Rabbit:
-        income: 2.0
+        income: 4.0
         points: 4.0
         experience: 5.0
       Sheep:
@@ -1195,7 +1183,7 @@ Jobs:
         points: 4.0
         experience: 5.0
       Chicken:
-        income: 2.0
+        income: 4.0
         points: 4.0
         experience: 5.0
     Shear:
@@ -1265,24 +1253,24 @@ Jobs:
         experience: 5.0 
     Milk:
       Cow:
-        income: 2.0
+        income: 5.0
         points: 5.0
         experience: 5.0
     Break:
       CHORUS_PLANT:
-        income: 0.5
+        income: 1.5
         points: 1.5
         experience: 3.0
       CHORUS_FLOWER:
-        income: 0.5
+        income: 1.5
         points: 1.5
         experience: 3.0
       BEETROOT_BLOCK-3:
-        income: 0.5
+        income: 1.5
         points: 1.5
         experience: 3.0
       CROPS-7:
-        income: 0.5
+        income: 1.5
         points: 1.5
         experience: 3.0
       CARROT-7:
@@ -1294,84 +1282,62 @@ Jobs:
         points: 1.0
         experience: 1.0
       PUMPKIN:
-        income: 0.25
+        income: 0.5
         points: 0.5
         experience: 1.0
       SUGAR_CANE_BLOCK:
-        income: 0.05
+        income: 0.2
         points: 0.2
         experience: 0.2
       COCOA-2:
-        income: 2
+        income: 4
         points: 4
         experience: 4.0
-      #'6':
-      # income: 2
-      #  points: 2
-      #  experience: 2.0
-      '111':
-        income: 5
-        points: 2
-        experience: 2.0
-      '37': #Lily Pad
+      '6':
         income: 2
         points: 2
         experience: 2.0
-      '38': #Poppy
-        income: 1
+      '111':
+        income: 2
         points: 2
         experience: 2.0
-      '39': #Brown Mushroom
-        income: 0.5
-        points: 1
-        experience: 1.0
-      '40': #Red Mushroom
-        income: 0.5
-        points: 1
-        experience: 1.0
-      '106': #Vines
+      '37':
+        income: 2
+        points: 2
+        experience: 2.0
+      '38':
+        income: 2
+        points: 2
+        experience: 2.0
+      '39':
         income: 1
         points: 1
         experience: 1.0
-      '81': #Cactus
-        income: 0.5
+      '40':
+        income: 1
         points: 1
         experience: 1.0
-      '115': #Nether Wart
-        income: 0.5
+      '106':
+        income: 1
+        points: 1
+        experience: 1.0
+      '81':
+        income: 1
+        points: 1
+        experience: 1.0
+      '115':
+        income: 1
         points: 1
         experience: 1.0
     Place:
       CROPS-0:
-        income: 0.5
+        income: 3.0
         points: 3
         experience: 3.0
-      391: #Carrot
-        income: 1.5
-        points: 3
-        experience: 3
-      392: #Potato
-        income: 1.5
-        points: 3
-        experience: 3
       SUGAR_CANE_BLOCK:
-        income: 0.1
+        income: 1.0
         points: 1
-        experience: 0.2
-    Craft:
-      354: #Cake
-        income: 5.0
-        points: 3
-        experience: 1
-      396: #Golden Carrot
-        income: 2.0
-        points: 3
-        experience: 1
-      400: #Pumpkin Pie
-        income 2.0
-        points: 3
-        experience: 1
-      
+        experience: 1.0
     Kill:
       Player:
         income: 7.5
@@ -1436,27 +1402,27 @@ Jobs:
         points: 10
         experience: 15.0
       Spider:
-        income: 5.0
+        income: 10.0
         points: 10
         experience: 15.0
       Zombie:
-        income: 5.0
+        income: 10.0
         points: 10
         experience: 15.0
       BLAZE:
-        income: 10.0
+        income: 20.0
         points: 20
         experience: 15.0
       CAVE_SPIDER:
-        income: 10.0
+        income: 20.0
         points: 20
         experience: 15.0
       ENDERMAN:
-        income: 0.5
+        income: 2.0
         points: 2
         experience: 2.0
       GHAST:
-        income: 60.0
+        income: 30.0
         points: 30
         experience: 30.0
       GIANT:
@@ -1464,7 +1430,7 @@ Jobs:
         points: 250
         experience: 100.0
       IRON_GOLEM:
-        income: 15.0
+        income: 30.0
         points: 30
         experience: 30.0
       MUSHROOM_COW:
@@ -1472,19 +1438,19 @@ Jobs:
         points: 5
         experience: 5.0
       PIG_ZOMBIE:
-        income: 2.5
+        income: 5.0
         points: 5
         experience: 5.0
       SILVERFISH:
-        income: 1.5
+        income: 3.0
         points: 3
         experience: 5.0
       SNOWMAN:
-        income: 1.0
+        income: 2.0
         points: 2
         experience: 4.0
       SQUID:
-        income: 4.0
+        income: 2.0
         points: 2
         experience: 2.0
       RABBIT:
@@ -1496,30 +1462,17 @@ Jobs:
         points: 2
         experience: 2.0
       SHULKER:
-        income: 50.0
+        income: 5.0
         points: 5
         experience: 5.0
       WITHER:
-        income: 200.0
+        income: 50.0
         points: 50
         experience: 120.0
       ENDER_DRAGON:
         income: 2000.0
         points: 2000
         experience: 2000.0
-      SLIME:
-        income: 5.0
-        points: 10
-        experience: 5.0
-      SKELETONWITHER:
-        income: 10.0
-        points: 10
-        experience: 5
-      WITCH: 
-        income: 10.0
-        points: 10
-        experience: 5
-        
       Player:
         income: 9.0
         points: 9
@@ -2003,51 +1956,51 @@ Jobs:
       Data: 0
     Brew:
       NETHER_STALK:
-        income: 6.0
+        income: 10.0
         points: 6.0
         experience: 6.0
       REDSTONE:
-        income: 6.0
+        income: 10.0
         points: 6.0
         experience: 6.0
       GLOWSTONE_DUST:
-        income: 8.0
+        income: 12.0
         points: 8.0
         experience: 8.0
       SPIDER_EYE:
-        income: 9.0
+        income: 15.0
         points: 9.0
         experience: 9.0
       FERMENTED_SPIDER_EYE:
-        income: 12.0
+        income: 20.0
         points: 12.0
         experience: 12.0
       BLAZE_POWDER:
-        income: 12.0
+        income: 20.0
         points: 12.0
         experience: 12.0
       SUGAR:
-        income: 7.0
+        income: 10.0
         points: 7.0
         experience: 7.0
       SPECKLED_MELON:
-        income: 10.0
+        income: 15.0
         points: 10.0
         experience: 10.0
       MAGMA_CREAM:
-        income: 12.0
+        income: 18.0
         points: 12.0
         experience: 12.0
       GHAST_TEAR:
-        income: 22.0
+        income: 40.0
         points: 22.0
         experience: 22.0
       GOLDEN_CARROT:
-        income: 14.0
+        income: 30.0
         points: 14.0
         experience: 14.0
-      349-3:
-        income: 14.0
+      349-3: #Pufferfish
+        income: 18.0
         points: 14.0
         experience: 14.0
       RABBIT_FOOT:
