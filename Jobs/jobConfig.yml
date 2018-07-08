@@ -1150,20 +1150,20 @@ Jobs:
         points: 5.0
         experience: 5.0
       Horse: 
-        income: 5.0
+        income: 10.0
         points: 5.0
         experience: 5.0
     Breed:
       Wolf:
-        income: 4.0
+        income: 2.0
         points: 4.0
         experience: 5.0
       Ocelot:
-        income: 4.0
+        income: 2.0
         points: 4.0
         experience: 5.0
       Pig:
-        income: 4.0
+        income: 2.0
         points: 4.0
         experience: 5.0
       Cow:
@@ -1171,11 +1171,11 @@ Jobs:
         points: 4.0
         experience: 5.0
       Horse:
-        income: 4.0
+        income: 8.0
         points: 4.0
         experience: 5.0
       Rabbit:
-        income: 4.0
+        income: 2.0
         points: 4.0
         experience: 5.0
       Sheep:
@@ -1183,7 +1183,7 @@ Jobs:
         points: 4.0
         experience: 5.0
       Chicken:
-        income: 4.0
+        income: 2.0
         points: 4.0
         experience: 5.0
     Shear:
@@ -1253,24 +1253,24 @@ Jobs:
         experience: 5.0 
     Milk:
       Cow:
-        income: 5.0
+        income: 2.0
         points: 5.0
         experience: 5.0
     Break:
       CHORUS_PLANT:
-        income: 1.5
+        income: 0.5
         points: 1.5
         experience: 3.0
       CHORUS_FLOWER:
-        income: 1.5
+        income: 0.5
         points: 1.5
         experience: 3.0
       BEETROOT_BLOCK-3:
-        income: 1.5
+        income: 0.5
         points: 1.5
         experience: 3.0
       CROPS-7:
-        income: 1.5
+        income: 0.5
         points: 1.5
         experience: 3.0
       CARROT-7:
@@ -1282,62 +1282,84 @@ Jobs:
         points: 1.0
         experience: 1.0
       PUMPKIN:
-        income: 0.5
+        income: 0.25
         points: 0.5
         experience: 1.0
       SUGAR_CANE_BLOCK:
-        income: 0.2
+        income: 0.05
         points: 0.2
         experience: 0.2
       COCOA-2:
-        income: 4
+        income: 2
         points: 4
         experience: 4.0
-      '6':
-        income: 2
-        points: 2
-        experience: 2.0
+      #'6':
+      # income: 2
+      #  points: 2
+      #  experience: 2.0
       '111':
+        income: 5
+        points: 2
+        experience: 2.0
+      '37': #Lily Pad
         income: 2
         points: 2
         experience: 2.0
-      '37':
-        income: 2
+      '38': #Poppy
+        income: 1
         points: 2
         experience: 2.0
-      '38':
-        income: 2
-        points: 2
-        experience: 2.0
-      '39':
+      '39': #Brown Mushroom
+        income: 0.5
+        points: 1
+        experience: 1.0
+      '40': #Red Mushroom
+        income: 0.5
+        points: 1
+        experience: 1.0
+      '106': #Vines
         income: 1
         points: 1
         experience: 1.0
-      '40':
-        income: 1
+      '81': #Cactus
+        income: 0.5
         points: 1
         experience: 1.0
-      '106':
-        income: 1
-        points: 1
-        experience: 1.0
-      '81':
-        income: 1
-        points: 1
-        experience: 1.0
-      '115':
-        income: 1
+      '115': #Nether Wart
+        income: 0.5
         points: 1
         experience: 1.0
     Place:
       CROPS-0:
-        income: 3.0
+        income: 0.5
         points: 3
         experience: 3.0
+      391: #Carrot
+        income: 1.5
+        points: 3
+        experience: 3
+      392: #Potato
+        income: 1.5
+        points: 3
+        experience: 3
       SUGAR_CANE_BLOCK:
-        income: 1.0
+        income: 0.1
         points: 1
-        experience: 1.0
+        experience: 0.2
+    Craft:
+      354: #Cake
+        income: 5.0
+        points: 3
+        experience: 1
+      396: #Golden Carrot
+        income: 2.0
+        points: 3
+        experience: 1
+      400: #Pumpkin Pie
+        income 2.0
+        points: 3
+        experience: 1
+      
     Kill:
       Player:
         income: 7.5
