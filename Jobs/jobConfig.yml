@@ -1473,6 +1473,19 @@ Jobs:
         income: 2000.0
         points: 2000
         experience: 2000.0
+      SLIME:
+        income: 5.0
+        points: 10
+        experience: 5.0
+      SKELETONWITHER:
+        income: 10.0
+        points: 10
+        experience: 5
+      WITCH: 
+        income: 10.0
+        points: 10
+        experience: 5
+        
       Player:
         income: 9.0
         points: 9
