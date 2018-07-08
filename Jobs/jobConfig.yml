@@ -658,47 +658,47 @@ Jobs:
         points: 1
         experience: 1
       COAL_ORE:
-        income: 3
+        income: 6
         points: 2
         experience: 2
       SANDSTONE:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       SANDSTONE-1:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       SANDSTONE-2:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       GLOWING_REDSTONE_ORE:
-        income: 2.5
+        income: 5
         points: 2
         experience: 2
       IRON_ORE:
-        income: 3.5
+        income: 7
         points: 3
         experience: 2
       GOLD_ORE:
-        income: 5
+        income: 10
         points: 4
         experience: 2
       LAPIS_ORE:
-        income: 7.5
+        income: 15
         points: 6
         experience: 2
       DIAMOND_ORE:
-        income: 10
+        income: 20
         points: 10
         experience: 10
       EMERALD_ORE:
-        income: 15
+        income: 30
         points: 15
         experience: 30
       QUARTZ_ORE:
-        income: 2.5
+        income: 5
         points: 2.5
         experience: 2.5
       OBSIDIAN:
@@ -706,19 +706,19 @@ Jobs:
         points: 5
         experience: 5
       MOSSY_COBBLESTONE:
-        income: 2.5
+        income: 5
         points: 2.5
         experience: 2.5
       NETHER_BRICK:
-        income: 1.0
+        income: 5
         points: 1
         experience: 1.0
       NETHER_BRICK_STAIRS:
-        income: 3
+        income: 6
         points: 3
         experience: 3
       NETHER_FENCE:
-        income: 1
+        income: 2
         points: 1
         experience: 1
       NETHERRACK:
@@ -731,7 +731,19 @@ Jobs:
         experience: 2.5
     Place:
       RAILS:
-        income: 2.0
+        income: 1.0
+        points: 2.0
+        experience: 2.0
+      27: #Powered Rail
+        income: 1.0
+        points: 2.0
+        experience: 2.0
+      28: #Detector Rail
+        income: 1.0
+        points: 2.0
+        experience: 2.0
+      157: #Activator Rail
+        income: 1.0
         points: 2.0
         experience: 2.0
       IRON_ORE:
