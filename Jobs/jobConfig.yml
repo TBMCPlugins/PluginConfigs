@@ -549,52 +549,52 @@ Jobs:
       Id: 17
       Data: 2
     Break:
-      17-0:
-        income: 2.5
+      17-0: #Oak Log
+        income: 7
         points: 2.5
         experience: 2.5
-      17-1:
-        income: 2.0
+      17-1: #Spruce Log
+        income: 7
         points: 2.5
         experience: 2.0
-      17-2:
-        income: 2.5
+      17-2: #Birch Log
+        income: 5
         points: 2.5
         experience: 2.5
-      17-3:
-        income: 2.5
+      17-3: #Jungle Log
+        income: 5
         points: 2.5
         experience: 2.5
-      18-0:
-        income: 0.5
+      18-0: #Oak leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      18-1:
-        income: 0.5
+      18-1: #Spruce Leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      18-2:
-        income: 0.5
+      18-2: #Birch Leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      18-3:
-        income: 0.5
+      18-3: #Jungle Leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      161-0:
-        income: 0.5
+      161-0: #Acacia Leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      161-1:
-        income: 0.5
+      161-1: #Dark Oak Leaves
+        income: 0.2
         points: 0.5
         experience: 0.5
-      162-0:
-        income: 2.5
+      162-0: #Acacia Wood
+        income: 5
         points: 2.5
         experience: 2.5
-      162-1:
-        income: 2.5
+      162-1: #Dark Oak Wood
+        income: 7
         points: 2.5
         experience: 2.5
     Kill:
