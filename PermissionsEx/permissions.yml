@@ -119,6 +119,7 @@ groups:
     inheritance:
     - trusted
     permissions:
+    - worldguard.teleport.own.*
     - essentials.sethome.multiple.builder
     - essentials.bigtree
     - essentials.fly
@@ -281,7 +282,8 @@ users:
   f48bf937-cb2f-4cae-ad75-c835ae563903:
     options:
       name: HasOkayInternet
-    group: []
+    group:
+    - member
     permissions: []
   bd0c72e7-f5a6-49be-a407-ad69e72a3431:
     group:
@@ -306,7 +308,7 @@ users:
     - member
   423ab9b6-5518-4fa2-afc3-31143f169a75:
     options:
-      name: FlamingoJay
+      name: __Flamingo
     group:
     - member
   7ede6d55-357d-45d2-8dd1-613e287f174a:
@@ -382,6 +384,7 @@ users:
     options:
       name: FigyTuna
     group:
+    - member
     - admin
     permissions: []
   38865e2e-8582-4ef3-8142-59a222168b09:
@@ -659,3 +662,23 @@ users:
     - member
     options:
       name: Jackster03
+  cffc1536-35ac-44c7-b5a0-a85a2c5e1404:
+    group:
+    - member
+    options:
+      name: Koiiev
+  b10d87c6-d2e3-4307-8b3a-48365291aca7:
+    group:
+    - member
+    options:
+      name: RedsToad
+  9bb4dab3-6f1f-4e18-bda2-72bc9f0701a4:
+    group:
+    - member
+    options:
+      name: willnutdude9
+  6594d366-1c94-4856-8b5d-1261976ee773:
+    group:
+    - member
+    options:
+      name: yewhotookAPUSH
