@@ -13,7 +13,6 @@ allowedBlocks:
     - 26
     - 29
     - 33
-    - 34
     - 35
     - 41
     - 42
@@ -96,6 +95,7 @@ allowedBlocks:
 
 forbiddenBlocks:
     - 7
+    - 34 #Piston Head
 
 canCruise: true
 cruiseSkipBlocks: 4
