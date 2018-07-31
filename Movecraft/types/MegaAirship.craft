@@ -115,6 +115,7 @@ allowedBlocks:
 
 forbiddenBlocks:
     - 7
+    - 34 #Piston Head
 
 canCruise: true
 canFly: true
