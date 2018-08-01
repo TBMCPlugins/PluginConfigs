@@ -423,7 +423,7 @@ users:
     - member
   70696a72-45a3-424c-82ed-769df0c6802b:
     options:
-      name: drox_stryder
+      name: cedricvh27
     group:
     - member
   88ecfbb1-8756-4cf8-8b58-da72eda642a3:
@@ -682,3 +682,28 @@ users:
     - member
     options:
       name: yewhotookAPUSH
+  c6852596-a0dd-4920-95f8-7933eca750b7:
+    group:
+    - member
+    options:
+      name: TheNr24
+  fa4789ef-b51b-410e-81fa-862c1a325b3b:
+    group:
+    - member
+    options:
+      name: Undersea_Ellie
+  cbdc0fef-6aee-4562-9253-e322fb4e049e:
+    group:
+    - member
+    options:
+      name: moertymoertan
+  4c1cf4ce-784c-467b-9814-e6aaf3b466c0:
+    group:
+    - member
+    options:
+      name: Prop42
+  813917c1-bb5f-4e1d-9ddc-f634f6277d42:
+    group:
+    - member
+    options:
+      name: Vivian_Vitella
