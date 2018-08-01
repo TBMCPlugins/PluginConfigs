@@ -22,6 +22,5 @@ git add -f 'Server/*' # Files are hardlinked from one above
 
 git add -f update.sh download.sh
 
-sudo -H git commit -S #sudo -H needed for GPG signing
-git push
+sudo -H git commit -S && /usr/local/bin/git push #sudo -H needed for GPG signing
 
