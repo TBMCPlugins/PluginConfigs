@@ -73,6 +73,7 @@ groups:
     inheritance:
     - default
     permissions:
+    - jobs.maxfurnaces.19042
     - essentials.motd
     - movecraft.*
     - essentials.warp
