@@ -309,8 +309,9 @@ users:
     - member
   423ab9b6-5518-4fa2-afc3-31143f169a75:
     options:
-      name: __Flamingo
+      name: Heisenbirdd
     group:
+    - gold
     - member
   7ede6d55-357d-45d2-8dd1-613e287f174a:
     options:
@@ -708,3 +709,23 @@ users:
     - member
     options:
       name: Vivian_Vitella
+  4f16c9a6-425a-46f7-84b9-a203cbad4e28:
+    group:
+    - member
+    options:
+      name: KingGroose
+  1dd482b1-7384-44b5-9c2f-040a4737f09a:
+    group:
+    - member
+    options:
+      name: RicketickYT
+  c44988c7-c4a0-405e-9914-4dd01c498326:
+    group:
+    - member
+    options:
+      name: LoreLord
+  6015cf23-d4ab-4714-a919-45848a6a176c:
+    group:
+    - member
+    options:
+      name: TheBeastGamer135
