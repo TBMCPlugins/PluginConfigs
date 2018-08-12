@@ -1368,7 +1368,7 @@ Jobs:
         points: 3
         experience: 1
       400: #Pumpkin Pie
-        income 2.0
+        income: 2.0
         points: 3
         experience: 1
       
