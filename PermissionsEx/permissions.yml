@@ -252,6 +252,7 @@ users:
     options:
       name: Mr_Byzantine
     group:
+    - mod
     - builder
     - trusted
     - member
@@ -462,6 +463,7 @@ users:
     - member
   c9468bea-0b2a-4cb7-9469-3ea1040d38fd:
     group:
+    - mod
     - member
     options:
       name: UnsafestFlea3
@@ -477,6 +479,8 @@ users:
       name: TheShyPig
   a37ac0d4-a6e9-4d4a-8531-d8de4d167edc:
     group:
+    - developer
+    - mod
     - member
     options:
       name: LadyVulcanOne
@@ -506,6 +510,7 @@ users:
       name: Spike52055
   e55c1999-b0f7-4112-ada2-a43ba1d8c661:
     group:
+    - developer
     - diamond
     - member
     options:
@@ -729,3 +734,20 @@ users:
     - member
     options:
       name: TheBeastGamer135
+  4a365988-bc38-4a1d-8847-c2423b898db7:
+    group:
+    - member
+    options:
+      name: DorpsGek2002
+  6ff7b27f-ce0e-4861-b6f8-4e5abab30cd7:
+    group:
+    - member
+    options:
+      name: tibothedog
+  c006ba14-91ac-4679-ba77-5b06165b8f5f:
+    group:
+    - member
+    options:
+      name: DapperThief
+  xxxxsinxxxx:
+    group: []
