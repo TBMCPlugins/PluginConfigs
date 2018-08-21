@@ -754,6 +754,7 @@ users:
     group: []
   fcdad1b9-a92d-479c-a3e9-4890821876f6:
     group:
+    - gold
     - member
     options:
       name: Czyrix
