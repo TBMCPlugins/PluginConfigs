@@ -147,6 +147,8 @@ groups:
     - donator
     - developer
     permissions:
+    - plots.admin
+    - ChestShop.admin
     - fawe.plotsquared.admin
     - fawe.worldguard.member
     - fawe.worldguard
@@ -177,7 +179,6 @@ groups:
     - townychat.*
     - towny.*
     - coreprotect.*
-    - plots.admin.*
     options:
       rank: '20'
   admin:
@@ -751,3 +752,11 @@ users:
       name: DapperThief
   xxxxsinxxxx:
     group: []
+  fcdad1b9-a92d-479c-a3e9-4890821876f6:
+    group:
+    - member
+    options:
+      name: Czyrix
+    worlds:
+      gold:
+        permissions: []
