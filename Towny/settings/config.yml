@@ -95,63 +95,63 @@ levels:
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 4
-    upkeepModifier: 1.0
+    upkeepModifier: 0.1
   - numResidents: 1
     namePostfix: ' (Settlement)'
     mayorPrefix: 'Hermit '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 64
-    upkeepModifier: 1.0
+    upkeepModifier: 0.1
   - numResidents: 2
     namePostfix: ' (Hamlet)'
     mayorPrefix: 'Chief '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 428
-    upkeepModifier: 1.0
+    upkeepModifier: 0.1
   - numResidents: 6
     namePostfix: ' (Village)'
     mayorPrefix: 'Baron Von '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 384
-    upkeepModifier: 1.1
+    upkeepModifier: 0.2
   - numResidents: 10
     namePostfix: ' (Town)'
     mayorPrefix: 'Viscount '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 640
-    upkeepModifier: 1.1
+    upkeepModifier: 0.3
   - numResidents: 14
     namePostfix: ' (Large Town)'
     mayorPrefix: 'Count Von '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 896
-    upkeepModifier: 1.2
+    upkeepModifier: 0.4
   - numResidents: 20
     namePostfix: ' (City)'
     mayorPrefix: 'Earl '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 4280
-    upkeepModifier: 1.3
+    upkeepModifier: 0.5
   - numResidents: 24
     namePostfix: ' (Large City)'
     mayorPrefix: 'Duke '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 4536
-    upkeepModifier: 1.4
+    upkeepModifier: 0.6
   - numResidents: 28
     namePostfix: ' (Metropolis)'
     mayorPrefix: 'Lord '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 4792
-    upkeepModifier: 1.5
+    upkeepModifier: 0.7
  
   # default Nation levels.
   nation_level:
