@@ -135,6 +135,7 @@ groups:
     - donator
     - developer
     permissions:
+    - libsdisguises.*
     - plots.admin
     - ChestShop.admin
     - fawe.plotsquared.admin
@@ -245,6 +246,7 @@ users:
     - builder
     - trusted
     - member
+    permissions: []
   69e63e10-e0a6-4cb0-b519-b0e8f57cc7c9:
     options:
       name: Ghostise
@@ -299,7 +301,7 @@ users:
     - member
   423ab9b6-5518-4fa2-afc3-31143f169a75:
     options:
-      name: Heisenbirdd
+      name: jaydotexe
     group:
     - gold
     - member
@@ -473,6 +475,8 @@ users:
     - member
     options:
       name: LadyVulcanOne
+    permissions:
+    - pex.*
   cb93383c-d72b-4605-bdd2-c9c0b44e2b30:
     group:
     - member
@@ -749,3 +753,8 @@ users:
     worlds:
       gold:
         permissions: []
+  0097b618-d8f7-48b5-82d7-172ae17fbd5b:
+    group:
+    - member
+    options:
+      name: SlackerPlays
