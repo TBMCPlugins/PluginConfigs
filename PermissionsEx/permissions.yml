@@ -45,6 +45,18 @@ groups:
     - essentials.tptoggle
     - modifyworld.*
     - towny.wild.*
+    - towny.chat.town
+    - towny.chat.nation
+    - towny.chat.join
+    - towny.chat.leave
+    - towny.command.nation.*
+    - towny.command.plot.*
+    - towny.command.resident.*
+    - towny.command.town.*
+    - towny.command.towny.*
+    - towny.command.townyworld.*
+    - towny.town.resident
+    - towny.town.spawn.town
     - multiverse.help
     - multiverse.core.confirm
     - multiverse.core.coord
@@ -221,12 +233,7 @@ groups:
 schema-version: 1
 users:
   6044fabf-cf2b-4579-8d44-bc52874b77f8:
-    permissions:
-    - coinspect.*
-    - essentials.socialspy
-    - dynmap.radiusrender
-    - permissions.*
-    - pex.*
+    permissions: []
     options:
       name: Alisolarflare
     group:
@@ -758,3 +765,23 @@ users:
     - member
     options:
       name: SlackerPlays
+  7c65701c-0be3-48ce-9335-4405b3822b2f:
+    group:
+    - member
+    options:
+      name: Rtasva
+  4893dc11-59fd-41f7-925e-c0496576f0a9:
+    group:
+    - member
+    options:
+      name: Rytho
+  8ba54766-a034-4a5d-a8c5-0995543c696d:
+    group:
+    - member
+    options:
+      name: MatterFluxxy
+  42847e0c-5b73-4084-9f22-507d722cdbd6:
+    group:
+    - member
+    options:
+      name: MrClod
