@@ -796,287 +796,287 @@ Jobs:
         income: 0.7
         points: 0.7
         experience: 2
-      '5':
+      '5': #Oak Planks
         income: 1.5
         points: 1.5
         experience: 2
-      '35':
+      '35': #Wool
         income: 1.5
         points: 1.5
         experience: 2
-      '41':
+      '41': #Gold Block
         income: 1.5
         points: 1.5
         experience: 2
-      '42':
+      '42': #Iron Block
         income: 1.5
         points: 1.5
         experience: 2
-      '44':
+      '44': #Stone Slabs (all varieties)
         income: 0.8
         points: 0.8
         experience: 2
-      '45':
+      '45': #Bricks
         income: 1.5
         points: 1.5
         experience: 2
-      '47':
+      '47': #Bookshelf
         income: 1.5
         points: 1.5
         experience: 2
-      '48':
+      '48': #Moss Stone
         income: 1.5
         points: 1.5
         experience: 2
-      '49':
+      '49': #Obsidian
         income: 1.5
         points: 1.5
         experience: 2
-      '53':
+      '53': #Oak Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '54':
+      '54': #Chest
         income: 1.5
         points: 1.5
         experience: 2
-      '57':
+      '57': #Diamond Block
         income: 1.5
         points: 1.5
         experience: 2
-      '58':
+      '58': #Crafting Table
         income: 1.5
         points: 1.5
         experience: 2
-      '61':
+      '61': #Furnace
         income: 1.5
         points: 1.5
         experience: 2
-      '65':
+      '65': #Ladder
         income: 1.5
         points: 1.5
         experience: 2
-      '67':
+      '67': #Cobblestone Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '79':
+      '79': #Ice
         income: 1.5
         points: 1.5
         experience: 2
-      '80':
+      '80': #Snow Block
         income: 1.0
         points: 1.0
         experience: 2
-      '84':
+      '84': #Jukebox
         income: 1.0
         points: 1.0
         experience: 2
-      '85':
+      '85': #Oak Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '89':
+      '89': #Glowstone
         income: 1.5
         points: 1.5
         experience: 2
-      '95':
+      '95': #Stained Glass block
         income: 1.5
         points: 1.5
         experience: 2
-      '96':
+      '96': #Wooden Trapdoor
         income: 1.5
         points: 1.5
         experience: 2
-      '98':
+      '98': #Stone Bricks (all varieties)
         income: 1.5
         points: 1.5
         experience: 2
-      '101':
+      '101': #Iron Bars
         income: 1.5
         points: 1.5
         experience: 2
-      '102':
+      '102': #Clear Glass Pane
         income: 1.5
         points: 1.5
         experience: 2
-      '107':
+      '107': #Oak Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '108':
+      '108': #Brick Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '109':
+      '109': #Stone Brick Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '112':
+      '112': #Nether Brick
         income: 1.5
         points: 1.5
         experience: 2
-      '113':
+      '113': #Nether Brick Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '114':
+      '114': #Nether Brick Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '116':
+      '116': #Enchantment Table
         income: 1.5
         points: 1.5
         experience: 2
-      '120':
+      '120': #End Portal Frame
         income: 1.5
         points: 1.5
         experience: 2
-      '123':
+      '123': #Redstone Lamp
         income: 1.0
         points: 1.0
         experience: 2
-      '126':
+      '126': #Wooden Slabs (all varieties)
         income: 0.8
         points: 0.8
         experience: 2
-      '128':
+      '128': #Sandstone Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '130':
+      '130': #Ender Chest
         income: 1.5
         points: 1.5
         experience: 2
-      '133':
+      '133': #Emerald Block
         income: 1.5
         points: 1.5
         experience: 2
-      '134':
+      '134': #Spruce Wood Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '139':
+      '139': #Cobblestone Wall
         income: 1.5
         points: 1.5
         experience: 2
-      '146':
+      '146': #Trapped Chest
         income: 1.5
         points: 1.5
         experience: 2
-      '152':
+      '152': #Redstone Block
         income: 1.5
         points: 1.5
         experience: 2
-      '154':
+      '154': #Hopper
         income: 1.5
         points: 1.5
         experience: 2
-      '155':
+      '155': #Quartz Block (all varieties)
         income: 1.5
         points: 1.5
         experience: 2
-      '156':
+      '156': #Quartz Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '159':
+      '159': #Stained Terracotta
         income: 1.5
         points: 1.5
         experience: 2
-      '160':
+      '160': #Stained Glass Pane
         income: 1.5
         points: 1.5
         experience: 2
-      '161':
+      '161': #Acacia and Dark Oak Leaves
         income: 1.5
         points: 1.5
         experience: 2
-      '163':
+      '163': #Acacia Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '164':
+      '164': #Dark Oak Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '167':
+      '167': #Iron Trapdoor
         income: 1.5
         points: 1.5
         experience: 2
-      '168':
+      '168': #Prismarine (all varieties)
         income: 1.3
         points: 1.3
         experience: 1.9
-      '169':
+      '169': #Sea Lantern
         income: 1.5
         points: 1.5
         experience: 2
-      '170':
+      '170': #Hay Bale
         income: 1.5
         points: 1.5
         experience: 2
-      '172':
+      '172': #Plain Terracotta
         income: 1.5
         points: 1.5
         experience: 2
-      '173':
+      '173': #Coal Block
         income: 1.5
         points: 1.5
         experience: 2
-      '174':
+      '174': #Packed Ice
         income: 1.5
         points: 1.5
         experience: 2
-      '179':
+      '179': #Red Sandstone
         income: 1.5
         points: 1.5
         experience: 2
-      '180':
+      '180': #Red Sandstone Stairs
         income: 1.5
         points: 1.5
         experience: 2
-      '182':
+      '182': #Red Sandstone Slab
         income: 0.8
         points: 0.8
         experience: 2
-      '183':
+      '183': #Spruce Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '184':
+      '184': #Birch Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '185':
+      '185': #Jungle Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '186':
+      '186': #Dark Oak Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '187':
+      '187': #Acacia Fence Gate
         income: 1.5
         points: 1.5
         experience: 2
-      '188':
+      '188': #Spruce Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '189':
+      '189': #Birch Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '190':
+      '190': #Jungle Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '191':
+      '191': #Dark Oak Fence
         income: 1.5
         points: 1.5
         experience: 2
-      '192':
+      '192': #Acacia Fence
         income: 1.5
         points: 1.5
         experience: 2
@@ -1102,7 +1102,7 @@ Jobs:
       Id: 269
       Data: 0
     Break:
-      '179':
+      '179': #Red Sandstone
         income: 1
         points: 1
         experience: 1
@@ -1126,7 +1126,7 @@ Jobs:
         income: 1
         points: 1
         experience: 1.0
-      '159':
+      '159': #Stained Terracotta
         income: 1
         points: 1
         experience: 1.0
@@ -1305,15 +1305,11 @@ Jobs:
         income: 2
         points: 4
         experience: 4.0
-      #'6':
-      # income: 2
-      #  points: 2
-      #  experience: 2.0
-      '111':
+      '111': #Lily Pad
         income: 5
         points: 2
         experience: 2.0
-      '37': #Lily Pad
+      '37': #Dandelion
         income: 2
         points: 2
         experience: 2.0
@@ -1346,11 +1342,11 @@ Jobs:
         income: 0.5
         points: 3
         experience: 3.0
-      391: #Carrot
+      141-0: #Carrot
         income: 1.5
         points: 3
         experience: 3
-      392: #Potato
+      POTATO-0: #Potato
         income: 1.5
         points: 3
         experience: 3
@@ -1371,7 +1367,6 @@ Jobs:
         income: 2.0
         points: 3
         experience: 1
-      
     Kill:
       Player:
         income: 7.5
