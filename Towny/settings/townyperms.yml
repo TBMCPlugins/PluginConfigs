@@ -69,6 +69,8 @@ towns:
             - towny.claimed.townowned.switch.*
         donator:
             # Currently only an example rank holder with no extra permissions
+        Knight:
+            # Title only no extra permissions as a test case
         vip:
             - towny.cheat.bypass
         # Sheriff rank is able to jail other town members.
