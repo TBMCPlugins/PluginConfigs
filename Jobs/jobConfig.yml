@@ -1434,9 +1434,9 @@ Jobs:
         points: 0.2
         experience: 0.2
       COCOA-2:
-        income: 2
-        points: 4
-        experience: 4.0
+        income: 0.5
+        points: 1.0
+        experience: 1.5
       '111': #Lily Pad
         income: 5
         points: 2
