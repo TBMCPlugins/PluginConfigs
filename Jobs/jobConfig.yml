@@ -1297,6 +1297,10 @@ Jobs:
         income: 0.25
         points: 0.5
         experience: 1.0
+      MELON:
+        income: 0.25
+        points: 0.5
+        experience: 1.0
       SUGAR_CANE_BLOCK:
         income: 0.05
         points: 0.2
