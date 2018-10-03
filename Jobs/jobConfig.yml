@@ -800,6 +800,14 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      '20': #Glass block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '24': #Sandstone
+        income: 1.5
+        points: 1.5
+        experience: 2
       '35': #Wool
         income: 1.5
         points: 1.5
@@ -953,6 +961,14 @@ Jobs:
         points: 1.5
         experience: 2
       '134': #Spruce Wood Stairs
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '135': #Birch Stairs
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '136': #Jungle Stairs
         income: 1.5
         points: 1.5
         experience: 2
