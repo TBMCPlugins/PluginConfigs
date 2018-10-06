@@ -225,6 +225,7 @@ users:
     options:
       name: Alisolarflare
     group:
+    - developer
     - member
     worlds:
       moderator:
@@ -773,3 +774,23 @@ users:
     - member
     options:
       name: MrClod
+  8720521c-10cb-4b68-852c-69e70fa18dc1:
+    group:
+    - member
+    options:
+      name: Nate337
+  337c608d-1d82-4859-9fa2-bb542f5266ba:
+    group:
+    - member
+    options:
+      name: Prixxit
+  5923fed0-4209-49bf-81e6-ae28c22fefe4:
+    group:
+    - member
+    options:
+      name: escapeCharacter
+  ae862d29-f33d-479a-a6ad-2ce73d5506d7:
+    group:
+    - member
+    options:
+      name: mayskam1995
