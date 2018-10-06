@@ -800,6 +800,18 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      '20': #Glass block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '22': #Lapis Lazuli block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '24': #Sandstone
+        income: 1.5
+        points: 1.5
+        experience: 2
       '35': #Wool
         income: 1.5
         points: 1.5
@@ -956,6 +968,14 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      '135': #Birch Stairs
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '136': #Jungle Stairs
+        income: 1.5
+        points: 1.5
+        experience: 2
       '139': #Cobblestone Wall
         income: 1.5
         points: 1.5
@@ -1077,6 +1097,114 @@ Jobs:
         points: 1.5
         experience: 2
       '192': #Acacia Fence
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '201': #Purpur block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '202': #Purpur pillar
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '203': #Purpur stairs
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '205': #Purpur slab
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '206': #End stone brick
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '212': #Frosted ice
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '213': #Magma
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '214': #Nether wart block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '215': #Red nether brick
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '216': #Bone block
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '235': #White glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '236': #Orange glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '237': #Magenta glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '238': #Light blue glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '239': #Yellow glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '240': #Lime glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '241': #Pink glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '242': #Gray glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '243': #Light gray glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '244': #Cyan glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '245': #Purple glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '246': #Blue glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '247': #Brown glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '248': #Green glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '249': #Red glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '250': #Black glazed terracotta
+        income: 1.5
+        points: 1.5
+        experience: 2
+      '251': #Concrete
         income: 1.5
         points: 1.5
         experience: 2
@@ -1297,14 +1425,18 @@ Jobs:
         income: 0.25
         points: 0.5
         experience: 1.0
+      MELON:
+        income: 0.25
+        points: 0.5
+        experience: 1.0
       SUGAR_CANE_BLOCK:
         income: 0.05
         points: 0.2
         experience: 0.2
       COCOA-2:
-        income: 2
-        points: 4
-        experience: 4.0
+        income: 0.5
+        points: 1.0
+        experience: 1.5
       '111': #Lily Pad
         income: 5
         points: 2
