@@ -1425,7 +1425,7 @@ Jobs:
         income: 0.25
         points: 0.5
         experience: 1.0
-      MELON:
+      '103': #Melon Block
         income: 0.25
         points: 0.5
         experience: 1.0
