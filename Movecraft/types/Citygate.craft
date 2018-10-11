@@ -7,8 +7,8 @@ allowedBlocks:
     - 162   #Dark Oak Logs
     - 191   #Dark Oak Fence
     - 190   #Jungle Fence
-    - 69    #Lever
-    - 33    #Piston
+    #- 69    #Lever
+    #- 33    #Piston
 
 forbiddenBlocks:
     - 7     #Bedrock
