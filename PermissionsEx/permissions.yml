@@ -352,7 +352,7 @@ users:
       name: MC_Brendan
   a34194de-b4f1-4bb2-9355-76cd34e3fefb:
     options:
-      name: Hack3rm4n
+      name: Ikizen
     group:
     - member
   f67bee95-b84f-483d-af00-c6448f742780:
@@ -794,3 +794,33 @@ users:
     - member
     options:
       name: mayskam1995
+  5ac57511-159b-4763-8957-cf1e8cb3b309:
+    group:
+    - member
+    options:
+      name: DJAronnsaei
+  acc22974-22ef-4cfd-8fa8-3a20b575b343:
+    group:
+    - member
+    options:
+      name: Tetdesu
+  f4ae30a1-2c94-4a0d-87dc-0373a08dba25:
+    group:
+    - member
+    options:
+      name: Bobbynaut
+  c917ed19-ce15-4899-94a7-3d7e62ed04a2:
+    group:
+    - member
+    options:
+      name: Enclasse
+  21f95712-8b67-498b-8576-56829b95a825:
+    group:
+    - member
+    options:
+      name: WarpUnresulting
+  575e3ade-000a-4e89-8ef1-5967b03ec85f:
+    group:
+    - member
+    options:
+      name: Ivy_Maze
