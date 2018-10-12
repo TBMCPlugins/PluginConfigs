@@ -12,7 +12,7 @@ for X in $(seq $X1 $X2); do
 	for Z in $(seq $Z1 $Z2); do
 		echo "Unzipping region ($X,$Z)..." >&2
 		#unzip "$1" "world/region/r.$X.$Z.mca" -d backupextract
-		unzip -j -u "$1" "world/region/r.$X.$Z.mca" -d backupextract # BACKUP_world/region # -j: Don't retain folder structure
+		unzip -j -u "$1" "world/region/r.$X.$Z.mca" -d /minecraft/main/BACKUP_world/region # -j: Don't retain folder structure
 	done
 done
 echo "Backup restoration finished!" >&2
