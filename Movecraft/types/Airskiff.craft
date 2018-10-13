@@ -85,13 +85,13 @@ forbiddenBlocks:
 
 canFly: true
 canCruise: true
-cruiseSpeed: 2.0
+cruiseSpeed: 1.0
 maxHeightLimit: 200
 maxHeightAboveGround: 50
 collisionExplosion: 0.0
 fuelBurnRate: 2.0
 explodeOnCrash: 2.0
-cruiseSkipBlocks: 1
+cruiseSkipBlocks: 6
 sinkSpeed: 4.0
 overallSinkPercent: 97.0
 detectionMultiplier: 20.0
