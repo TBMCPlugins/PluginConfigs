@@ -125,7 +125,7 @@ maxHeightAboveGround: 100
 vertCruiseSkipBlocks: 1
 collisionExplosion: 0.0
 speed: 0.75
-cruiseSkipBlocks: 4
+cruiseSkipBlocks: 6
 cruiseSpeed: 0.35
 fuelBurnRate: 4.0
 sinkPercent: 99.0
