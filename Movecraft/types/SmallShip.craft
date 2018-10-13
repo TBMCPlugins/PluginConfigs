@@ -98,6 +98,7 @@ forbiddenBlocks:
 
 canCruise: true
 cruiseSkipBlocks: 6
+cruiseSpeed: 2.0
 #depends mostly on the ship
 canFly: false
 sinkPercent: 99.0
