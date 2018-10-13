@@ -96,6 +96,7 @@ allowedBlocks:
 forbiddenBlocks:
     - 7
 
+cruiseSpeed: 1.0
 canCruise: true
 cruiseSkipBlocks: 6
 #depends mostly on the ship
