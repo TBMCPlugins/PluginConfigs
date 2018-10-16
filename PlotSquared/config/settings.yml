@@ -1,9 +1,10 @@
-# These first 4 aren't configurable
+# These first 7 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
+suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "9 Oct 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/2040"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/eab918b"
+date: "13 Nov 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/2048"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/b6d4872"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
