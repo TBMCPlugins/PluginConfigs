@@ -19,7 +19,7 @@ mysql-database: jobs
 mysql-table-prefix: jobs_
 verify-server-certificate: false
 use-ssl: false
-# How often in minutes you want it to save.  This must be a non-zero number
+# How often in minutes you want it to save. This must be a non-zero number
 save-period: 10
 # Should player data be saved on disconnect?
 # Player data is always periodically auto-saved and autosaved during a clean shutdown.
@@ -30,7 +30,7 @@ save-on-disconnect: false
 selectionTool: 294
 # Enable if you are using one data base for multiple servers across bungee network
 # This will force to load players data every time he is logging in to have most up to date data instead of having preloaded data
-# This will enable automaticaly save-on-disconnect feature
+# This will enable automatically save-on-disconnect feature
 MultiServerCompatability: false
 Optimizations:
   # When set to true staff will be informed about new Jobs plugin version
@@ -53,7 +53,7 @@ Optimizations:
       # Warning!!! before enabling this feature, please make data base backup, just in case there will be some issues with data base cleaning
       # When set to true, data base will be cleaned on each startup from user data to avoid having old player data
       Use: false
-      # Any one who not playied for defined amount of days, will be removed from data base
+      # Any one who not played for defined amount of days, will be removed from data base
       Days: 60
   AutoJobJoin:
     # Use or not auto join jobs feature
@@ -64,8 +64,8 @@ Optimizations:
     # For player to auto join job add permission node jobs.autojoin.[jobname]
     # Op players are ignored
     Delay: 15
-  # When set to true players who gets negavite experience can delevel job up to level 1
-  # ATTENTION! Set it to true only if you certain that commands performed on levelup will not cause issues if player start level and delevel in a row.
+  # When set to true players who gets negative experience can delevel job up to level 1
+  # ATTENTION! Set it to true only if you certain that commands performed on level up will not cause issues if player start level and delevel in a row.
   AllowDelevel: false
   DisabledWorlds:
     # By setting this to true, Jobs plugin will be disabled in given worlds
@@ -79,10 +79,10 @@ Logging:
   Use: true
 broadcast:
   on-skill-up:
-    # Do all players get a message when somone goes up a skill level?
+    # Do all players get a message when someone goes up a skill level?
     use: false
   on-level-up:
-    # Do all players get a message when somone goes up a level?
+    # Do all players get a message when someone goes up a level?
     use: false
     # For what levels you want to broadcast message? Keep it at 0 if you want for all of them
     levels:
@@ -106,15 +106,16 @@ hide-jobsinfo-without-permission: false
 enable-pay-near-spawner: false
 # Option to allow payment to be made in creative mode
 enable-pay-creative: false
-# Option to allow payment to be made for exploring when player flyies
+# Option to allow payment to be made for exploring when player flies
 enable-pay-for-exploring-when-flying: false
-# Adds the Jobs xp recieved to the player's Minecraft XP bar
+# Adds the Jobs xp received to the player's Minecraft XP bar
 add-xp-player: false
-# Modifys chat to add chat titles.  If you're using a chat manager, you may add the tag {jobs} to your chat format and disable this.
-modify-chat: true
-modify-chat-prefix: '&c['
-modify-chat-suffix: '&c]&r'
-modify-chat-separator: ' '
+# Modifys chat to add chat titles. If you're using a chat manager, you may add the tag {jobs} to your chat format and disable this.
+modify-chat:
+  use: true
+  prefix: '&c['
+  suffix: '&c]&r'
+  separator: ' '
 # Do you want to use custom item/block/mob/enchant/color names
 # With this set to true names like Stone:1 will be translated to Granite
 # Name list is in TranslatableWords.yml file
@@ -127,7 +128,7 @@ economy-batch-delay: 5
 economy-async: true
 Economy:
   # By disabling one of thies, players no longer will get particular payment.
-  # Usefull for removing particular payment method without editing whole jobConfig file
+  # Useful for removing particular payment method without editing whole jobConfig file
   PaymentMethods:
     Money: true
     Points: true
@@ -157,21 +158,21 @@ Economy:
     limit: 0.1
   DynamicPayment:
     # Do you want to use dinamic payment dependent on how many players already working for jobs
-    # This can help automaticaly lift up payments for not so popular jobs and lower for most popular ones
+    # This can help automatically lift up payments for not so popular jobs and lower for most popular ones
     use: true
     equation: ((totalworkers / totaljobs) - jobstotalplayers)/10.0
     MaxPenalty: 25.0
     MaxBonus: 100.0
-  # Server economy acount
+  # Server economy account
   # With this enabled, players will get money from defined user (server account)
-  # If this acount dont have enough money to pay for players for, player will get message
+  # If this account don't have enough money to pay for players for, player will get message
   UseServerAcount: false
   # Username should be with Correct capitalization
   AcountName: Server
   Taxes:
     # Do you want to use taxes feature for jobs payment
     use: false
-    # Username should be with Correct capitalization, it can be same as settup in server account before
+    # Username should be with Correct capitalization, it can be same as setup in server account before
     AccountName: Server
     # Amount in percentage
     Amount: 15.0
@@ -183,23 +184,23 @@ Economy:
   Limit:
     # Money gain limit
     # With this enabled, players will be limited how much they can make in defined time
-    # Time in seconds: 60 = 1min, 3600 = 1 hour, 86400 = 24 hours
+    # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
     Money:
       Use: false
       # Do you want to stop money gain when exp limit reached?
       StopWithExp: false
       # Do you want to stop money gain when point limit reached?
       StopWithPoint: false
-      # Equation to calculate max limit. Option to use totallevel to include players total amount levels of current jobs
+      # Equation to calculate max limit. Option to use total level to include players total amount levels of current jobs
       # You can always use simple number to set money limit
       # Default equation is: 500+500*(totallevel/100), this will add 1% from 500 for each level player have
       # So player with 2 jobs with level 15 and 22 will have 685 limit
       MoneyLimit: 500+500*(totallevel/100)
-      # Time in seconds: 60 = 1min, 3600 = 1 hour, 86400 = 24 hours
+      # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
       TimeLimit: 3600
       # Delay between announcements about reached money limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
-      AnnouncmentDelay: 30
+      AnnouncementDelay: 30
     # Point gain limit
     # With this enabled, players will be limited how much they can make in defined time
     Point:
@@ -208,38 +209,38 @@ Economy:
       StopWithExp: false
       # Do you want to stop Point gain when money limit reached?
       StopWithMoney: false
-      # Equation to calculate max limit. Option to use totallevel to include players total amount levels of current jobs
+      # Equation to calculate max limit. Option to use total level to include players total amount levels of current jobs
       # You can always use simple number to set limit
       # Default equation is: 500+500*(totallevel/100), this will add 1% from 500 for each level player have
       # So player with 2 jobs with level 15 and 22 will have 685 limit
       Limit: 500+500*(totallevel/100)
-      # Time in seconds: 60 = 1min, 3600 = 1 hour, 86400 = 24 hours
+      # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
       TimeLimit: 3600
       # Delay between announcements about reached limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
-      AnnouncmentDelay: 30
+      AnnouncementDelay: 30
     # Exp gain limit
     # With this enabled, players will be limited how much they can get in defined time
-    # Time in seconds: 60 = 1min, 3600 = 1 hour, 86400 = 24 hours
+    # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
     Exp:
       Use: false
       # Do you want to stop exp gain when money limit reached?
       StopWithMoney: false
       # Do you want to stop exp gain when point limit reached?
       StopWithPoint: false
-      # Equation to calculate max money limit. Option to use totallevel to include players total amount of current jobs
+      # Equation to calculate max money limit. Option to use total level to include players total amount of current jobs
       # You can always use simple number to set exp limit
       # Default equation is: 5000+5000*(totallevel/100), this will add 1% from 5000 for each level player have
       # So player with 2 jobs with level 15 and 22 will have 6850 limit
       Limit: 5000+5000*(totallevel/100)
-      # Time in seconds: 60 = 1min, 3600 = 1 hour, 86400 = 24 hours
+      # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
       TimeLimit: 3600
       # Delay between announcements about reached Exp limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
-      AnnouncmentDelay: 30
+      AnnouncementDelay: 30
   Repair:
     # Do you want to give money for only renaming items in anvil
-    # Players will get full pay as they would for remairing two items when they only renaming one
+    # Players will get full pay as they would for remaining two items when they only renaming one
     # This is not big issue, but if you want to disable it, you can
     PayForRenaming: true
   Crafting:
@@ -250,7 +251,7 @@ Economy:
     # With this true, when timer is still going, cow milking event will be canceled
     # With this false, player will get bucket of milk, but still no payment
     CancelMilking: false
-    # How ofter player can milk cows in seconds. Keep in mind that by default player can milk cow indefinetly and as often as he wants
+    # How ofter player can milk cows in seconds. Keep in mind that by default player can milk cow indefinitely and as often as he wants
     # Set to 0 if you want to disable timer
     Timer: 30
 ExploitProtections:
@@ -305,14 +306,14 @@ ExploitProtections:
   MythicMobs:
     enabled: true
   Spawner:
-    # Prevent slime spliting when they are from spawner
-    # Protects agains exploiting as new splited slimes is treated as naturaly spawned and not from spawner
+    # Prevent slime splitting when they are from spawner
+    # Protects agains exploiting as new splited slimes is treated as naturally spawned and not from spawner
     PreventSlimeSplit: true
-    # Prevent magmacube spliting when they are from spawner
+    # Prevent magmacube splitting when they are from spawner
     PreventMagmaCubeSplit: true
   Smelt:
     # Prevent payments when hoppers moving items into furnace
-    # Player will not get paid, but items will be smellted
+    # Player will not get paid, but items will be smelted
     PreventHopperFillUps: true
   Brew:
     PreventBrewingStandFillUps: true
@@ -397,8 +398,8 @@ JobsGUI:
   # Do you want to show chat information when performing /jobs browse command
   ShowChatBrowse: true
   # With true left mouse button will join job and right will show more info
-  # With false left mouse button will show more info, rigth will join job
-  # Dont forget to adjust locale file
+  # With false left mouse button will show more info, right will join job
+  # Don't forget to adjust locale file
   SwitcheButtons: false
   # Defines size in rows of GUI
   Rows: 5
@@ -416,3 +417,6 @@ JobsGUI:
   Filler:
     Material: STAINED_GLASS_PANE
     Data: 15
+JobsTop:
+  # Defines amount of players to be shown in one page for /jobs top & /jobs gtop
+  AmountToShow: 15

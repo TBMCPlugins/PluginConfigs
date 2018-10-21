@@ -1,4 +1,4 @@
-configVersion: 15
+configVersion: 16
 language: en
 enableEconomy: false
 tutorial:
@@ -43,3 +43,8 @@ secureMode:
   editCommandWhitelist: []
 backupMode: ON_DISABLE_AND_SAVE
 editPermissions: []
+chatFormat:
+  edit: '&2[Edit] &r%player_name%: '
+  game: '&2[Game] %group_color%%player_name%: &r'
+  group: '&2%group_color%[%group_name%] %player_name%: &r'
+  spy: '&2[Chat Spy] %player_name%: &r'

@@ -104,3 +104,8 @@ HEROES_EXP: 100.0
 SHOWITEM_MESSAGE: true
 #Add icons and make item names hoverable in transaction messages when ShowItem is installed?
 
+#A list of worlds in which to remove empty shops with the previous config. Case sensitive. An empty list means all worlds.
+REMOVE_EMPTY_WORLDS: 
+- "world1"
+- "world2"
+

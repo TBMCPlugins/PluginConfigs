@@ -1,11 +1,11 @@
 # These first 6 aren't configurable
 issues: "https://github.com/boy0001/FastAsyncWorldedit/issues"
 wiki: "https://github.com/boy0001/FastAsyncWorldedit/wiki/"
-date: "25 Jun 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1138"
-commit: "https://github.com/boy0001/FastAsyncWorldedit/commit/4049014"
+date: "5 Nov 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/1218"
+commit: "https://github.com/boy0001/FastAsyncWorldedit/commit/f3fdef6"
 platform: "bukkit"
-# Options: de, ru, tr
+# Options: de, es, fr, nl, ru, tr
 # Create a PR to contribute a translation: https://github.com/boy0001/FastAsyncWorldedit/new/master/core/src/main/resources
 language: ''
 # Enable or disable automatic updates
@@ -99,7 +99,7 @@ experimental:
   anvil-queue-mode: false
   # [SAFE] Dynamically increase the number of chunks rendered
   #  - Requires Paper: ci.destroystokyo.com/job/PaperSpigot/
-  #  - Set your server view distance to 1 (spigot.yml, server.properties)
+  #  - Set your server view distance to 3 (spigot.yml, server.properties)
   #  - Based on tps and player movement
   #  - Please provide feedback
   dynamic-chunk-rendering: -1
@@ -112,6 +112,9 @@ experimental:
   # [SAFE] Keep entities that are positioned in non-air blocks when editing an area
   # Might cause client-side FPS lagg in some situations
   keep-entities-in-blocks: false
+  # [SAFE] Experimental scripting support for Java 9
+  #  - 
+  modern-craftscripts: false
 
 # This relates to how FAWE places chunks
 queue:
@@ -229,6 +232,14 @@ paths:
   clipboard: "clipboard"
   # Each player has their own sub directory for schematics
   per-player-schematics: true
+  commands: "commands"
+
+# Region restriction settings
+region-restrictions-options:
+  # What type of users are allowed to WorldEdit in a region
+  #  - MEMBER = Players added to a region
+  #  - OWNER = Players who own the region
+  mode: "MEMBER"
 # The "default" limit group affects those without a specific limit permission.
 # To grant someone different limits, copy the default limits group
 # and give it a different name (e.g. newbie). Then give the user the limit 
@@ -271,3 +282,5 @@ limits:
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
     confirm-large: true
+    # List of blocks to strip nbt from
+    strip-nbt: []

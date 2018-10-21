@@ -140,4 +140,9 @@ TownyWorldHeightLimits:
     worldMin: -1
     aboveTownSpawn: 96
     worldMax: -1
+  luna:
+    underTownSpawn: 255
+    worldMin: -1
+    aboveTownSpawn: 96
+    worldMax: -1
 DurabilityOverride: {}

@@ -842,3 +842,20 @@ users:
   c8f6c4a1-ff1a-4d3d-a7d5-1200df958d08:
     group:
     - member
+    options:
+      name: HELLO_IM_A_BEAR
+  faae79ae-968b-4f19-a14a-8cdbdeb3f5e8:
+    group:
+    - member
+    options:
+      name: Freddo3000
+  eaed0589-1a40-46bf-ae1e-7c94e995e723:
+    group:
+    - member
+    options:
+      name: Gecko998
+  cd0d5619-3346-4f8c-b55a-52c179491eff:
+    group:
+    - member
+    options:
+      name: NameinProgressTM
