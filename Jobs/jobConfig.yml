@@ -1413,11 +1413,11 @@ Jobs:
         income: 0.5
         points: 1.5
         experience: 3.0
-      CARROT-7:
+      CARROTS-7:
         income: 1.0
         points: 1.0
         experience: 1.0
-      POTATO-7:
+      POTATOES-7:
         income: 1.0
         points: 1.0
         experience: 1.0
@@ -1425,7 +1425,7 @@ Jobs:
         income: 0.25
         points: 0.5
         experience: 1.0
-      '103': #Melon Block
+      MELON:
         income: 0.25
         points: 0.5
         experience: 1.0
@@ -1474,11 +1474,11 @@ Jobs:
         income: 0.5
         points: 3
         experience: 3.0
-      141-0: #Carrot
+      CARROTS-0: #Carrot
         income: 1.5
         points: 3
         experience: 3
-      POTATO-0: #Potato
+      POTATOES-0: #Potato
         income: 1.5
         points: 3
         experience: 3
@@ -1486,6 +1486,10 @@ Jobs:
         income: 0.1
         points: 1
         experience: 0.2
+      '115': #Nether Wart
+        income: 1
+        points: 1
+        experience: 1.0
     Craft:
       354: #Cake
         income: 5.0
