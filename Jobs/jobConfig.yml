@@ -779,6 +779,58 @@ Jobs:
     Gui:
       Id: 108
       Data: 0
+    # Daily quests
+    maxDailyQuests: 3
+    Quests:
+      # Quest identification. Can be any ONE word or number or both of them. This doesnt have any real meaning but it cant repeat
+      1:
+        Name: "Post office"
+        Action: Place
+        Target: "1-4" #Polished Diorite
+        Amount: 128
+        # Command list to be performed after quest is finished.
+        # Use [playerName] to insert players name who finished that quest
+        RewardCommands: 
+        - "pay [playerName] 500"
+        - "msg [playerName] Completed quest! Please contact LadyVulcan if you did not receive payment automatically."
+        RewardDesc: 
+        - "Build a post office using at least 2 stacks of polished diorite"
+        - "Get 500 bucks for this [BETA]"
+        Chance: 40
+        toLevel: 100
+        fromLevel: 5
+      2:
+        Name: "Stone Wall"
+        Action: Place
+        Target: "98" #Stone bricks, all kinds
+        Amount: 320
+        # Command list to be performed after quest is finished.
+        # Use [playerName] to insert players name who finished that quest
+        RewardCommands: 
+        - "pay [playerName] 500"
+        - "msg [playerName] Completed quest! Please contact LadyVulcan if you did not receive payment automatically."
+        RewardDesc: 
+        - "Build a stone wall using at least 5 stacks of stone brick. Any kind (normal, mossy, cracked, chiseled) will work."
+        - "Get 500 bucks for this [BETA]"
+        Chance: 40
+        toLevel: 100
+        fromLevel: 5
+      3:
+        Name: "Desert Temple"
+        Action: Place
+        Target: "24", "179" #Sandstone and Red sandstone. Don't know if two targets will work.
+        Amount: 320
+        # Command list to be performed after quest is finished.
+        # Use [playerName] to insert players name who finished that quest
+        RewardCommands: 
+        - "pay [playerName] 500"
+        - "msg [playerName] Completed quest! Please contact LadyVulcan if you did not receive payment automatically."
+        RewardDesc: 
+        - "Build a desert temple using at least 5 stacks of sandstone. [BETA] Try using both normal and red sandstone."
+        - "Get 500 bucks for this [BETA]"
+        Chance: 40
+        toLevel: 100
+        fromLevel: 5
     Place:
       STONE-2:
         income: 1.3
