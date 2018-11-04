@@ -13,9 +13,9 @@ cruiseSkipBlocks: 0
 canFly: false
 minHeightLimit: 10
 maxHeightLimit: 65
-collisionExplosion: 5.0
+collisionExplosion: 6.0
 moveEntities: false
-speed: 10.0
+speed: 12.0
 tryNudge: false
 sinkPercent: 99.0
 flyblocks:

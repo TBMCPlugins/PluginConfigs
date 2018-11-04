@@ -95,6 +95,8 @@ forbiddenBlocks:
 
 canFly: true
 canCruise: true
+cruiseSkipBlocks: 5
+cruiseSpeed: 1.0
 maxHeightLimit: 200
 maxHeightAboveGround: 50
 collisionExplosion: 0.0
