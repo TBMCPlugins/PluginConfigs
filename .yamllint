@@ -43,6 +43,7 @@ rules:
     spaces: consistent
     indent-sequences: whatever
     check-multi-line-strings: false
+    level: warning
   key-duplicates: enable
   key-ordering: disable
   line-length: disable
@@ -52,6 +53,6 @@ rules:
   octal-values:
     forbid-implicit-octal: false
     forbid-explicit-octal: false
-  trailing-spaces: enable
+  trailing-spaces: disable
   truthy:
     level: warning
