@@ -4,4 +4,4 @@ python:
 install:
   - pip install yamllint
 script:
-  - yamllint */*.yml
+  - git diff --name-only $TRAVIS_COMMIT_RANGE | xargs yamllint
