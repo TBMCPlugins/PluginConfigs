@@ -832,17 +832,9 @@ Jobs:
         toLevel: 100
         fromLevel: 5
     Place:
-      STONE-2:
-        income: 1.3
-        points: 1.3
-        experience: 2
-      STONE-4:
-        income: 1.3
-        points: 1.3
-        experience: 2
-      STONE-6:
-        income: 1.3
-        points: 1.3
+      STONE: #All variants, polished and not, granite, etc.
+        income: 1.0
+        points: 1.0
         experience: 2
       COBBLESTONE:
         income: 0.7
