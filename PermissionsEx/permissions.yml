@@ -62,6 +62,7 @@ groups:
     - default
     permissions:
     - jobs.maxfurnaces.19042
+    - jobs.maxbrewingstands.19042
     - essentials.motd
     - movecraft.*
     - essentials.warp
