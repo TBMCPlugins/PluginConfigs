@@ -2185,7 +2185,7 @@ Jobs:
       Id: 379
       Data: 0
     Brew:
-      NETHER_STALK:
+      NETHER_WART:
         income: 6.0
         points: 6.0
         experience: 6.0
@@ -2213,7 +2213,7 @@ Jobs:
         income: 7.0
         points: 7.0
         experience: 7.0
-      SPECKLED_MELON:
+      GLISTERING_MELON_SLICE:
         income: 10.0
         points: 10.0
         experience: 10.0
@@ -2237,6 +2237,14 @@ Jobs:
         income: 18.0
         points: 18.0
         experience: 18.0
+      GUNPOWDER:
+        income: 10.0
+        points: 10.0
+        experience: 10.0
+      DRAGON_BREATH:
+        income: 20.0
+        points: 20.0
+        experience: 20.0
   Enchanter:
     fullname: Enchanter
     shortname: E
