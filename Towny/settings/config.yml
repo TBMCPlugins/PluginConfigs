@@ -972,10 +972,10 @@ economy:
 jail:
   #If true attacking players who die on enemy-town land will be placed into the defending town's jail if it exists.
   #Requires town_respawn to be true in order to work.
-  is_jailing_attacking_enemies: 'false'
+  is_jailing_attacking_enemies: 'true'
   #If true attacking players who are considered an outlaw, that are killed inside town land will be placed into the defending town's jail if it exists.
   #Requires town_respawn to be true in order to work.
-  is_jailing_attacking_outlaws: 'false'
+  is_jailing_attacking_outlaws: 'true'
   #If true jailed players can use Ender Pearls but are still barred from using other methods of teleporting.
   jail_allows_ender_pearls: 'false'
   #If false jailed players can use /town leave, and escape a jail.

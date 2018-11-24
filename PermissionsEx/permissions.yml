@@ -890,3 +890,8 @@ users:
     - member
     options:
       name: yebu101
+  b522961f-8634-4d18-a3a7-d2d9995ba771:
+    options:
+      name: MintCCookie
+    group:
+    - member
