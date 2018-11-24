@@ -377,13 +377,13 @@ global_town_settings:
   # when there is a war or peace.
   allow_town_spawn_travel_ally: 'true'
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
-  is_nation_ally_spawning_requiring_public_status: 'false'
+  is_nation_ally_spawning_requiring_public_status: 'true'
   # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '0'
+  teleport_warmup_time: '60'
   # Respawn the player at his town spawn point when he/she dies
-  town_respawn: 'false'
+  town_respawn: 'true'
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
-  town_respawn_same_world_only: 'false'
+  town_respawn_same_world_only: 'true'
   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
   # Allowed options: unclaimed,enemy,neutral
   prevent_town_spawn_in: enemy
@@ -1011,7 +1011,7 @@ war:
   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
   nation_can_be_neutral: 'true'
   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
-  disallow_one_way_alliance: 'false'
+  disallow_one_way_alliance: 'true'
  
  
   ############################################################
@@ -1039,7 +1039,7 @@ war:
   # +------------------------------------------------------+ #
   ############################################################
  
-  # This is started with /townyadmnin toggle war
+  # This is started with /townyadmin toggle war
  
   # In peace time War spoils are accumulated from towns and nations being
   # deleted with any money left in the bank.
@@ -1075,14 +1075,14 @@ war:
  
     # A townblock takes damage every 5 seconds that an enemy is stood in it.
     block_hp:
-      town_block_hp: '60'
+      town_block_hp: '20'
       home_block_hp: '120'
  
     eco:
       # This amount is new money injected into the economy with a war event.
       base_spoils: '100.0'
       # This amount is taken from the losing town for each plot lost.
-      wartime_town_block_loss_price: '25.0'
+      wartime_town_block_loss_price: '0.0'
       # This amount is taken from the player if they die during the event
       price_death_wartime: '200.0'
     # If set to true when a town drops an enemy townblock's HP to 0, the attacking town gains a bonus townblock,
@@ -1091,9 +1091,9 @@ war:
  
     points:
       points_townblock: '1'
-      points_town: '10'
-      points_nation: '100'
-      points_kill: '1'
+      points_town: '0'
+      points_nation: '0'
+      points_kill: '0'
  
     # The minimum height at which a player must stand to count as an attacker.
     min_height: '60'
