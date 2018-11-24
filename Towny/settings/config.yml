@@ -381,7 +381,7 @@ global_town_settings:
   # If non zero it delays any spawn request by x seconds.
   teleport_warmup_time: '60'
   # Respawn the player at his town spawn point when he/she dies
-  town_respawn: 'true'
+  town_respawn: 'false'
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
   town_respawn_same_world_only: 'true'
   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
