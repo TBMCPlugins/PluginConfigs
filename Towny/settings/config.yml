@@ -101,6 +101,8 @@ levels:
     townBlockLimit: 4792
     upkeepModifier: 0.7
     townOutpostLimit: 4
+    
+    
   # default Nation levels.
   nation_level:
   - kingPostfix: ''
@@ -137,7 +139,7 @@ levels:
     namePostfix: ' (Nation)'
     townBlockLimitBonus: 160
     namePrefix: 'Dominion of '
-    nationZonesSize: 1
+    nationZonesSize: 2
     nationTownUpkeepModifier: 1.2
   - kingPostfix: ''
     capitalPostfix: ''
@@ -184,7 +186,7 @@ levels:
  
 town:
   # Default public status of the town (used for /town spawn)
-  default_public: 'true'
+  default_public: 'false' #makes getting visitors optin
   # Default Open status of the town (are new towns open and joinable by anyone at creation?)
   default_open: 'false'
   # Default tax settings for new towns.
@@ -379,7 +381,7 @@ global_town_settings:
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
   is_nation_ally_spawning_requiring_public_status: 'true'
   # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '60'
+  teleport_warmup_time: '10'
   # Respawn the player at his town spawn point when he/she dies
   town_respawn: 'false'
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
@@ -392,10 +394,10 @@ global_town_settings:
   show_town_notifications: 'true'
   # The required number of residents in a town to join a nation
   # If the number is 0, towns will not require a certain amount of residents to join a nation
-  required_number_residents_join_nation: '0'
+  required_number_residents_join_nation: '3'
   # The required number of residents in a town to create a nation
   # If the number is 0, towns will not require a certain amount of residents to create a nation
-  required_number_residents_create_nation: '0'
+  required_number_residents_create_nation: '5'
   # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
   refund_disband_low_residents: 'true'
   # The maximum number of townblocks a town can be away from a nation capital,
@@ -417,7 +419,7 @@ global_town_settings:
   homeblocks_prevent_forcepvp: 'false'
   # The amount of residents a town needs to claim an outpost,
   # Setting this value to 0, means a town can claim outposts no matter how many residents
-  minimum_amount_of_residents_in_town_for_outpost: '0'
+  minimum_amount_of_residents_in_town_for_outpost: '2'
   # If People should keep their experience on death in a town
   # Is not guaranteed to work with other keep experience plugins!
   keep_inventory_on_death_in_town: 'false'
@@ -444,13 +446,13 @@ global_nation_settings:
   nationzone:
  
     # Nation zone feature is disabled by default. This is because it can cause a higher server load for servers with a large player count.
-    enable: 'false'
+    enable: 'true'
  
     # When set to true, only the capital town of a nation will be surrounded by a nation zone type of wilderness.
     only_capitals: 'true'
  
     # Amount of buffer added to nation zone width surrounding capitals only. Creates a larger buffer around nation capitals.
-    capital_bonus_size: '0'
+    capital_bonus_size: '3'
  
     # When set to true, nation zones are disabled during the the Towny war types.
     war_disables: 'true'
@@ -467,7 +469,7 @@ global_nation_settings:
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the nation,
   # when there is a war or peace.
-  allow_nation_spawn_travel: 'true'
+  allow_nation_spawn_travel: 'peace'
   # Allow regular residents to use /nation spawn [nation] to other nations allied with your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the nations,
@@ -862,9 +864,9 @@ economy:
   # Prefix to apply to all nation economy accounts.
   nation_prefix: nation-
   # The cost of renaming a town.
-  town_rename_cost: '0'
+  town_rename_cost: '5000'
   # The cost of renaming a nation.
-  nation_rename_cost: '0'
+  nation_rename_cost: '10000'
  
   spawn_travel:
     # Cost to use /town spawn
@@ -895,7 +897,7 @@ economy:
     # How much it costs a player to buy extra blocks.
     price_purchased_bonus_townblock: '75.0'
     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
-    price_purchased_bonus_townblock_increase: '1.2'
+    price_purchased_bonus_townblock_increase: '1.0'
  
   death:
     # Either fixed or percentage.
@@ -983,9 +985,9 @@ jail:
  
   bail:
     #If true players can pay a bail amount to be unjailed.
-    is_allowing_bail: 'false'
+    is_allowing_bail: 'true'
     #Amount that bail costs.
-    bail_amount: '10'
+    bail_amount: '50000'
  
  
   ############################################################
@@ -1009,7 +1011,7 @@ bank:
  
 war:
   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
-  nation_can_be_neutral: 'false'
+  nation_can_be_neutral: 'true'
   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
   disallow_one_way_alliance: 'true'
  
@@ -1056,7 +1058,7 @@ war:
   event:
     warning_delay: '30'
     #If false all towns not in nations can be attacked during a war event.
-    towns_are_neutral: 'false'
+    towns_are_neutral: 'true'
     enemy:
       # If true, enemy's can only attack the edge plots of a town in war.
       only_attack_borders: 'true'
