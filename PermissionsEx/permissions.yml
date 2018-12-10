@@ -136,6 +136,7 @@ groups:
     - donator
     - developer
     permissions:
+    - -essentials.god
     - libsdisguises.*
     - plots.admin
     - ChestShop.admin
@@ -250,7 +251,6 @@ users:
     group:
     - member
     - Admins
-    - gold
     - admin
   633d0de1-4a67-46ff-bd8a-004fa8ce4858:
     group:
@@ -273,6 +273,7 @@ users:
     options:
       name: HasOkayInternet
     group:
+    - diamond
     - member
     permissions: []
   bd0c72e7-f5a6-49be-a407-ad69e72a3431:
@@ -284,7 +285,6 @@ users:
       name: NorbiPeti
   80f097d0-bb18-444c-ba0a-8d8e0a923622:
     group:
-    - gold
     - member
     - admin
     - mod
@@ -298,7 +298,7 @@ users:
     - member
   423ab9b6-5518-4fa2-afc3-31143f169a75:
     options:
-      name: jaydotexe
+      name: jarrxth
     group:
     - gold
     - member
@@ -358,7 +358,7 @@ users:
     - member
   f67bee95-b84f-483d-af00-c6448f742780:
     options:
-      name: TitanZz
+      name: SyK7
     group:
     - member
   mod:
@@ -501,7 +501,6 @@ users:
   e55c1999-b0f7-4112-ada2-a43ba1d8c661:
     group:
     - developer
-    - diamond
     - member
     options:
       name: xxxxxsinxxxxx
@@ -509,7 +508,7 @@ users:
     group:
     - member
     options:
-      name: rastard
+      name: filthy_platypus
   seleda:
     group: []
   6ec10875-d010-4d49-a56c-2c6db4b6c5eb:
@@ -676,6 +675,7 @@ users:
       name: willnutdude9
   6594d366-1c94-4856-8b5d-1261976ee773:
     group:
+    - gold
     - member
     options:
       name: yewhotookAPUSH
@@ -895,3 +895,18 @@ users:
       name: MintCCookie
     group:
     - member
+  6c5e2ed0-cbaa-48fd-85b2-646a5e72ac79:
+    group:
+    - member
+    options:
+      name: RomanStream849
+  60119c87-3eca-4c0f-b03f-cd0ae3cd1723:
+    group:
+    - member
+    options:
+      name: Net_ShadowHunter
+  8de5662e-3029-4881-9822-91f567ef6718:
+    group:
+    - member
+    options:
+      name: SheepMaster69

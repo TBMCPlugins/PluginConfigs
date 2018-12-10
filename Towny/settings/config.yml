@@ -1039,7 +1039,7 @@ war:
   # +------------------------------------------------------+ #
   ############################################################
  
-  # This is started with /townyadmin toggle war
+  # This is started with /townyadmnin toggle war
  
   # In peace time War spoils are accumulated from towns and nations being
   # deleted with any money left in the bank.
