@@ -2,9 +2,9 @@
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "15 Dec 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/2052"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/252cf7"
+date: "26 Jan 2019 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/2060"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/e3192f0"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
