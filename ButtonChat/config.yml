@@ -1,0 +1,61 @@
+global:
+  notificationSound: ''
+components:
+  TownyComponent:
+    enabled: true
+  TownColorComponent:
+    enabled: true
+    colorCount: 1
+    towncolors:
+      violetford:
+      - DarkPurple
+      - DarkGray
+      aurelia:
+      - Gray
+      port_purpura:
+      - LightPurple
+      - Gold
+      new_cairo:
+      - Yellow
+      - Aqua
+      greywatch:
+      - DarkGray
+      fellreach:
+      - DarkPurple
+      knightfall:
+      - DarkGray
+      ashport:
+      - Yellow
+      marine_city:
+      - DarkGray
+      britguard:
+      - DarkBlue
+      - DarkRed
+      iwa:
+      - Aqua
+      redguard:
+      - DarkRed
+      - DarkRed
+      pyralis:
+      - DarkAqua
+      alderon:
+      - Gold
+      treavis:
+      - DarkGreen
+      forfgorne:
+      - DarkGray
+    nationcolors:
+      knights: DarkRed
+      albion: DarkBlue
+      makani: DarkGreen
+      pressia: DarkBlue
+      aurora: Gold
+      alderon: DarkAqua
+      expanse: Gray
+  FlairComponent:
+    enabled: true
+    flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
+  AnnouncerComponent:
+    enabled: true
+    announceTime: 900000
+    announceMessages: []

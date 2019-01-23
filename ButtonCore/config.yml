@@ -1,1 +1,58 @@
 test: false
+global:
+  writePluginList: false
+components:
+  PluginUpdaterComponent:
+    enabled: true
+  RestartComponent:
+    enabled: true
+  ChannelComponent:
+    enabled: true
+    g:
+      enabled: true
+      IDs: []
+      displayName: §fOOC§f
+      color: White
+    a:
+      enabled: true
+      IDs: []
+    mod:
+      enabled: true
+      IDs: []
+    dev:
+      enabled: true
+      IDs: []
+    red:
+      enabled: true
+      IDs: []
+    orange:
+      enabled: true
+      IDs: []
+    yellow:
+      enabled: true
+      IDs: []
+    green:
+      enabled: true
+      IDs: []
+    blue:
+      enabled: true
+      IDs: []
+    purple:
+      enabled: true
+      IDs: []
+    tc:
+      enabled: true
+      IDs: []
+    nc:
+      enabled: true
+      IDs: []
+    rp:
+      enabled: true
+      IDs: []
+  RandomTPComponent:
+    enabled: true
+  MemberComponent:
+    enabled: true
+    memberGroup: member
+  TownyComponent:
+    enabled: true
