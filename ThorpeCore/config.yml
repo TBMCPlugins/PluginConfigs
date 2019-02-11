@@ -1,6 +1,6 @@
 test: false
 global:
-  writePluginList: false
+  writePluginList: true
 components:
   PluginUpdaterComponent:
     enabled: true
@@ -10,15 +10,18 @@ components:
     enabled: true
     g:
       enabled: true
-      IDs: []
-      displayName: §fOOC§f
+      IDs:
+      - ooc
       color: White
+      displayName: §fOOC§f
     a:
       enabled: true
       IDs: []
     mod:
       enabled: true
       IDs: []
+      color: Blue
+      displayName: §9MOD§f
     dev:
       enabled: true
       IDs: []
@@ -46,6 +49,8 @@ components:
     nc:
       enabled: true
       IDs: []
+      color: Gold
+      displayName: §6NC§f
     rp:
       enabled: true
       IDs: []

@@ -29,7 +29,6 @@ components:
       marine_city:
       - DarkGray
       britguard:
-      - DarkBlue
       - DarkRed
       iwa:
       - Aqua
@@ -45,12 +44,9 @@ components:
       forfgorne:
       - DarkGray
     nationcolors:
-      knights: DarkRed
       albion: DarkBlue
-      makani: DarkGreen
-      pressia: DarkBlue
+      pressia: Aqua
       aurora: Gold
-      alderon: DarkAqua
       expanse: Gray
   FlairComponent:
     enabled: true
@@ -59,3 +55,5 @@ components:
     enabled: true
     announceTime: 900000
     announceMessages: []
+  FunComponent:
+    enabled: true
