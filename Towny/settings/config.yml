@@ -1009,7 +1009,7 @@ bank:
  
 war:
   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
-  nation_can_be_neutral: 'false'
+  nation_can_be_neutral: 'true'
   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
   disallow_one_way_alliance: 'true'
  
