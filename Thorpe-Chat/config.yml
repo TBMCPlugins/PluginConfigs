@@ -1,0 +1,103 @@
+global:
+  notificationSound: ''
+  notificationPitch: 1.0
+components:
+  TownyComponent:
+    enabled: true
+  TownColorComponent:
+    enabled: true
+    colorCount: 1
+    towncolors:
+      violetford:
+      - DarkPurple
+      - DarkGray
+      aurelia:
+      - Gray
+      port_purpura:
+      - LightPurple
+      - Gold
+      greywatch:
+      - DarkGray
+      fellreach:
+      - DarkPurple
+      knightfall:
+      - DarkGray
+      ashport:
+      - Yellow
+      marine_city:
+      - DarkGray
+      britguard:
+      - DarkRed
+      iwa:
+      - Aqua
+      vordan:
+      - Yellow
+      redguard:
+      - DarkRed
+      - DarkRed
+      pyralis:
+      - DarkAqua
+      alderon:
+      - Gold
+      treavis:
+      - DarkGreen
+      forfgorne:
+      - DarkGray
+    nationcolors:
+      albion: DarkBlue
+      pressia: Aqua
+      aurora: Gold
+      expanse: DarkGreen
+    useNationColors: true
+  FlairComponent:
+    enabled: true
+    flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
+  AnnouncerComponent:
+    enabled: true
+    announceTime: 900000
+    announceMessages: []
+  FunComponent:
+    enabled: true
+    unlol: true
+    laughStrings:
+    - xd
+    - lel
+    - lawl
+    - kek
+    - lmao
+    - hue
+    - hah
+    - rofl
+    respect: true
+  AppendTextComponent:
+    enabled: true
+    texts:
+      ww:
+        helpText:
+        - §6---- Wait what ----
+        - Wait what
+        appendedText: wait what
+      lenny:
+        helpText:
+        - §6---- Lenny ----
+        - This command appends a Lenny face after your message
+        - Or just sends one
+        appendedText: ( ͡° ͜ʖ ͡°)
+      unflip:
+        helpText:
+        - §6---- Unflip ----
+        - This command appends an unflip after your message
+        - Or just unflips as you
+        appendedText: ┬─┬ ノ( ゜-゜ノ)
+      tableflip:
+        helpText:
+        - §6---- Tableflip ----
+        - This command appends a tableflip after your message
+        - Or just makes you tableflip
+        appendedText: (╯°□°）╯︵ ┻━┻
+      shrug:
+        helpText:
+        - §6---- Shrug ----
+        - This command appends a shrug after your message
+        - Or just makes you shrug
+        appendedText: ¯\\\_(ツ)\_/¯

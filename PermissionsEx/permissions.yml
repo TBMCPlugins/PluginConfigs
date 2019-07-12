@@ -5,6 +5,7 @@ groups:
       prefix: '[Newcomer]'
       rank: '100'
     permissions:
+    - thorpe.command.*
     - multiverse.portal.access.Plotworld
     - essentials.motd
     - movecraft.movecraft.*
@@ -61,6 +62,7 @@ groups:
     inheritance:
     - default
     permissions:
+    - thorpe.command.*
     - jobs.maxfurnaces.19042
     - jobs.maxbrewingstands.19042
     - essentials.motd
@@ -353,7 +355,7 @@ users:
       name: MC_Brendan
   a34194de-b4f1-4bb2-9355-76cd34e3fefb:
     options:
-      name: Ikizen
+      name: kzDeku
     group:
     - member
   f67bee95-b84f-483d-af00-c6448f742780:
@@ -592,7 +594,7 @@ users:
     group:
     - member
     options:
-      name: antifloral
+      name: Applesaurus
   102a2198-4f54-4d0a-9725-63ae6376b1ed:
     group:
     - member
@@ -612,7 +614,7 @@ users:
     group:
     - member
     options:
-      name: yTobi
+      name: Quankerstein
   f23ecada-fd76-477d-80e5-d059d6fcf4a2:
     group:
     - member
@@ -819,7 +821,7 @@ users:
     group:
     - member
     options:
-      name: WarpUnresulting
+      name: airmad
   575e3ade-000a-4e89-8ef1-5967b03ec85f:
     group:
     - member
@@ -839,7 +841,7 @@ users:
     group:
     - member
     options:
-      name: JustDaddy_
+      name: TheFeralGirl
   c8f6c4a1-ff1a-4d3d-a7d5-1200df958d08:
     group:
     - member
@@ -869,7 +871,7 @@ users:
     group:
     - member
     options:
-      name: Emilylikesmc
+      name: PersonPlayMC
   47e05e6b-5443-42a4-9a06-b29ff6425ee2:
     group:
     - member
@@ -955,3 +957,103 @@ users:
     - member
     options:
       name: Ninja_Gaiden1
+  56fb8e2d-a5e8-46af-a663-1d2894c06ab6:
+    group:
+    - member
+    options:
+      name: master_pvp15
+  7a76f6de-b318-4c1b-bd77-435d2d391234:
+    group:
+    - member
+    options:
+      name: FROOOOOOOOOOOOOG
+  e985a149-501f-4fc7-8fb6-e9bcd9e3d97f:
+    group:
+    - member
+    options:
+      name: Cosmic_Wendy
+  84150001-e84f-443e-bdba-26b5e44c2e24:
+    group:
+    - member
+    options:
+      name: Realmion
+  f6496248-de57-474c-b133-c24e34e056e7:
+    group:
+    - member
+    options:
+      name: gods_of_MC
+  39512899-2f6a-43f4-95f4-8818ba6d86d5:
+    group:
+    - member
+    options:
+      name: CrumblinSquirrlz
+  ac9d630f-aafb-4873-af7f-da657076c3a7:
+    group:
+    - member
+    options:
+      name: tanruss1
+  3bc4dec4-e83d-40c4-8bcf-449a88095942:
+    group:
+    - member
+    options:
+      name: Deoplo
+  a768c46d-45f3-4b9c-9b32-02c4fc427d3b:
+    group:
+    - member
+    options:
+      name: nadirmuki
+  2875cece-b356-4fab-8bad-2d4e34200bc6:
+    group:
+    - member
+    options:
+      name: CookieChiken
+  1486b04a-0136-4f5f-829d-be6fe456b580:
+    group:
+    - member
+    options:
+      name: CaptainRumbIy
+  49d0c635-d00c-426d-a153-23ab332363dd:
+    group:
+    - member
+    options:
+      name: XanMan11
+  4e996119-6a52-4640-a136-1efcc6fc7e98:
+    group:
+    - member
+    options:
+      name: DerpyPanda27
+  f6a7ae21-9297-4219-a1a3-d09f7b077226:
+    group:
+    - member
+    options:
+      name: Death599
+  b867cc93-ae3d-4931-8fc9-e8cc66df24a7:
+    group:
+    - member
+    options:
+      name: faSpetru
+  1e4135f6-e789-4325-8822-6ff9208c3591:
+    group:
+    - member
+    options:
+      name: meaningoflife42
+  28419b54-c225-46ba-84d6-4a3de86a583d:
+    group:
+    - member
+    options:
+      name: GodsPotion
+  421195d4-1e52-410b-9516-49ac6b31bed0:
+    group:
+    - member
+    options:
+      name: MrsKawaiii
+  bf197c71-3725-48c9-9f33-fbf7a8583446:
+    group:
+    - member
+    options:
+      name: Dragonslayer271
+  7137de0e-f65e-46c6-acd5-675e194afec4:
+    group:
+    - member
+    options:
+      name: uzou

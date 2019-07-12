@@ -1,6 +1,8 @@
 test: false
 global:
   writePluginList: true
+  test: false
+  chatFormat: '[{origin}|{channel}] <{name}> {message}'
 components:
   PluginUpdaterComponent:
     enabled: true
@@ -46,6 +48,8 @@ components:
     tc:
       enabled: true
       IDs: []
+      displayName: §3TC§f
+      color: DarkAqua
     nc:
       enabled: true
       IDs: []
@@ -54,10 +58,17 @@ components:
     rp:
       enabled: true
       IDs: []
+      displayName: §7RP§f
+      color: Gray
   RandomTPComponent:
     enabled: true
   MemberComponent:
     enabled: true
     memberGroup: member
+    registeredForDays: 7
+    playedHours: 12
   TownyComponent:
     enabled: true
+  VotifierComponent:
+    enabled: true
+    rewardAmount: 0.0
