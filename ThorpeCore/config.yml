@@ -27,6 +27,8 @@ components:
     dev:
       enabled: true
       IDs: []
+      displayName: §6DEV§f
+      color: Gold
     red:
       enabled: true
       IDs: []

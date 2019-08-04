@@ -16,8 +16,6 @@ components:
       port_purpura:
       - LightPurple
       - Gold
-      greywatch:
-      - DarkGray
       fellreach:
       - DarkPurple
       knightfall:
@@ -35,12 +33,10 @@ components:
       redguard:
       - DarkRed
       - DarkRed
-      pyralis:
-      - DarkAqua
       alderon:
       - Gold
       treavis:
-      - DarkGreen
+      - DarkAqua
       forfgorne:
       - DarkGray
     nationcolors:
