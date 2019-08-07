@@ -17,7 +17,7 @@ debugging:
 database:
   host: 'localhost'
   port: 3306
-  dbname: 'chestshop_notifier?useSSL=false'
+  dbname: 'chestshop_notifier'
   username: 'chestshop'
   password: 'NOPE'
 
