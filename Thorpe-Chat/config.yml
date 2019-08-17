@@ -16,10 +16,10 @@ components:
       port_purpura:
       - LightPurple
       - Gold
-      fellreach:
-      - DarkPurple
       knightfall:
       - DarkGray
+      liria:
+      - DarkPurple
       ashport:
       - Yellow
       marine_city:
