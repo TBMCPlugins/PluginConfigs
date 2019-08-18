@@ -84,7 +84,7 @@ change-1_9-hitbox: false
 change-1_14-hitbox: false
 # 
 # Enable serverside block-connections for 1.13+ clients
-serverside-blockconnections: false
+serverside-blockconnections: true
 # Sets the method for the block connections (world for highly experimental (USE AT OWN RISK) world-level or packet for packet-level)
 blockconnection-method: packet
 # When activated, only the most important blocks are stored in the blockstorage. (fences, glass panes etc. won't connect to solid blocks)
