@@ -386,11 +386,11 @@ Jobs:
     # Catching fish
     Fish:
       raw_fish:
-        income: 20.0
+        income: 0.2
         experience: 25.0
       # If you are using below version 1.13
       legacy_raw_fish:
-        income: 20.0
+        income: 0.2
         experience: 25.0
     # Repairing items
     Repair:
@@ -594,29 +594,29 @@ Jobs:
     Break:
       #logs - natural; gain income, points, and exp
       oak_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 7.0
+        points: 2.5
+        experience: 2.5
       spruce_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 7.0
+        points: 2.5
+        experience: 2.0
       birch_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 5.0
+        points: 2.5
+        experience: 2.5
       jungle_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 5.0
+        points: 2.5
+        experience: 2.5
       acacia_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 5.0
+        points: 2.5
+        experience: 2.5
       dark_oak_log:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 7.0
+        points: 2.5
+        experience: 2.5
       #planks - natural in mineshafts; gain some income/points and exp, but less as compromise as it's mainly a building block and used in placement
       #oak_planks:
         #income: 0.25
@@ -765,15 +765,15 @@ Jobs:
         points: 1
         experience: 1
       sandstone:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       chiseled_sandstone:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       cut_sandstone:
-        income: 0.15
+        income: 0.30
         points: 0.15
         experience: 0.2
       coal_ore:
@@ -781,31 +781,31 @@ Jobs:
         points: 2
         experience: 2
       redstone_ore:
-        income: 2.5
+        income: 5
         points: 2
         experience: 2
       iron_ore:
-        income: 3.5
+        income: 7
         points: 3
         experience: 2
       gold_ore:
-        income: 5
+        income: 10
         points: 4
         experience: 2
       lapis_ore:
-        income: 7.5
+        income: 15
         points: 6
         experience: 2
       diamond_ore:
-        income: 10
+        income: 20
         points: 10
         experience: 10
       emerald_ore:
-        income: 15
+        income: 30
         points: 15
         experience: 30
       nether_quartz_ore:
-        income: 2.5
+        income: 5
         points: 2.5
         experience: 2.5
       obsidian:
@@ -813,23 +813,23 @@ Jobs:
         points: 5
         experience: 5
       cobblestone_wall:
-        income: 2.5
+        income: 5
         points: 2.5
         experience: 2.5
       mossy_cobblestone_wall:
-        income: 2.5
+        income: 5
         points: 2.5
         experience: 2.5
       nether_bricks:
-        income: 1.0
+        income: 5
         points: 1
         experience: 1.0
       nether_brick_stairs:
-        income: 3
+        income: 6
         points: 3
         experience: 3
       nether_brick_fence:
-        income: 1
+        income: 2
         points: 1
         experience: 1
       netherrack:
@@ -850,7 +850,7 @@ Jobs:
         experience: 2.5
     Place:
       rail:
-        income: 2.0
+        income: 1.0
         points: 2.0
         experience: 2.0
       iron_ore:
