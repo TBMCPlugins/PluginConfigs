@@ -1,0 +1,26 @@
+# The time of day to make backups (makes sense with daily backups)
+start-time: 03:00
+backup-interval-hours: 24.0
+backup-worlds: []
+backup-file: backups/
+backup-date-format: yyyy-MM-dd-HH-mm-ss
+backup-empty-server: false
+disable-zipping: false
+broadcast-message: true
+backup-message: '[Backup]'
+custom-backup-message: Backup starting
+custom-backup-message-end: Backup completed
+backup-completed-hook: ''
+backup-prefix: ''
+delete-schedule:
+  intervals:
+  - 2d
+  interval-frequencies:
+  - 0
+backup-folders:
+- TBMC
+- plugins/Towny/data
+- plugins/Towny/settings
+- plugins/WorldGuard/worlds
+- plugins/ButtonPresents
+

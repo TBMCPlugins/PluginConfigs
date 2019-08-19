@@ -6,55 +6,19 @@ components:
     enabled: true
   TownColorComponent:
     enabled: true
-    colorCount: 1
-    towncolors:
-      violetford:
-      - DarkPurple
-      - DarkGray
-      aurelia:
-      - Gray
-      port_purpura:
-      - LightPurple
-      - Gold
-      knightfall:
-      - DarkGray
-      liria:
-      - DarkPurple
-      ashport:
-      - Yellow
-      marine_city:
-      - DarkGray
-      britguard:
-      - DarkRed
-      iwa:
-      - Aqua
-      vordan:
-      - Yellow
-      redguard:
-      - DarkRed
-      - DarkRed
-      alderon:
-      - Gold
-      treavis:
-      - DarkAqua
-      forfgorne:
-      - DarkGray
-    nationcolors:
-      albion: DarkBlue
-      pressia: Aqua
-      aurora: Gold
-      expanse: DarkGreen
     useNationColors: true
+    colorCount: 1
+    towncolors: {}
+    nationcolors: {}
   FlairComponent:
     enabled: true
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
   AnnouncerComponent:
     enabled: true
-    announceTime: 900000
     announceMessages: []
+    announceTime: 900000
   FunComponent:
     enabled: true
-    unlol: true
     laughStrings:
     - xd
     - lel
@@ -65,6 +29,7 @@ components:
     - hah
     - rofl
     respect: true
+    unlol: true
   AppendTextComponent:
     enabled: true
     texts:

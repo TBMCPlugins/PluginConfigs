@@ -31,7 +31,7 @@ load:
   aliases:
   - load
   - restore
-  usage: /plot restore
+  usage: /plot load
   description: Load your plot
   confirmation: false
 confirm:
@@ -50,15 +50,8 @@ download:
   aliases:
   - download
   - dl
-  usage: /plot download [schematic|bo3|world]
+  usage: /plot download [schematic|world]
   description: Download your plot
-  confirmation: false
-changelog:
-  aliases:
-  - changelog
-  - cl
-  usage: /plot changelog
-  description: View the changelog
   confirmation: false
 setup:
   aliases:
@@ -145,35 +138,34 @@ clear:
   - clear
   - reset
   usage: /plot clear
-  description: Clear a plot
+  description: Clear the plot you stand on
   confirmation: true
 delete:
   aliases:
   - delete
   - dispose
   - del
-  - reset
   usage: /plot delete
-  description: Delete a plot
+  description: Delete the plot you stand on
   confirmation: true
 trust:
   aliases:
   - trust
   - t
   usage: /plot trust <player>
-  description: Allow a player to build in a plot
+  description: Allow a user to build in a plot while you are offline
   confirmation: false
 add:
   aliases:
   - add
   usage: /plot add <player>
-  description: Allow a user to build while you are online
+  description: Allow a user to build in a plot while you are online
   confirmation: false
 leave:
   aliases:
   - leave
   usage: ''
-  description: Leave a plot
+  description: Removes self from being trusted or a member of the plot
   confirmation: false
 deny:
   aliases:
@@ -199,7 +191,7 @@ info:
   aliases:
   - info
   - i
-  usage: /plot info <id>
+  usage: /plot info <id> [-f, to force info]
   description: Display plot info
   confirmation: false
 near:
@@ -229,6 +221,7 @@ schematic:
   aliases:
   - schematic
   - sch
+  - schem
   usage: /plot schematic <arg...>
   description: Schematic command
   confirmation: false
@@ -236,7 +229,7 @@ plugin:
   aliases:
   - plugin
   - version
-  usage: ''
+  usage: /plot plugin
   description: Show plugin information
   confirmation: false
 purge:
@@ -249,13 +242,14 @@ purge:
 reload:
   aliases:
   - reload
+  - rl
   usage: /plot reload
-  description: Reload configurations
+  description: Reload translations and world settings
   confirmation: false
 relight:
   aliases:
   - relight
-  usage: ''
+  usage: /plot relight
   description: Relight your plot
   confirmation: false
 merge:
@@ -270,29 +264,23 @@ debugpaste:
   - debugpaste
   - dp
   usage: /plot debugpaste
-  description: Upload settings.yml, worlds.yml, commands.yml and latest.log to www.hastebin.com
+  description: Upload settings.yml, worlds.yml, PlotSquared.use_THIS.yml and your
+    latest.log to https://athion.net/ISPaster/paste
   confirmation: false
 unlink:
   aliases:
   - unlink
   - u
   - unmerge
-  usage: /plot unlink
+  usage: /plot unlink [createroads]
   description: Unlink a mega-plot
   confirmation: true
 kick:
   aliases:
   - kick
   - k
-  usage: <player>
+  usage: /plot kick <player>
   description: Kick a player from your plot
-  confirmation: false
-rate:
-  aliases:
-  - rate
-  - rt
-  usage: /plot rate [#|next|purge]
-  description: Rate the plot
   confirmation: false
 debugclaimtest:
   aliases:
@@ -332,13 +320,14 @@ music:
   aliases:
   - music
   usage: /plot music
-  description: Player music in a plot
+  description: Play music in your plot
   confirmation: false
 debugroadregen:
   aliases:
   - debugroadregen
-  usage: /plot debugroadregen
-  description: Regenerate all roads based on the road schematic
+  usage: /plot debugroadregen <plot|region [height]>
+  description: Regenerate roads in the plot or region the user is, based on the road
+    schematic
   confirmation: false
 debugexec:
   aliases:
@@ -415,13 +404,6 @@ continue:
   usage: ''
   description: Continue a plot that was previously marked as done
   confirmation: false
-bo3:
-  aliases:
-  - bo3
-  - bo2
-  usage: ''
-  description: Mark a plot as done
-  confirmation: false
 middle:
   aliases:
   - middle
@@ -484,7 +466,7 @@ sethome:
   - sh
   - seth
   usage: /plot sethome [none]
-  description: Set the plot home
+  description: Set the plot home to your current position
   confirmation: false
 cluster:
   aliases:
@@ -498,6 +480,13 @@ debugimportworlds:
   - debugimportworlds
   usage: ''
   description: Import worlds by player name
+  confirmation: false
+rate:
+  aliases:
+  - rate
+  - rt
+  usage: /plot rate [#|next|purge]
+  description: Rate the plot
   confirmation: false
 toggle:
   aliases:
@@ -573,10 +562,4 @@ generatebiome:
   - gb
   usage: /plots generatebiome <biome>
   description: Generate a biome in your plot
-  confirmation: false
-moveto512:
-  aliases:
-  - moveto512
-  usage: /plots moveto512 [world]
-  description: Move plots to a 512 sized region
   confirmation: false

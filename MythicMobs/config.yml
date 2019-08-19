@@ -1,17 +1,18 @@
-# 
-# CONFIGURATION INFORMATION AVAILABLE AT: http://www.mythicmobs.net
-
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
 Configuration:
-  Version: 4.0
+  Version: 4.6
   General:
     AllowMetrics: true
     CheckForUpdates: true
     CompatibilityMode: false
     DebugLevel: 0
     ErrorLogging: true
+    Language: enUS
     UseVolatileFeatures: true
   Clock:
-    ClockInterval: 5
+    ClockInterval: 1
     SaveInterval: 5
     SpawnsInterval: 2
     ScannerInterval: 10
@@ -25,7 +26,7 @@ Configuration:
     EnableTimerSkills: true
     EnableThreatTables: true
     EnablePlayerFactions: true
-    EnableLegacySkills: true
+    EnableLegacySkills: false
     KillMessagePrefix: ''
     PreventOtherDropsByDefault: false
     ShowHealth:
@@ -48,31 +49,30 @@ Configuration:
       KnockbackResistance: 0
       Power: 0
   RandomSpawning:
+    DisableVanillaSpawns: false
     GenerateSpawnPoints: false
-    MaxMobsPerChunk: 80
+    MaxMobsPerChunk: 2
     SpawnRadiusPerPlayer: 64
     SpawnRadiusPerPlayerY: 32
     DespawnLazyRandomMobs: true
     MaxGenerationTime: 20
     PointsPerSecond:
-      Land: 10
+      Land: 5
       Air: 0
-      Sea: 0
+      Sea: 2
       Lava: 0
       Ground: 0
   Compatibility:
     Heroes:
       Enabled: true
-      ShowXPMessage: true
-      XPMessageFormat: You receive <drops.xp> experience for slaying <mob.name>
     McMMO:
       Enabled: true
       ShowXPMessage: true
-      XPMessageFormat: You receive <drops.xp> experience for slaying <mob.name>
+      XPMessageFormat: You receive <drops.mcmmo> experience for slaying <mob.name>
     SkillAPI:
       Enabled: true
       ShowXPMessage: true
-      XPMessageFormat: You receive <drops.xp> experience for slaying <mob.name>
+      XPMessageFormat: You receive <drops.skillapi> experience for slaying <mob.name>
     Vault:
       Enabled: true
       ShowMoneyMessage: true

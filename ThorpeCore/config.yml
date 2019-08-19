@@ -1,4 +1,3 @@
-test: false
 global:
   writePluginList: true
   test: false
@@ -12,23 +11,18 @@ components:
     enabled: true
     g:
       enabled: true
-      IDs:
-      - ooc
+      IDs: []
+      displayName: §fg§f
       color: White
-      displayName: §fOOC§f
     a:
       enabled: true
       IDs: []
     mod:
       enabled: true
       IDs: []
-      color: Blue
-      displayName: §9MOD§f
     dev:
       enabled: true
       IDs: []
-      displayName: §6DEV§f
-      color: Gold
     red:
       enabled: true
       IDs: []
@@ -50,27 +44,24 @@ components:
     tc:
       enabled: true
       IDs: []
-      displayName: §3TC§f
-      color: DarkAqua
     nc:
       enabled: true
       IDs: []
-      color: Gold
-      displayName: §6NC§f
     rp:
       enabled: true
       IDs: []
-      displayName: §7RP§f
-      color: Gray
   RandomTPComponent:
     enabled: true
   MemberComponent:
     enabled: true
-    memberGroup: member
     registeredForDays: 7
     playedHours: 12
+    memberGroup: member
   TownyComponent:
     enabled: true
   VotifierComponent:
     enabled: true
     rewardAmount: 0.0
+  SpawnComponent:
+    enabled: true
+    targetServer: ''

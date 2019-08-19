@@ -1,18 +1,17 @@
 configVersion: 16
-language: en
+language: english
 enableEconomy: false
+chatEnabled: true
+chatFormat:
+  edit: '&2[Edit] &r%player_name%: '
+  game: '&2[Game] %group_color%%player_name%: &r'
+  group: '&2%group_color%[%group_name%] %player_name%: &r'
+  spy: '&2[Chat Spy] %player_name%: &r'
 tutorial:
   activated: false
   dungeon: tutorial
   startGroup: default
   endgroup: player
-sendFloorTitle: true
-editCommandWhitelist: []
-default: {}
-chatEnabled: true
-chatFormatGame: '&2[Game] %group_color%%player_name%: &r'
-chatFormatGroup: '&2%group_color%[%group_name%] %player_name%: &r'
-chatFormatSpy: '&2[Chat Spy] %player_name%: &r'
 groupColorPriority:
 - DARK_BLUE
 - LIGHT_RED
@@ -20,7 +19,6 @@ groupColorPriority:
 - LIGHT_GREEN
 - PURPLE
 - ORANGE
-- WHITE
 - BLACK
 - LIGHT_BLUE
 - DARK_GREEN
@@ -29,22 +27,17 @@ groupColorPriority:
 - CYAN
 - MAGENTA
 - DARK_GRAY
+- PINK
 announcementInterval: 30.0
+sendFloorTitle: true
 globalDeathMessagesDisabled: true
 externalMobProviders: {}
 resourcePacks: {}
 maxInstances: 10
-tweaksEnabled: false
 secureMode:
   enabled: false
   openInventories: false
   dropItems: false
   checkInterval: 5.0
-  editCommandWhitelist: []
 backupMode: ON_DISABLE_AND_SAVE
-editPermissions: []
-chatFormat:
-  edit: '&2[Edit] &r%player_name%: '
-  game: '&2[Game] %group_color%%player_name%: &r'
-  group: '&2%group_color%[%group_name%] %player_name%: &r'
-  spy: '&2[Chat Spy] %player_name%: &r'
+default: {}

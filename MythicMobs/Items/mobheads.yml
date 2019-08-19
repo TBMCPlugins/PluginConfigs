@@ -1,7 +1,0 @@
-RobotHead:
-  Id: 397
-  Data: 3
-  Options:
-    SkinTexture: eyJ0aW1lc3RhbXAiOjE1MDYxMDgyNTI5NzgsInByb2ZpbGVJZCI6IjliZDU2MGRiNGZjMDQyYjhhY2I3NWMyOTJlZmM5MmMxIiwicHJvZmlsZU5hbWUiOiJ0cmFpbnJpZGVyIiwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NkMTAzMTQ3YzdiY2IwY2IzMmFhZWI5M2Q3MWM4OWYzZjU5YWRlNWY0YzQwMmQ3MTgxZGY5Y2U5Mjg4MjgifX19 
-  Display: '&2Robot Head'
-  Amount: 1

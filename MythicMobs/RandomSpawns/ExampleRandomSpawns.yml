@@ -1,13 +1,13 @@
-# 
-# These example files show you how to inject Mythic Mobs
-# you've created into your world. The name of each block
-# can be whatever you'd like but must be unique.
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
 RandomSkeletonKing:
   MobType: SkeletonKing
   Worlds: world
   Chance: 0.001
   Priority: 1
-  Action: replace
+  Action: REPLACE
   Conditions:
   - outside true
 RandomSkeletalKnight:
@@ -15,4 +15,4 @@ RandomSkeletalKnight:
   Worlds: world
   Chance: 0.008
   Priority: 1
-  Action: add
+  Action: REPLACE

@@ -13,9 +13,9 @@
 #   The definitions of these templates are in normal-hi_boost_vhi.txt, nether-hi_boost_vhi.txt, and the_end-hi_boost_vhi.txt
 # To use the HDMap hi-res (16 ppb) map templates, with support for boosting resolution selectively to xhi-res (64 ppb), set value to hi_boost_xhi
 #   The definitions of these templates are in normal-hi_boost_xhi.txt, nether-hi_boost_xhi.txt, and the_end-hi_boost_xhi.txt
-deftemplatesuffix: disabled #vlowres
+deftemplatesuffix: vlowres #disabled
 
-# Map storage scheme: only uncommoent one 'type' value
+# Map storage scheme: only uncomment one 'type' value
 #  filetree: classic and default scheme: tree of files, with all map data under the directory indicated by 'tilespath' setting
 #  sqlite: single SQLite database file (this can get VERY BIG), located at 'dbfile' setting (default is file dynmap.db in data directory)
 #  mysql: MySQL database, at hostname:port in database, accessed via userid with password
@@ -25,7 +25,7 @@ storage:
   # SQLite db for map storage (uses dbfile as storage location)
   #type: sqlite
   #dbfile: dynmap.db
-  # MySQL DB for map storage (at 'hostname':'port' in database 'database' using user 'userid' password 'password' and table prefix 'prefix'
+  # MySQL DB for map storage (at 'hostname':'port' with flags "flags" in database 'database' using user 'userid' password 'password' and table prefix 'prefix')
   #type: mysql
   #hostname: localhost
   #port: 3306
@@ -33,6 +33,7 @@ storage:
   #userid: dynmap
   #password: dynmap
   #prefix: ""
+  #flags: "?allowReconnect=true"
   
 components:
   - class: org.dynmap.ClientConfigurationComponent
@@ -95,10 +96,10 @@ components:
   #  hide-if-invisiblity-potion: true
   #  hidenames: false
    
-  #- class: org.dynmap.SimpleWebChatComponent
-  #  allowchat: true
-  #  # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
-  #  allowurlname: false
+  - class: org.dynmap.SimpleWebChatComponent
+    allowchat: true
+    # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
+    allowurlname: false
   
   # Note: this component is needed for the dmarker commands, and for the Marker API to be available to other plugins
   - class: org.dynmap.MarkersComponent
@@ -128,36 +129,36 @@ components:
     # (optional) show world border (vanilla 1.8+)
     showworldborder: true
     
-  #- class: org.dynmap.ClientComponent
-  #  type: chat
-  #  allowurlname: false
-  #- class: org.dynmap.ClientComponent
-  #  type: chatballoon
-  #  focuschatballoons: false
-  #- class: org.dynmap.ClientComponent
-  #  type: chatbox
-  #  showplayerfaces: true
-  #  messagettl: 5
-  #  # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
-  #  #scrollback: 100
-  #  # Optiona; set maximum number of lines visible for chatbox
-  #  #visiblelines: 10
-  #  # Optional: send push button
-  #  sendbutton: false
-  #- class: org.dynmap.ClientComponent
-  #  type: playermarkers
-  #  showplayerfaces: true
-  #  showplayerhealth: true
-  #  # If true, show player body too (only valid if showplayerfaces=true
-  #  showplayerbody: false
-  #  # Option to make player faces small - don't use with showplayerhealth
-  #  smallplayerfaces: false
-  #  # Optional - make player faces layer hidden by default
-  #  hidebydefault: false
-  #  # Optional - ordering priority in layer menu (low goes before high - default is 0)
-  #  layerprio: 0
-  #  # Optional - label for player marker layer (default is 'Players')
-  #  label: "Players"
+#  - class: org.dynmap.ClientComponent
+#    type: chat
+#    allowurlname: false
+#  - class: org.dynmap.ClientComponent
+#    type: chatballoon
+#    focuschatballoons: false
+#  - class: org.dynmap.ClientComponent
+#    type: chatbox
+#    showplayerfaces: true
+#    messagettl: 5
+#    # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
+#    #scrollback: 100
+#    # Optiona; set maximum number of lines visible for chatbox
+#    #visiblelines: 10
+#    # Optional: send push button
+#    sendbutton: false
+#  - class: org.dynmap.ClientComponent
+#    type: playermarkers
+#    showplayerfaces: true
+#    showplayerhealth: true
+#    # If true, show player body too (only valid if showplayerfaces=true
+#    showplayerbody: false
+#    # Option to make player faces small - don't use with showplayerhealth
+#    smallplayerfaces: false
+#    # Optional - make player faces layer hidden by default
+#    hidebydefault: false
+#    # Optional - ordering priority in layer menu (low goes before high - default is 0)
+#    layerprio: 0
+#    # Optional - label for player marker layer (default is 'Players')
+#    label: "Players"
     
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
@@ -277,11 +278,6 @@ custom-colors-support: true
 
 # Customize URL used for fetching player skins (%player% is macro for name)
 skin-url: "http://skins.minecraft.net/MinecraftSkins/%player%.png"
-
-# Control behavior for new (1.0+) compass orientation (sunrise moved 90 degrees: east is now what used to be south)
-#   default is 'newrose' (preserve pre-1.0 maps, rotate rose)
-#   'newnorth' is used to rotate maps and rose (requires fullrender of any HDMap map - same as 'newrose' for FlatMap or KzedMap)
-compass-mode: newnorth
 
 render-triggers:
   #- playermove
@@ -444,16 +440,7 @@ url:
     #tiles: "tiles/"
     # markers base URL
     #markers: "tiles/"
-    
-# Spout support controls
-spout:
-    # If false, ignore spout even if detected
-    enabled: true
-    # If true, previously loaded textures will be assumed to still be valid (faster startup, but
-    # can result in stale textures if originals are updated - delete files in texturepacks/standard/spoout
-    # to clean cached textures and force reload on next startup)
-    use-existing-textures: true
-    
+
 # Customization commands - allows scripts to be run before/after certain events
 custom-commands:
     image-updates:
@@ -476,3 +463,10 @@ verbose: false
 #  - class: org.dynmap.debug.LogDebugger
 # Debug: dump blocks missing render data
 dump-missing-blocks: false
+
+# Have dynmap migrate old chunks to the new format for the current MC version (specifically, for migrating pre-1.13 chunks to 1.13 or 1.14).  This is needed
+# in order to render chunks on an upgraded server (due to various bugs/limitations in CB/spigot 1.13+).  This setting is NOT suggested to be enabled full time,
+# but only long enough to do a fullrender of a migrated world - it should be turned back off once worlds are migrated).  It is EXPERIMENTAL, so be sure to backup
+# your worlds before running with this setting enabled (set to true)
+#
+#migrate-chunks: true

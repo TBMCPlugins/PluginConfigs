@@ -1,7 +1,7 @@
-# 
-# This example file shows you how to change default values for 
-# vanilla mobs. Most MythicMobs options will work here, including
-# skills and effects! **Despawn: FALSE does not work, though.**
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
 CAVE_SPIDER:
   Health: 30
   Damage: 7

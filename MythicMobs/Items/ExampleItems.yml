@@ -1,8 +1,9 @@
-# 
-# This example file shows you how to set up special items
-# for your mobs to equip or drop.
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
 SkeletonKingSword:
-  Id: 276
+  Id: DIAMOND_SWORD
   Data: 0
   Display: '&3Greatsword of the Skeleton King'
   Lore:
@@ -17,7 +18,7 @@ SkeletonKingSword:
       Health: 10
       MovementSpeed: 0.1
 KingsCrown:
-  Id: 314
+  Id: GOLDEN_HELMET
   Data: 0
   Amount: 1
   Display: '&dCrown of the King'
@@ -29,7 +30,7 @@ KingsCrown:
   - PROTECTION_PROJECTILE:2
   - PROTECTION_FIRE:2
   - PROTECTION_EXPLOSIONS:2
-  Hides:
+  Hide:
   - ATTRIBUTES
   - ENCHANTS
   Attributes:
@@ -37,7 +38,7 @@ KingsCrown:
       Health: 10
       KnockbackResistance: 10
 BanditTunic:
-  Id: 299
+  Id: LEATHER_CHESTPLATE
   Display: '&aBandit Tunic'
   Lore:
   - '&6A leather tunic taken from'

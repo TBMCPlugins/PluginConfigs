@@ -1,8 +1,0 @@
-source /etc/screenrc
-multiuser on
-aclchg norbipeti +rwx "#?" # acladd
-aclchg iie +rwx "#?"
-aclchg ghostise +rwx "#?"
-aclchg figytuna +rwx "#?"
-# detach - for some reason it doesn't color the prompt if I detach automatically in any way
-

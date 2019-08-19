@@ -13,7 +13,7 @@
 
 # If you have problems join the Essentials help support channel: http://tiny.cc/EssentialsChat
 
-# Version ${full.version}
+# Version 2.17.0.0
 
 # KITS ARE NOW IN THE kits.yml FILE
 
@@ -35,6 +35,10 @@ max-nick-length: 150
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
 ignore-colors-in-max-nick-length: false
+
+# When this option is enabled, display names for hidden users will not be shown. This prevents players from being
+# able to see that they are online while vanished.
+hide-displayname-in-vanish: true
 
 # Disable this if you have any other plugin, that modifies the displayname of a user.
 change-displayname: true
@@ -69,10 +73,10 @@ teleport-safety: true
 force-disable-teleport-safety: false
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 10
+teleport-cooldown: 0
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
-teleport-delay: 10
+teleport-delay: 0
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
@@ -281,6 +285,12 @@ player-commands:
   - worth
   - xmpp
 
+# Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
+# This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
+# If you wish to use EssentialsX's built-in permissions using the `player-commands` section above, set this to false.
+# Default is true.
+use-bukkit-permissions: true
+
 # When this option is enabled, one-time use kits (ie. delay < 0) will be
 # removed from the /kit list when a player can no longer use it
 skip-used-one-time-kits-from-kit-list: false
@@ -321,6 +331,11 @@ enabledSigns:
 # Values should be between 1-20, 20 being virtually no lag protection.
 # Lower numbers will reduce the possibility of lag, but may annoy players.
 sign-use-per-second: 4
+
+# Allow item IDs on pre-existing signs on 1.13 and above.
+# You cannot use item IDs on new signs, but this will allow players to interact with signs that
+# were placed before 1.13.
+allow-old-id-signs: false
 
 # List of sign names Essentials should not protect. This feature is especially useful when
 # another plugin provides a sign that EssentialsX provides, but Essentials overrides.
@@ -380,7 +395,6 @@ auto-afk: 300
 # essentials.afk.kickexempt node overrides this feature.
 # Set to -1 for no timeout.
 auto-afk-kick: -1
-# auto-afk-kick: 600
 
 # Set this to true, if you want to freeze the player, if the player is AFK.
 # Other players or monsters can't push the player out of AFK mode then.
@@ -400,6 +414,11 @@ cancel-afk-on-interact: false
 # Player will be removed from AFK on chat/command regardless of this setting.
 # Disable this to reduce server lag.
 cancel-afk-on-move: true
+
+# Should AFK players be ignored when other players are trying to sleep?
+# When this setting is false, players won't be able to skip the night if some players are AFK.
+# Users with the permission node essentials.sleepingignored will always be ignored.
+sleep-ignores-afk-players: true
 
 # Set the player's list name when they are AFK. This is none by default which specifies that Essentials 
 # should not interfere with the AFK player's list name.
@@ -471,11 +490,13 @@ mails-per-minute: 1000
 # Set to -1 to disable, and essentials.tempban.unlimited can be used to override.
 max-tempban-time: -1
 
-# Changes /reply functionality. If true, /r goes to the person you messaged last, otherwise the first person that messaged you. 
+# Changes the default /reply functionality. This can be changed on a per-player basis using /rtoggle.
+# If true, /r goes to the person you messaged last, otherwise the first person that messaged you.
 # If false, /r goes to the last person that messaged you.
 last-message-reply-recipient: true
 
-# If last-message-reply-recipient is true, this specifies the duration, in seconds, that would need to elapse for the 
+# If last-message-reply-recipient is enabled for a particular player,
+# this specifies the duration, in seconds, that would need to elapse for the
 # reply-recipient to update when receiving a message.
 # Default is 180 (3 minutes)
 last-message-reply-recipient-timeout: 180
@@ -527,6 +548,9 @@ default-enabled-confirm-commands:
 #- pay
 #- clearinventory
 
+# Whether or not to teleport a player back to their previous position after they have been freed from jail.
+teleport-back-when-freed-from-jail: true
+
 # Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
 # Set to 0 for no timeout.
 tpa-accept-cancellation: 120
@@ -538,6 +562,15 @@ allow-direct-hat: true
 # If false, running /broadcastworld in-game will always send a message to the player's current world.
 # This doesn't affect running the command from the console, where a world is always required.
 allow-world-in-broadcastworld: true
+
+# Consider water blocks as "safe," therefore allowing players to teleport
+# using commands such as /home or /spawn to a location that is occupied
+# by water blocks
+is-water-safe: false
+
+# Should the usermap try to sanitise usernames before saving them?
+# You should only change this to false if you use Minecraft China.
+safe-usermap-names: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -570,6 +603,7 @@ sethome-multiple:
   worldeditor: 6
   mod: 10
   admin: 20
+
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
@@ -618,12 +652,6 @@ min-money: -10000
 
 # Enable this to log all interactions with trade/buy/sell signs and sell command.
 economy-log-enabled: false
-
-# Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
-# This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
-# If you wish to use EssentialsX' built-in permissions using the `player-commands` section above, set this to false.
-# Default is true. 
-use-bukkit-permissions: false
 
 # Minimum acceptable amount to be used in /pay.
 minimum-pay-amount: 0.001
@@ -828,20 +856,19 @@ protect:
     warn-on-build-disallow: true
 
   # For which block types would you like to be alerted?
-  # You can find a list of IDs in plugins/Essentials/items.csv after loading Essentials for the first time.
-  # 10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket
+  # You can find a list of items at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html.
   alert:
-    on-placement: 10,11,46,327
-    on-use: 327
+    on-placement: LAVA,TNT,LAVA_BUCKET
+    on-use: LAVA_BUCKET
     on-break:
 
   blacklist:
 
     # Which blocks should people be prevented from placing?
-    placement: 10,11,46,327
+    placement: LAVA,TNT,LAVA_BUCKET
 
     # Which items should people be prevented from using?
-    usage: 327
+    usage: LAVA_BUCKET
 
     # Which blocks should people be prevented from breaking?
     break:

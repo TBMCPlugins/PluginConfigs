@@ -2,9 +2,9 @@
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "26 Jan 2019 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/2060"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/e3192f0"
+date: "27 Jul 2019 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/298"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/2468456"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -34,8 +34,6 @@ enabled-components:
   block-cache: true
   # Getting a rating won't need the database
   rating-cache: true
-  # The converter will attempt to convert the PlotMe database
-  plotme-converter: true
   # Allow WorldEdit to be restricted to plots
   worldedit-restrictions: true
   # Allow economy to be used
@@ -60,8 +58,13 @@ enabled-components:
   database-purger: false
   # Delete plots when a player is banned
   ban-deleter: false
+  # Prevent possibly unsafe blocks from being used in plot components
+  prevent-unsafe: true
 
 ratings:
+  # Replace the rating system with a like system. Will add /plot like/dislike, and remove the rating command
+  use-likes: false
+  # Rating categories
   categories: []
 
 claim:
@@ -81,6 +84,8 @@ teleport:
   on-death: false
   # Teleport to your plot on login
   on-login: false
+  # Teleport to your plot on claim
+  on-claim: true
   # Add a teleportation delay to all commands
   delay: 0
   # The visit command is ordered by world instead of globally
@@ -89,11 +94,6 @@ teleport:
 confirmation:
   # Teleport to your plot on death
   confirmation-timeout-seconds: 20
-
-# Switching from PlotMe?
-plotme:
-  # Cache the uuids from the PlotMe database
-  cache-uuds: false
 
 # Relating to how many plots someone can claim  
 limit:
@@ -132,10 +132,21 @@ web:
 # Configure the paths that will be used
 paths:
   schematics: "schematics"
-  bo3: "bo3"
   scripts: "scripts"
   templates: "templates"
   translations: "translations"
+
+# Schematic Settings
+schematics:
+  # Whether schematic based generation should paste schematic on top of plots, or from Y=1
+  paste-on-top: true
+
+# General settings
+general:
+  # Display scientific numbers (4.2E8)
+  scientific: false
+  # Replace wall when merging
+  merge-replace-wall: true
 
 uuid:
   # Force using offline UUIDs (it usually detects the right mode)
@@ -158,10 +169,10 @@ chunk-processor:
 # This is an auto clearing task called `task1`
 auto-clear:
   task1:
-    threshold: 1
+    threshold: -1
     required-plots: -1
     confirmation: true
-    days: 7
+    days: 90
     skip-account-age-days: -1
     worlds: 
     - "*"
