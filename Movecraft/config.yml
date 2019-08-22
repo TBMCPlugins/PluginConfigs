@@ -23,7 +23,7 @@ WGCustomFlagsUseMoveFlag: false
 WGCustomFlagsUseRotateFlag: false
 WGCustomFlagsUseSinkFlag: false
 TownyBlockMoveOnSwitchPerm: false
-TownyBlockSinkOnNoPVP: false
+TownyBlockSinkOnNoPVP: true
 TownyWorldHeightLimits:
   world:
     underTownSpawn: 255
