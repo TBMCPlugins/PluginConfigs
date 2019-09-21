@@ -8,7 +8,7 @@ do
 	fi
 done
 find . -path './Movecraft/types/*.craft' -exec git add -f '{}' \;
-git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt' 'dynmap/templates/normal-vlowres.txt'
+git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt' 'dynmap/templates/custom-normal-vlowres.txt' 'dynmap/templates/custom-nether-vlowres.txt' 'dynmap/templates/custom-the_end-vlowres.txt'
 git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
 git add -f 'Towny/settings/townyperms.yml'

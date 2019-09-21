@@ -213,7 +213,7 @@ worlds:
     entryfee:
       ==: MVEntryFee
       amount: '0.0'
-    hunger: 'true'
+    hunger: 'false'
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
@@ -237,7 +237,7 @@ worlds:
   v2:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: v2
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -260,7 +260,7 @@ worlds:
     entryfee:
       ==: MVEntryFee
       amount: '0.0'
-    hunger: 'true'
+    hunger: 'false'
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
@@ -307,7 +307,7 @@ worlds:
     entryfee:
       ==: MVEntryFee
       amount: '0.0'
-    hunger: 'true'
+    hunger: 'false'
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
