@@ -23,6 +23,8 @@ components:
     dev:
       enabled: true
       IDs: []
+      displayName: §6DEV§f
+      color: Gold
     red:
       enabled: true
       IDs: []
@@ -44,6 +46,8 @@ components:
     tc:
       enabled: true
       IDs: []
+      displayName: §3TC§f
+      color: DarkAqua
     nc:
       enabled: true
       IDs: []
@@ -51,7 +55,7 @@ components:
       enabled: true
       IDs: []
   RandomTPComponent:
-    enabled: true
+    enabled: false
   MemberComponent:
     enabled: true
     registeredForDays: 7

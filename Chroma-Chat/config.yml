@@ -8,7 +8,11 @@ components:
     enabled: true
     useNationColors: true
     colorCount: 1
-    towncolors: {}
+    towncolors:
+      badlands:
+      - Blue
+      acoralis:
+      - DarkPurple
     nationcolors: {}
   FlairComponent:
     enabled: true

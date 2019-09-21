@@ -1,0 +1,12 @@
+components:
+  DictionaryComponent:
+    enabled: true
+  SpawnComponent:
+    enabled: true
+  MagicComponent:
+    enabled: true
+  ResearchComponent:
+    enabled: true
+  TownyFactionsComponent:
+    enabled: true
+    distance: 5
