@@ -74,3 +74,6 @@ components:
   VotifierComponent:
     enabled: true
     rewardAmount: 0.0
+  SpawnComponent:
+    enabled: true
+    targetServer: lobby

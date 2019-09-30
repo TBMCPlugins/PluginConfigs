@@ -8,35 +8,31 @@ components:
     enabled: true
     colorCount: 1
     towncolors:
-      violetford:
-      - DarkPurple
-      - DarkGray
-      aurelia:
-      - Gray
-      port_purpura:
-      - LightPurple
-      - Gold
-      knightfall:
-      - DarkGray
-      liria:
-      - DarkPurple
-      ashport:
-      - Yellow
       marine_city:
       - DarkGray
       britguard:
       - DarkRed
+      violetford:
+      - DarkPurple
+      - DarkGray
       iwa:
       - Aqua
+      aurelia:
+      - Gray
       vordan:
       - Yellow
       redguard:
       - DarkRed
       - DarkRed
-      alderon:
+      port_purpura:
+      - LightPurple
       - Gold
+      fishtown:
+      - Blue
       treavis:
       - DarkAqua
+      liria:
+      - DarkPurple
       forfgorne:
       - DarkGray
     nationcolors:
