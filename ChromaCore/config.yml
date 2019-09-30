@@ -20,6 +20,8 @@ components:
     mod:
       enabled: true
       IDs: []
+      displayName: §9MOD§f
+      color: Blue
     dev:
       enabled: true
       IDs: []
@@ -51,6 +53,8 @@ components:
     nc:
       enabled: true
       IDs: []
+      displayName: §6NC§f
+      color: Gold
     rp:
       enabled: true
       IDs: []

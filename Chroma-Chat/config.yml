@@ -9,9 +9,9 @@ components:
     useNationColors: true
     colorCount: 1
     towncolors:
-      badlands:
-      - Blue
-      acoralis:
+      praxis:
+      - DarkRed
+      liria:
       - DarkPurple
     nationcolors: {}
   FlairComponent:

@@ -528,6 +528,12 @@ toggle:
     usage: ''
     description: Toggle plot chat
     confirmation: false
+  time:
+    aliases:
+    - time
+    usage: ''
+    description: Toggle plot time settings
+    confirmation: false
 help:
   aliases:
   - help

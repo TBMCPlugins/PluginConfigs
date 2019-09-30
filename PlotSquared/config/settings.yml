@@ -2,9 +2,9 @@
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "27 Jul 2019 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared/298"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/2468456"
+date: "8 Oct 2019 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared-Releases/353"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/4f789d"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -52,7 +52,7 @@ enabled-components:
   kill-road-vehicles: false
   # Notify a player of any missed comments upon plot entry
   comment-notifier: false
-  # Let player's claim entire worlds with PlotSquared
+  # Let players claim entire worlds with PlotSquared
   worlds: false
   # Actively purge invalid database entries
   database-purger: false

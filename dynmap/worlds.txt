@@ -6,6 +6,15 @@
 #   Deleting this file will result in a fresh copy being produced by dynmap.jar on the next startup.
 #
 worlds:
+- name: world_nether
+  enabled: false
+- name: world_the_end
+  enabled: false
+- name: world
+  center:
+    x: -32271
+    y: 64
+    z: -8199
   # Worlds can be handled by templates, based on world type
   # You can override the properties of the template by specifying them in this section
   #    for example 'Title: "My Awesome World"'
