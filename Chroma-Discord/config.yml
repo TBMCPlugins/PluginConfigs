@@ -84,4 +84,4 @@ components:
     - when's the server ready
     - when's the server open
     - Vhen vill ze server be open?
-serverup: false
+serverup: true
