@@ -11,9 +11,17 @@ components:
     towncolors:
       praxis:
       - DarkRed
+      ignatios_antonos:
+      - DarkGray
+      uh-oh:
+      - Yellow
+      the_shire:
+      - DarkAqua
       liria:
       - DarkPurple
-    nationcolors: {}
+    nationcolors:
+      comintern: Red
+      leagueofcrafters: Gold
   FlairComponent:
     enabled: true
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
@@ -66,3 +74,38 @@ components:
         - This command appends a shrug after your message
         - Or just makes you shrug
         appendedText: ¯\\\_(ツ)\_/¯
+  FormatterComponent:
+    enabled: true
+    allowFormatting: true
+    bold:
+      enabled: true
+    italic:
+      enabled: true
+    underlined:
+      enabled: true
+    strikethrough:
+      enabled: true
+    spoiler:
+      enabled: true
+    escape:
+      enabled: true
+    nullMention:
+      enabled: true
+    consolePing:
+      enabled: true
+    hashtag:
+      enabled: true
+    cyan:
+      enabled: true
+    code:
+      enabled: true
+    maskedLink:
+      enabled: true
+    url:
+      enabled: true
+    entireMessage:
+      enabled: true
+    name:
+      enabled: true
+    nickname:
+      enabled: true
