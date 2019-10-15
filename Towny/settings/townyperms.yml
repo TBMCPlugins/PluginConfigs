@@ -53,6 +53,7 @@ towns:
         - towny.command.plot.*
         - towny.claimed.owntown.*
         - towny.command.nation.new
+        - towny.command.nation.leave
         - towny.outlaw.jailer
 
     ranks:
