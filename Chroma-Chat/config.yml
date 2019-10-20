@@ -11,6 +11,8 @@ components:
     towncolors:
       praxis:
       - DarkRed
+      cliffnautica:
+      - Blue
       ignatios_antonos:
       - DarkGray
       uh-oh:

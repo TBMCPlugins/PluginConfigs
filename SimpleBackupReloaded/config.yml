@@ -1,7 +1,13 @@
 # The time of day to make backups (makes sense with daily backups)
 start-time: 03:00
 backup-interval-hours: 24.0
-backup-worlds: []
+backup-worlds:
+- world
+- world_nether
+- world_the_end
+- worldhub
+- flatworld
+- plotworld
 backup-file: backups/
 backup-date-format: yyyy-MM-dd-HH-mm-ss
 backup-empty-server: false

@@ -169,10 +169,10 @@ chunk-processor:
 # This is an auto clearing task called `task1`
 auto-clear:
   task1:
-    threshold: -1
+    threshold: 1
     required-plots: -1
     confirmation: true
-    days: 90
+    days: 7
     skip-account-age-days: -1
     worlds: 
     - "*"
