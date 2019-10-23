@@ -20,7 +20,9 @@ worlds:
       z0: -12800
       x1: -27700
       z1: -3650
-  hidestyle: air      
+  hidestyle: air
+- name: flatworld
+  enabled: false
   # Worlds can be handled by templates, based on world type
   # You can override the properties of the template by specifying them in this section
   #    for example 'Title: "My Awesome World"'
