@@ -21,6 +21,56 @@ worlds:
       x1: -27700
       z1: -3650
   hidestyle: air
+  - name: spawnhub
+  alias: Hub
+  center:
+    x: 160
+    y: 64
+    z: -95
+  visibilitylimits:
+    - x0: 80
+      z0: 180
+      x1: 260
+      z1: 0
+  hidestyle: air
+  - name: v1
+  alias: "Chroma Version 1"
+  center:
+    x: -3650
+    y: 64
+    z: -6500
+  visibilitylimits:
+    - x0: -4650
+      z0: -7500
+      x1: -2650
+      z1: -5500
+  hidestyle: air
+    - name: v2
+  alias: "Chroma Version 2"
+  center:
+    x: 1412
+    y: 64
+    z: -296
+  visibilitylimits:
+    - x0: -2590
+      z0: -4300
+      x1: 5410
+      z1: 3700
+  hidestyle: air
+    - name: v3
+  alias: "Chroma Version 3"
+  center:
+    x: 2300
+    y: 64
+    z: 0
+  visibilitylimits:
+    - x0: -2200
+      z0: -4500
+      x1: 6850
+      z1: 4500
+  hidestyle: air
+- name: plotworld
+  enabled: true
 - name: flatworld
   enabled: false
   # Worlds can be handled by templates, based on world type
