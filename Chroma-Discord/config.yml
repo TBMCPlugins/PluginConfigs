@@ -1,10 +1,10 @@
 global:
   mainServer: 125813020357165056
-  commandChannel: 239519012529111040
-  prefix: /
+  commandChannel: 209720707188260864
+  prefix: '|'
   inviteLink: ''
   modRole: Moderator
-serverup: false
+serverup: true
 components:
   GeneralEventBroadcasterModule:
     enabled: true
