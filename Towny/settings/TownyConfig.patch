@@ -1,0 +1,414 @@
+diff --git b/Towny/settings/config.yml a/Towny/settings/config.yml
+index c0302a9..4eb15c1 100644
+--- b/Towny/settings/config.yml
++++ a/Towny/settings/config.yml
+@@ -32,72 +32,72 @@ levels:
+     mayorPrefix: 'Spirit '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 1
+-    upkeepModifier: 1.0
++    townBlockLimit: 4
++    upkeepModifier: 0.1
+     townOutpostLimit: 0
+   - numResidents: 1
+     namePostfix: ' (Settlement)'
+     mayorPrefix: 'Hermit '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 16
+-    upkeepModifier: 1.0
++    townBlockLimit: 64
++    upkeepModifier: 0.1
+     townOutpostLimit: 0
+   - numResidents: 2
+     namePostfix: ' (Hamlet)'
+     mayorPrefix: 'Chief '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 32
+-    upkeepModifier: 1.0
++    townBlockLimit: 128
++    upkeepModifier: 0.1
+     townOutpostLimit: 1
+   - numResidents: 6
+     namePostfix: ' (Village)'
+     mayorPrefix: 'Baron Von '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 96
+-    upkeepModifier: 1.0
++    townBlockLimit: 384
++    upkeepModifier: 0.2
+     townOutpostLimit: 1
+   - numResidents: 10
+     namePostfix: ' (Town)'
+     mayorPrefix: 'Viscount '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 160
+-    upkeepModifier: 1.0
++    townBlockLimit: 640
++    upkeepModifier: 0.3
+     townOutpostLimit: 2
+   - numResidents: 14
+     namePostfix: ' (Large Town)'
+     mayorPrefix: 'Count Von '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 224
+-    upkeepModifier: 1.0
++    townBlockLimit: 896
++    upkeepModifier: 0.4
+     townOutpostLimit: 2
+   - numResidents: 20
+     namePostfix: ' (City)'
+     mayorPrefix: 'Earl '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 320
+-    upkeepModifier: 1.0
++    townBlockLimit: 4280
++    upkeepModifier: 0.5
+     townOutpostLimit: 3
+   - numResidents: 24
+     namePostfix: ' (Large City)'
+     mayorPrefix: 'Duke '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 384
+-    upkeepModifier: 1.0
++    townBlockLimit: 4536
++    upkeepModifier: 0.6
+     townOutpostLimit: 3
+   - numResidents: 28
+     namePostfix: ' (Metropolis)'
+     mayorPrefix: 'Lord '
+     namePrefix: ''
+     mayorPostfix: ''
+-    townBlockLimit: 448
+-    upkeepModifier: 1.0
++    townBlockLimit: 4792
++    upkeepModifier: 0.7
+     townOutpostLimit: 4
+   # default Nation levels.
+   nation_level:
+@@ -109,70 +109,70 @@ levels:
+     numResidents: 0
+     nationBonusOutpostLimit: 0
+     namePostfix: ' (Nation)'
+-    townBlockLimitBonus: 10
++    townBlockLimitBonus: 40
+     namePrefix: 'Land of '
+     nationZonesSize: 1
+     nationTownUpkeepModifier: 1.0
+   - kingPostfix: ''
+     capitalPostfix: ''
+-    upkeepModifier: 1.0
++    upkeepModifier: 1.1
+     kingPrefix: 'Count '
+     capitalPrefix: ''
+     numResidents: 10
+     nationBonusOutpostLimit: 1
+     namePostfix: ' (Nation)'
+-    townBlockLimitBonus: 20
++    townBlockLimitBonus: 80
+     namePrefix: 'Federation of '
+     nationZonesSize: 1
+-    nationTownUpkeepModifier: 1.0
++    nationTownUpkeepModifier: 1.1
+   - kingPostfix: ''
+     capitalPostfix: ''
+-    upkeepModifier: 1.0
++    upkeepModifier: 1.2
+     kingPrefix: 'Duke '
+     capitalPrefix: ''
+     numResidents: 20
+     nationBonusOutpostLimit: 2
+     namePostfix: ' (Nation)'
+-    townBlockLimitBonus: 40
++    townBlockLimitBonus: 160
+     namePrefix: 'Dominion of '
+     nationZonesSize: 1
+-    nationTownUpkeepModifier: 1.0
++    nationTownUpkeepModifier: 1.2
+   - kingPostfix: ''
+     capitalPostfix: ''
+-    upkeepModifier: 1.0
++    upkeepModifier: 1.3
+     kingPrefix: 'King '
+     capitalPrefix: ''
+     numResidents: 30
+     nationBonusOutpostLimit: 3
+     namePostfix: ' (Nation)'
+-    townBlockLimitBonus: 60
++    townBlockLimitBonus: 240
+     namePrefix: 'Kingdom of '
+     nationZonesSize: 2
+-    nationTownUpkeepModifier: 1.0
++    nationTownUpkeepModifier: 1.3
+   - kingPostfix: ''
+     capitalPostfix: ''
+-    upkeepModifier: 1.0
++    upkeepModifier: 1.4
+     kingPrefix: 'Emperor '
+     capitalPrefix: ''
+     numResidents: 40
+     nationBonusOutpostLimit: 4
+     namePostfix: ' Empire'
+-    townBlockLimitBonus: 100
++    townBlockLimitBonus: 400
+     namePrefix: 'The '
+     nationZonesSize: 2
+-    nationTownUpkeepModifier: 1.0
++    nationTownUpkeepModifier: 1.4
+   - kingPostfix: ''
+     capitalPostfix: ''
+-    upkeepModifier: 1.0
++    upkeepModifier: 1.5
+     kingPrefix: 'God Emperor '
+     capitalPrefix: ''
+     numResidents: 60
+     nationBonusOutpostLimit: 5
+     namePostfix: ' Realm'
+-    townBlockLimitBonus: 140
++    townBlockLimitBonus: 560
+     namePrefix: 'The '
+     nationZonesSize: 3
+-    nationTownUpkeepModifier: 1.0
++    nationTownUpkeepModifier: 1.5
+  
+ ############################################################
+ # +------------------------------------------------------+ #
+@@ -201,24 +201,24 @@ town:
+     # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
+     minimumtax: '0.0'
+   # Limits the maximum amount of bonus blocks a town can buy.
+-  max_purchased_blocks: '0'
++  max_purchased_blocks: '2147483647'
+   # maximum number of plots any single resident can own
+-  max_plots_per_resident: '100'
++  max_plots_per_resident: '400'
+   # maximum number used in /town claim/unclaim # commands.
+   # set to 0 to disable limiting of claim radius value check.
+   # keep in mind that the default value of 4 is a radius, 
+   # and it will allow claiming 9x9 (80 plots) at once.
+-  max_claim_radius_value: '4'
++  max_claim_radius_value: '16'
+   # Maximum number of towns allowed on the server.
+   town_limit: '3000'
+  
+   # Minimum number of plots any towns plot must be from the next town's own plots.
+   # This will prevent town encasement to a certain degree.
+-  min_plot_distance_from_town_plot: '5'
++  min_plot_distance_from_town_plot: '4'
+  
+   # Minimum number of plots any towns home plot must be from the next town.
+   # This will prevent someone founding a town right on your doorstep
+-  min_distance_from_town_homeblock: '5'
++  min_distance_from_town_homeblock: '20'
+  
+   # Minimum number of plots an outpost must be from any other town's plots.
+   # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
+@@ -231,12 +231,12 @@ town:
+  
+   # The maximum townblocks available to a town is (numResidents * ratio).
+   # Setting this value to 0 will instead use the level based jump values determined in the town level config.
+-  town_block_ratio: '8'
++  town_block_ratio: '48'
+   # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
+   # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
+   # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
+   # Each cell is (town_block_size * town_block_size * 128) in size, with 128 being from bedrock to clouds.
+-  town_block_size: '16'
++  town_block_size: '8'
+  
+  
+   ############################################################
+@@ -252,7 +252,7 @@ town:
+  
+ new_world_settings:
+   # Default for new worlds to have towny enabled.
+-  using_towny: 'true'
++  using_towny: 'false'
+  
+   pvp:
+     # Set if PVP is enabled in this world
+@@ -289,4 +289,4 @@ new_world_settings:
+   plot_management:
+  
+     block_delete:
+-      enabled: 'true'
++      enabled: 'false'
+@@ -312,7 +312,7 @@ new_world_settings:
+       #
+       # If you allow players to break/build in the wild the snapshot will
+       # include any changes made before the plot was claimed.
+-      enabled: 'true'
++      enabled: 'false'
+       speed: 1s
+       # These block types will NOT be regenerated
+       block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,MOB_SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,SIGN_POST,WALL_SIGN,GLOWSTONE
+@@ -339,7 +339,7 @@ global_town_settings:
+     speed: 3s
+     enable: 'true'
+   # Allow towns to claim outposts (a townblock not connected to town).
+-  allow_outposts: 'true'
++  allow_outposts: 'false'
+   # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
+   # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
+   # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
+@@ -375,13 +375,13 @@ global_town_settings:
+   # when there is a war or peace.
+   allow_town_spawn_travel_ally: 'true'
+   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
+-  is_nation_ally_spawning_requiring_public_status: 'false'
++  is_nation_ally_spawning_requiring_public_status: 'true'
+   # If non zero it delays any spawn request by x seconds.
+-  teleport_warmup_time: '0'
++  teleport_warmup_time: '60'
+   # Respawn the player at his town spawn point when he/she dies
+   town_respawn: 'false'
+   # Town respawn only happens when the player dies in the same world as the town's spawn point.
+-  town_respawn_same_world_only: 'false'
++  town_respawn_same_world_only: 'true'
+   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
+   # Allowed options: unclaimed,enemy,neutral
+   prevent_town_spawn_in: enemy
+@@ -522,7 +522,7 @@ plugin:
+       fake_residents: '[IndustrialCraft],[BuildCraft],[Redpower],[Forestry],[Turtle]'
+  
+     # Enable using_essentials if you are using cooldowns in essentials for teleports.
+-    using_essentials: 'false'
++    using_essentials: 'true'
+  
+     # This enables/disables all the economy functions of Towny.
+     # This will first attempt to use Vault or Reserve to bridge your economy plugin with Towny.
+@@ -609,7 +609,7 @@ protection:
+   # Husk, Stray, SkeletonHorse, ZombieHorse, Vex, Vindicator, Evoker, Endermite, PolarBear
+  
+   # Remove living entities within a town's boundaries, if the town has the mob removal flag set.
+-  town_mob_removal_entities: Monster,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse
++  town_mob_removal_entities: Monster,Flying,Slime,Shulker,ZombieHorse
+  
+   # Whether the town mob removal should remove THE_KILLER_BUNNY type rabbits.
+   town_mob_removal_killer_bunny: 'true'
+@@ -889,9 +889,9 @@ economy:
+     # How much it costs to start a town.
+     price_new_town: '250.0'
+     # How much it costs to make an outpost. An outpost isn't limited to being on the edge of town.
+-    price_outpost: '500.0'
++    price_outpost: '1500.0'
+     # The price for a town to expand one townblock.
+-    price_claim_townblock: '25.0'
++    price_claim_townblock: '6.25'
+     # How much every additionally claimed townblock increases in cost. Set to 1 to deactivate this. 1.3 means +30% to every bonus claim block cost.
+     price_claim_townblock_increase: '1.0'
+     # The amount refunded to a town when they unclaim a townblock.
+@@ -899,9 +899,9 @@ economy:
+     # It is advised that you do not set this to the same price as claiming either, otherwise towns will get around using outposts to claim far away.
+     price_claim_townblock_refund: '0.0'
+     # How much it costs a player to buy extra blocks.
+-    price_purchased_bonus_townblock: '25.0'
++    price_purchased_bonus_townblock: '75.0'
+     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
+-    price_purchased_bonus_townblock_increase: '1.0'
++    price_purchased_bonus_townblock_increase: '1.2'
+  
+   death:
+     # Either fixed or percentage.
+@@ -954,7 +954,7 @@ economy:
+     max_tax_percent: '25'
+     # The server's daily charge on each nation. If a nation fails to pay this upkeep
+     # all of it's member town are kicked and the Nation is removed.
+-    price_nation_upkeep: '100.0'
++    price_nation_upkeep: '250.0'
+     # Uses total number of towns in the nation to determine upkeep instead of nation level (Number of Residents)
+     # calculated by (number of towns in nation X price_nation_upkeep).
+     nation_pertown_upkeep: 'false'
+@@ -962,12 +962,12 @@ economy:
+     nation_pertown_upkeep_affected_by_nation_level_modifier: 'false'
+     # The server's daily charge on each town. If a town fails to pay this upkeep
+     # all of it's residents are kicked and the town is removed.
+-    price_town_upkeep: '10.0'
++    price_town_upkeep: '5.0'
+     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
+     # calculated by (number of claimed plots X price_town_upkeep).
+-    town_plotbased_upkeep: 'false'
++    town_plotbased_upkeep: 'true'
+     # If set to true, the plot-based-upkeep system will be modified by the Town Levels' upkeep modifiers.
+-    town_plotbased_upkeep_affected_by_town_level_modifier: 'false'
++    town_plotbased_upkeep_affected_by_town_level_modifier: 'true'
+     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
+     price_town_overclaimed_upkeep_penalty: '0.0'
+     # Uses total number of plots that the town is overclaimed by, to determine the price_town_overclaimed_upkeep_penalty cost.
+@@ -988,10 +988,10 @@ economy:
+ jail:
+   #If true attacking players who die on enemy-town land will be placed into the defending town's jail if it exists.
+   #Requires town_respawn to be true in order to work.
+-  is_jailing_attacking_enemies: 'false'
++  is_jailing_attacking_enemies: 'true'
+   #If true attacking players who are considered an outlaw, that are killed inside town land will be placed into the defending town's jail if it exists.
+   #Requires town_respawn to be true in order to work.
+-  is_jailing_attacking_outlaws: 'false'
++  is_jailing_attacking_outlaws: 'true'
+   #If true jailed players can use Ender Pearls but are still barred from using other methods of teleporting.
+   jail_allows_ender_pearls: 'false'
+   #If false jailed players can use /town leave, and escape a jail.
+@@ -1027,7 +1027,7 @@ war:
+   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
+   nation_can_be_neutral: 'true'
+   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
+-  disallow_one_way_alliance: 'false'
++  disallow_one_way_alliance: 'true'
+  
+  
+   ############################################################
+@@ -1044,7 +1044,7 @@ war:
+       defended_attack: '10'
+     # Defending town pays attaking flagbearer. If a negative (attacker pays defending town),
+     # and the attacker can't pay, the attack is canceled.
+-    townblock_won: '10'
++    townblock_won: '3'
+     # Same as townblock_won but for the special case of winning the homeblock.
+     homeblock_won: '100'
+  
+@@ -1072,7 +1072,7 @@ war:
+   event:
+     warning_delay: '30'
+     #If false all towns not in nations can be attacked during a war event.
+-    towns_are_neutral: 'true'
++    towns_are_neutral: 'false'
+     enemy:
+       # If true, enemy's can only attack the edge plots of a town in war.
+       only_attack_borders: 'true'
+@@ -1091,14 +1091,14 @@ war:
+  
+     # A townblock takes damage every 5 seconds that an enemy is stood in it.
+     block_hp:
+-      town_block_hp: '60'
++      town_block_hp: '20'
+       home_block_hp: '120'
+  
+     eco:
+       # This amount is new money injected into the economy with a war event.
+       base_spoils: '100.0'
+       # This amount is taken from the losing town for each plot lost.
+-      wartime_town_block_loss_price: '100.0'
++      wartime_town_block_loss_price: '0.0'
+       # This amount is taken from the player if they die during the event
+       price_death_wartime: '200.0'
+     # If set to true when a town drops an enemy townblock's HP to 0, the attacking town gains a bonus townblock,
+@@ -1107,9 +1107,9 @@ war:
+  
+     points:
+       points_townblock: '1'
+-      points_town: '10'
+-      points_nation: '100'
+-      points_kill: '1'
++      points_town: '0'
++      points_nation: '0'
++      points_kill: '0'
+  
+     # The minimum height at which a player must stand to count as an attacker.
+     min_height: '60'
