@@ -11,7 +11,7 @@ find . -path './Movecraft/types/*.craft' -exec git add -f '{}' \;
 git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt' 'dynmap/templates/custom-normal-vlowres.txt' 'dynmap/templates/custom-nether-vlowres.txt' 'dynmap/templates/custom-the_end-vlowres.txt'
 git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
-git add -f 'Towny/settings/*' ':!:Towny/settings/*.rej'
+git add -f 'Towny/settings/*' ':!:Towny/settings/*.rej' ':!:Towny/settings/english.yml'
 git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*' ':!:PlotSquared/translations*'
 #git add -f 'PermissionsEx/permissions.yml'
 git add -f 'Multiverse-Core/worlds.yml'
