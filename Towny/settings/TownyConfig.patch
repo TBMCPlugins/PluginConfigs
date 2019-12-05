@@ -2,8 +2,9 @@ diff --git b/Towny/settings/config.yml a/Towny/settings/config.yml
 index c0302a9..4eb15c1 100644
 --- b/Towny/settings/config.yml
 +++ a/Towny/settings/config.yml
-@@ -32,72 +32,72 @@ levels:
+@@ -32,81 +32,81 @@ levels:
      mayorPrefix: 'Spirit '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 1
@@ -14,6 +15,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 1
      namePostfix: ' (Settlement)'
      mayorPrefix: 'Hermit '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 16
@@ -24,6 +26,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 2
      namePostfix: ' (Hamlet)'
      mayorPrefix: 'Chief '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 32
@@ -34,6 +37,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 6
      namePostfix: ' (Village)'
      mayorPrefix: 'Baron Von '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 96
@@ -44,6 +48,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 10
      namePostfix: ' (Town)'
      mayorPrefix: 'Viscount '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 160
@@ -54,6 +59,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 14
      namePostfix: ' (Large Town)'
      mayorPrefix: 'Count Von '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 224
@@ -64,6 +70,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 20
      namePostfix: ' (City)'
      mayorPrefix: 'Earl '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 320
@@ -74,6 +81,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 24
      namePostfix: ' (Large City)'
      mayorPrefix: 'Duke '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 384
@@ -84,6 +92,7 @@ index c0302a9..4eb15c1 100644
    - numResidents: 28
      namePostfix: ' (Metropolis)'
      mayorPrefix: 'Lord '
+     townBlockBuyBonusLimit: 0
      namePrefix: ''
      mayorPostfix: ''
 -    townBlockLimit: 448
@@ -180,12 +189,14 @@ index c0302a9..4eb15c1 100644
   
  ############################################################
  # +------------------------------------------------------+ #
-@@ -201,24 +201,24 @@ town:
+@@ -201,26 +201,26 @@ town:
      # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
      minimumtax: '0.0'
    # Limits the maximum amount of bonus blocks a town can buy.
 -  max_purchased_blocks: '0'
 +  max_purchased_blocks: '2147483647'
+   # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
+   max_purchased_blocks_uses_town_levels: 'true'
    # maximum number of plots any single resident can own
 -  max_plots_per_resident: '100'
 +  max_plots_per_resident: '400'
@@ -258,7 +269,7 @@ index c0302a9..4eb15c1 100644
    # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
    # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
    # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
-@@ -375,13 +375,13 @@ global_town_settings:
+@@ -375,19 +375,19 @@ global_town_settings:
    # when there is a war or peace.
    allow_town_spawn_travel_ally: 'true'
    # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
@@ -267,6 +278,12 @@ index c0302a9..4eb15c1 100644
    # If non zero it delays any spawn request by x seconds.
 -  teleport_warmup_time: '0'
 +  teleport_warmup_time: '60'
+   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
+   spawn_cooldown_time: '30'
+   # Number of seconds that must pass before pvp can be toggled by a town.
+   # Applies to residents of the town using /res toggle pvp, as well as
+   # plots having their PVP toggled using /plot toggle pvp.
+   pvp_cooldown_time: '30'
    # Respawn the player at his town spawn point when he/she dies
    town_respawn: 'false'
    # Town respawn only happens when the player dies in the same world as the town's spawn point.
@@ -355,15 +372,6 @@ index c0302a9..4eb15c1 100644
    #If true jailed players can use Ender Pearls but are still barred from using other methods of teleporting.
    jail_allows_ender_pearls: 'false'
    #If false jailed players can use /town leave, and escape a jail.
-@@ -1027,7 +1027,7 @@ war:
-   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
-   nation_can_be_neutral: 'true'
-   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
--  disallow_one_way_alliance: 'false'
-+  disallow_one_way_alliance: 'true'
-  
-  
-   ############################################################
 @@ -1044,7 +1044,7 @@ war:
        defended_attack: '10'
      # Defending town pays attaking flagbearer. If a negative (attacker pays defending town),

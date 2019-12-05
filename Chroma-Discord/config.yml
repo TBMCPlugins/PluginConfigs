@@ -2,7 +2,7 @@ global:
   mainServer: 125813020357165056
   commandChannel: 209720707188260864
   prefix: '|'
-  inviteLink: ''
+  inviteLink: https://discord.gg/gxmTS8N
   modRole: Moderator
 serverup: true
 components:

@@ -17,6 +17,8 @@ components:
       - DarkGray
       uh-oh:
       - Yellow
+      tmp:
+      - Gold
       the_shire:
       - DarkAqua
       liria:
