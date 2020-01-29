@@ -11,27 +11,26 @@ components:
     towncolors:
       praxis:
       - DarkRed
-      cliffnautica:
-      - Blue
       ignatios_antonos:
       - DarkGray
-      uh-oh:
-      - Yellow
       tmp:
       - Gold
-      the_shire:
-      - DarkAqua
       liria:
       - DarkPurple
+      xoll:
+      - DarkBlue
     nationcolors:
-      comintern: Red
+      peoples_republic: Red
       leagueofcrafters: Gold
   FlairComponent:
     enabled: true
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
   AnnouncerComponent:
     enabled: true
-    announceMessages: []
+    announceMessages:
+    - §eCheck out the subreddit! https://www.reddit.com/r/Chromagamers/
+    - '§bJoin Discord: https://discord.gg/gxmTS8N'
+    - '§bLike the server? Vote: http://goo.gl/HDRW0a'
     announceTime: 900000
   FunComponent:
     enabled: true
@@ -112,4 +111,8 @@ components:
     name:
       enabled: true
     nickname:
+      enabled: true
+    italic2:
+      enabled: true
+    someone:
       enabled: true

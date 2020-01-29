@@ -40,6 +40,7 @@ components:
         groupid: everyone
         toggles: 0
         brtoggles: []
+    profileURL: https://tbmcplugins.github.io/profile.html
   ExceptionListenerModule:
     enabled: true
   GameRoleModule:

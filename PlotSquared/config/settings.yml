@@ -2,9 +2,9 @@
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "8 Oct 2019 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared-Releases/353"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/4f789d"
+date: "12 Dec 2019 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared-Releases/400"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/7623698"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -13,7 +13,7 @@ debug: true
 # For just you: `/plot toggle titles`
 titles: true
 
-# Enable or disable part of the plugin
+# Enable or disable parts of the plugin
 # Note: A cache will use some memory if enabled
 enabled-components:
   # The database stores all the plots
@@ -38,7 +38,7 @@ enabled-components:
   worldedit-restrictions: true
   # Allow economy to be used
   economy: true
-  # Send anonymous usage statistics. Bukkit only setting.
+  # Send anonymous usage statistics to bStats. Bukkit only setting.
   metrics: true
   # Expiry will clear old or simplistic plots
   plot-expiry: false
@@ -59,6 +59,7 @@ enabled-components:
   # Delete plots when a player is banned
   ban-deleter: false
   # Prevent possibly unsafe blocks from being used in plot components
+  # Can be bypassed with `/plot debugallowunsafe`
   prevent-unsafe: true
 
 ratings:
@@ -86,7 +87,7 @@ teleport:
   on-login: false
   # Teleport to your plot on claim
   on-claim: true
-  # Add a teleportation delay to all commands
+  # Add a delay to all teleport commands
   delay: 0
   # The visit command is ordered by world instead of globally
   per-world-visit: false
@@ -99,21 +100,23 @@ confirmation:
 limit:
   # Should the limit be global (over multiple worlds)
   global: false
-  # The range of permissions to check e.g. plots.plot.127
+  # The max. range of permissions to check e.g. plots.plot.127
+  # The value covers the range to check only, you need to assign the permission to players/groups still
+  # Modifying the value does NOT change the amount of plots players can claim
   max-plots: 127
 
 chat:
   # Sometimes console color doesn't work, you can disable it here
   console-color: true
-  # Should chat be interactive
+  # Should the chat be interactive?
   interactive: true
 
 done:
-  # Require a done plot to download
+  # Require a plot marked as done to download
   required-for-download: false
-  # Only done plots can be rated
+  # Only plots marked as done can be rated
   required-for-ratings: false
-  # Restrict building when a plot is done
+  # Restrict building when a plot is marked as done
   restrict-building: false
   # The limit being how many plots a player can claim
   counts-towards-limit: true
