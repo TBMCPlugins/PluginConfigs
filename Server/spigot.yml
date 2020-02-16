@@ -12,6 +12,7 @@
 
 config-version: 12
 settings:
+  log-villager-deaths: true
   save-user-cache-on-stop-only: false
   bungeecord: true
   sample-count: 12
@@ -59,6 +60,7 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    trident-despawn-rate: 1200
     max-entity-collisions: 8
     verbose: true
     hopper-amount: 1
@@ -101,6 +103,7 @@ world-settings:
       sweetberry-modifier: 100
       kelp-modifier: 100
     entity-activation-range:
+      water: 16
       animals: 16
       monsters: 24
       raiders: 48
@@ -131,3 +134,5 @@ world-settings:
     merge-radius:
       exp: 6.0
       item: 4.0
+  worldeditregentempworld:
+    verbose: false

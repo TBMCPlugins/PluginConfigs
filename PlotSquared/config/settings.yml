@@ -2,15 +2,16 @@
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
 suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-date: "12 Dec 2019 00:00:00 GMT"
-build: "https://ci.athion.net/job/PlotSquared-Releases/400"
-commit: "https://github.com/IntellectualSites/PlotSquared/commit/7623698"
+date: "24 Feb 2020 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared-Releases/453"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/c31c855"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
 # The big annoying text that appears when you enter a plot
 # For a single plot: `/plot flag set titles false`
 # For just you: `/plot toggle titles`
+# For all plots: Add `titles: false` in the worlds.yml flags block
 titles: true
 
 # Enable or disable parts of the plugin
@@ -24,7 +25,7 @@ enabled-components:
   commands: true
   # The UUID cacher is used to resolve player names
   uuid-cache: true
-  # The plugin auto updater
+  # The plugin auto updater will notify you if updates are available.
   updater: true
   # Stores user metadata in a database
   persistent-meta: true
@@ -38,7 +39,7 @@ enabled-components:
   worldedit-restrictions: true
   # Allow economy to be used
   economy: true
-  # Send anonymous usage statistics to bStats. Bukkit only setting.
+  # @deprecated - use bstats config.yml
   metrics: true
   # Expiry will clear old or simplistic plots
   plot-expiry: false
@@ -88,6 +89,7 @@ teleport:
   # Teleport to your plot on claim
   on-claim: true
   # Add a delay to all teleport commands
+  # Assign `plots.teleport.delay.bypass` to bypass the cooldown.
   delay: 0
   # The visit command is ordered by world instead of globally
   per-world-visit: false

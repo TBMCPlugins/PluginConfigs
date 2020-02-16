@@ -135,3 +135,5 @@ components:
       enabled: true
     notificationSound: ''
     notificationPitch: 1.0
+    rpc:
+      enabled: true

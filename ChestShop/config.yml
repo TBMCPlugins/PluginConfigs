@@ -107,3 +107,19 @@ HEROES_EXP: 100.0
 #Add icons and make item names hoverable in transaction messages when ShowItem is installed?
 SHOWITEM_MESSAGE: true
 
+
+#What containers are allowed to hold a shop? (Only blocks with inventories work!)
+SHOP_CONTAINERS: 
+- "CHEST"
+- "TRAPPED_CHEST"
+#Do you want to allow using shops to people who have access to it due to their permissions? (owners are always ignored)
+IGNORE_ACCESS_PERMS: true
+#How many decimal places are allowed at a maximum for prices?
+PRICE_PRECISION: 2
+
+#Enable this if you use BungeeCord and want players to receive shop notifications on other servers
+BUNGEECORD_MESSAGES: false
+#How many seconds do you want to wait before showing notifications for the same shop to the owner again?
+NOTIFICATION_MESSAGE_COOLDOWN: 10
+#Should all shop removals be logged to the console?
+LOG_ALL_SHOP_REMOVALS: true
