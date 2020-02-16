@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.95.2.0
+  version: 0.95.2.12
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.95.2.0
+  last_run_version: 0.95.2.12
 # The language file you wish to use
 language: english.yml
  
@@ -682,7 +682,7 @@ protection:
   # PigZombie, Sheep, Skeleton, Slime, Spider, Squid, WaterMob, Wolf, Zombie
  
   # Protect living entities within a town's boundaries from being killed by players.
-  mob_types: Animals,WaterMob,NPC,Snowman,ArmorStand
+  mob_types: Animals,WaterMob,NPC,Snowman,ArmorStand,Villager
  
   # permitted Potion Types https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionType.html
   # ABSORPTION, BLINDNESS, CONFUSION, DAMAGE_RESISTANCE, FAST_DIGGING, FIRE_RESISTANCE, HARM, HEAL, HEALTH_BOOST, HUNGER, 
@@ -742,6 +742,10 @@ notification:
     outpostblock: '&b[Outpost]'
     forsale: '&e[For Sale: %s]'
     type: '&6[%s]'
+  # When set to true, town's names are the long form (townprefix)(name)(townpostfix) configured in the town_level section.
+  # When false, it is only the town name.
+  town_names_are_verbose: 'true'
+  group: '&f[%s]'
   # If set to true MC's Title and Subtitle feature will be used when crossing into a town.
   # Could be seen as intrusive/distracting, so false by default.
   using_titles: 'false'
@@ -761,6 +765,10 @@ notification:
   # If the notification.owner option should show name or {title} name.
   # Titles are the ones granted by nation kings.
   owner_shows_nation_title: 'false'
+  # This setting only applies to servers running spigot, paper or bungeecord.
+  # On servers using craftbukkit.jar the notifications will always appear in the chat.
+  # When set to false the notifications will appear in the chat rather than the action bar.
+  notifications_appear_in_action_bar: 'true'
  
  
  
@@ -1194,7 +1202,13 @@ war:
     costs_townblocks: 'false'
     # If set to true when a town drops an enemy townblock's HP to 0, the attacking town takes full control of the townblock.
     # One available (bonus) claim is given to the victorious town, one available (bonus) claim is removed from the losing town.
+    # Will not have any effect if war.event.winner_takes_ownership_of_town is set to true.
     winner_takes_ownership_of_townblocks: 'false'
+    # If set to true when a town knocks another town out of the war, the losing town will join the winning town's nation.
+    # The losing town will enter a conquered state and be unable to leave the nation until the conquered time has passed.
+    winner_takes_ownership_of_town: 'false'
+    # Number of Towny new days until a conquered town loses its conquered status.
+    conquer_time: '7'
  
     points:
       points_townblock: '1'

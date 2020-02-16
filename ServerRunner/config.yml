@@ -1,5 +1,4 @@
 !!buttondevteam.serverrunner.Config {restartAt: 12, serverParams: -Djline.terminal=jline.UnixTerminal
     -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AggressiveOpts -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs
-    -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64832 -Dcom.sun.management.jmxremote.local.only=false -Djava.rmi.server.hostname=67.205.165.1 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
     -Xms2G -Xmx5G, serverVersion: 1.14.4, customJar: paper.jar}
 

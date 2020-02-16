@@ -1,9 +1,16 @@
 global:
   notificationSound: ''
   notificationPitch: 1.0
+  # If enabled, stores and displays the last 10 messages the player can see (public, their town chat etc.)
+  # Can be used with the Discord plugin so players can see some of the conversation they missed that's visible on Discord anyways.
+  storeChatHistory: true
 components:
+  # This component manages the town and nation chat. It's also needed for the TownColorComponent.
+  # It provides the TC and NC channels, and posts Towny messages (global, town, nation) to the correct channels for other platforms like Discord.
   TownyComponent:
     enabled: true
+  # Town colors for Towny. It allows mayors and kings to set a color for their town/nation (nation can be disabled).
+  # This color is applied to the player names in chat and on Dynmap, if used.
   TownColorComponent:
     enabled: true
     useNationColors: true
@@ -17,14 +24,19 @@ components:
       - Gold
       liria:
       - DarkPurple
+      winterforge:
+      - Aqua
       xoll:
       - DarkBlue
     nationcolors:
       peoples_republic: Red
       leagueofcrafters: Gold
+  # This component checks a specific Reddit thread every 10 seconds for comments such as "IGN: NorbiPeti" to link Reddit accounts and to determine their /r/thebutton flair.
+  # This was the original goal of this plugin when it was made.
   FlairComponent:
     enabled: true
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
+  # Displays the configured messages at the set interval when someone is online.
   AnnouncerComponent:
     enabled: true
     announceMessages:
@@ -32,6 +44,7 @@ components:
     - '§bJoin Discord: https://discord.gg/gxmTS8N'
     - '§bLike the server? Vote: http://goo.gl/HDRW0a'
     announceTime: 900000
+  # Random things I added over the years.
   FunComponent:
     enabled: true
     laughStrings:
@@ -45,6 +58,7 @@ components:
     - rofl
     respect: true
     unlol: true
+  # Allows players to append tableflips and other things to their messages. Everything is configurable here.
   AppendTextComponent:
     enabled: true
     texts:
@@ -77,6 +91,9 @@ components:
         - This command appends a shrug after your message
         - Or just makes you shrug
         appendedText: ¯\\\_(ツ)\_/¯
+  # This component handles the custom processing of chat messages. If this component is disabled channels won't be supported in Minecraft.
+  # If you only want to disable the formatting features, set allowFormatting to false.
+  # If you're using another chat plugin, you should disable the whole component.
   FormatterComponent:
     enabled: true
     allowFormatting: true
@@ -116,3 +133,5 @@ components:
       enabled: true
     someone:
       enabled: true
+    notificationSound: ''
+    notificationPitch: 1.0

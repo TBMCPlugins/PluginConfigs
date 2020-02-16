@@ -1,13 +1,22 @@
 global:
+  # The main server where the roles and other information is pulled from. It's automatically set to the first server the bot's invited to.
   mainServer: 125813020357165056
+  # The (bot) channel to use for Discord commands like /role.
   commandChannel: 209720707188260864
+  # The prefix to use with Discord commands like /role. It only works in the bot channel.
   prefix: '|'
+  # The invite link to show by /discord invite. If empty, it defaults to the first invite if the bot has access.
   inviteLink: https://discord.gg/gxmTS8N
+  # The role that allows using mod-only Discord commands.
+  # If empty (''), then it will only allow for the owner.
   modRole: Moderator
 serverup: true
 components:
+  # Uses a bit of a hacky method of getting all broadcasted messages, including advancements and any other message that's for everyone.
+  # If this component is enabled then these messages will show up on Discord.
   GeneralEventBroadcasterModule:
     enabled: true
+  # Provides Minecraft chat connection to Discord. Commands may be used either in a public chat (limited) or in a DM.
   MinecraftChatModule:
     enabled: true
     chatChannel: 613506700099584050
@@ -41,15 +50,26 @@ components:
         toggles: 0
         brtoggles: []
     profileURL: https://tbmcplugins.github.io/profile.html
+  # Listens for errors from the Chroma plugins and posts them to Discord, ignoring repeating errors so it's not that spammy.
   ExceptionListenerModule:
     enabled: true
+    channel: 239519012529111040
+    pingRole: Coder
+  # Automatically collects roles with a certain color (the second to last in the upper row - #95a5a6).
+  # Users can add these roles to themselves using the /role Discord command.
   GameRoleModule:
     enabled: true
+  # Posts new posts from Reddit to the specified channel(s). It will pin the regular posts (not the mod posts).
   AnnouncerModule:
     enabled: true
     keepPinned: 40
-    lastAnnouncementTime: 1563726352
-    lastSeenTime: 1563726352
+    lastAnnouncementTime: 1577850597
+    lastSeenTime: 1577850597
+    channel: 125813020357165056
+    subredditURL: https://www.reddit.com/r/ChromaGamers
+    modChannel: 126795071927353344
+  # All kinds of random things.
+  # The YEEHAW event uses an emoji named :YEEHAW: if available
   FunModule:
     enabled: true
     serverReadyAnswers:
@@ -77,3 +97,4 @@ components:
     - when's the server ready
     - when's the server open
     - Vhen vill ze server be open?
+    fullHouseChannel: 0
