@@ -7,7 +7,6 @@ global:
   # The chat format to use for messages from other platforms if Chroma-Chat is not installed.
   chatFormat: '[{origin}|{channel}] <{name}> {message}'
 components:
-  # Downloads plugin updates built from their source using JitPack - doesn't work anymore
   PluginUpdaterComponent:
     enabled: true
   # Provides commands such as /schrestart (restart after a countdown) and /primerestart (restart when nobody is online)
@@ -24,6 +23,8 @@ components:
     a:
       enabled: true
       IDs: []
+      displayName: §cADMIN§f
+      color: Red
     mod:
       enabled: true
       IDs: []
@@ -40,6 +41,8 @@ components:
     orange:
       enabled: true
       IDs: []
+      displayName: §6ORANGE§f
+      color: Gold
     yellow:
       enabled: true
       IDs: []
@@ -49,6 +52,8 @@ components:
     blue:
       enabled: true
       IDs: []
+      displayName: §bBLUE§f
+      color: Blue
     purple:
       enabled: true
       IDs: []

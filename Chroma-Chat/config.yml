@@ -137,3 +137,4 @@ components:
     notificationPitch: 1.0
     rpc:
       enabled: true
+    minTimeBetweenMessages: 100

@@ -123,3 +123,4 @@ BUNGEECORD_MESSAGES: false
 NOTIFICATION_MESSAGE_COOLDOWN: 10
 #Should all shop removals be logged to the console?
 LOG_ALL_SHOP_REMOVALS: true
+

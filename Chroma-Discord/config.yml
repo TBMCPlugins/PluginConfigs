@@ -59,6 +59,7 @@ components:
   # Users can add these roles to themselves using the /role Discord command.
   GameRoleModule:
     enabled: true
+    logChannel: 0
   # Posts new posts from Reddit to the specified channel(s). It will pin the regular posts (not the mod posts).
   AnnouncerModule:
     enabled: true
