@@ -1,13 +1,21 @@
 test: false
 global:
+  # Sets whether the plugin should write a list of installed plugins in a txt file.
+  # It can be useful if some other software needs to know the plugins.
   writePluginList: true
+  # Print some debug information.
   test: false
+  # The chat format to use for messages from other platforms if Chroma-Chat is not installed.
   chatFormat: '[{origin}|{channel}] <{name}> {message}'
+  # If a Chroma command clashes with another plugin's command, this setting determines whether the Chroma command should be executed or the other plugin's.
+  prioritizeCustomCommands: false
 components:
   PluginUpdaterComponent:
     enabled: true
+  # Provides commands such as /schrestart (restart after a countdown) and /primerestart (restart when nobody is online)
   RestartComponent:
     enabled: true
+  # Manages chat channels. If disabled, only global channels will be registered.
   ChannelComponent:
     enabled: true
     g:
@@ -62,18 +70,25 @@ components:
       IDs: []
       displayName: §7RP§f
       color: Gray
+  # Teleport player to random location within world border.
+  # Every five players teleport to the same general area, and then a new general area is randomly selected for the next five players.
+  # Author: github.com/iiegit
   RandomTPComponent:
     enabled: true
+  # Allows giving a 'member' group over some time elapsed OR played.
   MemberComponent:
     enabled: true
     memberGroup: member
     registeredForDays: 7
     playedHours: 12
+  # Automatically renames Towny players if they changed their Minecraft name
   TownyComponent:
     enabled: true
+  # Do not use (EULA)
   VotifierComponent:
     enabled: true
     rewardAmount: 0.0
+  # Provides a /spawn command that works with BungeeCord. Make sure to set up on each server.
   SpawnComponent:
     enabled: true
     targetServer: lobby

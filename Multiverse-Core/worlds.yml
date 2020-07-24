@@ -127,7 +127,7 @@ worlds:
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
+    keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
       x: -4.710357902146693
@@ -154,7 +154,7 @@ worlds:
     respawnWorld: ''
     allowWeather: 'true'
     difficulty: NORMAL
-    spawning: &id007
+    spawning: &id010
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -166,7 +166,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id011
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -185,7 +185,7 @@ worlds:
       yaw: 91.80102
     autoLoad: 'true'
     bedRespawn: 'true'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id012 []
     environment: NORMAL
     seed: '7008642968894271479'
     generator: TerrainControl
@@ -271,7 +271,7 @@ worlds:
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
+    keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
       x: 0.0
@@ -319,7 +319,7 @@ worlds:
     adjustSpawn: 'false'
     portalForm: ALL
     gameMode: CREATIVE
-    keepSpawnInMemory: 'true'
+    keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
       x: -99.94598490882755
@@ -327,7 +327,7 @@ worlds:
       z: 361.22998653715314
       pitch: 26.886911
       yaw: 2.6845398
-    autoLoad: 'true'
+    autoLoad: 'false'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
@@ -367,7 +367,7 @@ worlds:
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: CREATIVE
-    keepSpawnInMemory: 'true'
+    keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
       x: 170.0
@@ -375,7 +375,7 @@ worlds:
       z: -39.0
       pitch: 0.0
       yaw: 0.0
-    autoLoad: 'true'
+    autoLoad: 'false'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
@@ -442,14 +442,14 @@ worlds:
     respawnWorld: ''
     allowWeather: 'true'
     difficulty: NORMAL
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id010
+    entryfee: *id011
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
     gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
+    keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
       x: 2.384034371076785
@@ -459,7 +459,7 @@ worlds:
       yaw: -269.4009
     autoLoad: 'true'
     bedRespawn: 'true'
-    worldBlacklist: *id009
+    worldBlacklist: *id012
     environment: NORMAL
     seed: '7008642968894271479'
     generator: TerrainControl

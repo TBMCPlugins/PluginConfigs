@@ -5,7 +5,7 @@ groups:
       prefix: '[Newcomer]'
       rank: '100'
     permissions:
-    - thorpe.command.*
+    - chroma.command.*
     - multiverse.portal.access.Plotworld
     - essentials.motd
     - movecraft.movecraft.*
@@ -285,6 +285,7 @@ users:
     - developer
     options:
       name: NorbiPeti
+    permissions: []
   80f097d0-bb18-444c-ba0a-8d8e0a923622:
     group:
     - member
