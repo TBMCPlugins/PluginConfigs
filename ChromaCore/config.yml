@@ -6,6 +6,8 @@ global:
   test: false
   # The chat format to use for messages from other platforms if Chroma-Chat is not installed.
   chatFormat: '[{origin}|{channel}] <{name}> {message}'
+  # If a Chroma command clashes with another plugin's command, this setting determines whether the Chroma command should be executed or the other plugin's.
+  prioritizeCustomCommands: false
 components:
   PluginUpdaterComponent:
     enabled: true
