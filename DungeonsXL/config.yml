@@ -1,4 +1,4 @@
-configVersion: 16
+configVersion: 20
 language: english
 enableEconomy: false
 chatEnabled: true
@@ -41,3 +41,7 @@ secureMode:
   checkInterval: 5.0
 backupMode: ON_DISABLE_AND_SAVE
 default: {}
+groupAdaptersEnabled: false
+editInstanceRemovalDelay: 5
+strictMovementCheckEnabled: true
+lobbyContainersEnabled: false

@@ -108,13 +108,19 @@ DailyQuests:
   # Default 0, disabling cost of skipping quest.
   SkipQuestCost: 0.0
 # Enables the schedule manager to boost the server.
-# By default this has been disabled for causing memory leak.
 ScheduleManager:
   Use: true
+# Fire players if their work time has expired at a job.
+# Setting time to 0, will not works.
+# For this to work, the player needs to get a new job for the timer to start.
+# Counting in hours
+JobExpirationTime: 0
 # Maximum number of jobs a player can join.
 # Use 0 for no maximum
 # Keep in mind that jobs.max.[amount] will bypass this setting
 max-jobs: 3
+# Disabling the payment if the user reached the maximum level of a job.
+disable-payment-if-max-level-reached: false
 # Hide jobs from player if they lack the permission to join the job
 hide-jobs-without-permission: false
 # Hide jobs info from player if they lack the permission to join the job
@@ -134,6 +140,9 @@ disablePaymentIfRiding: false
 add-xp-player: false
 # Do the jobs boost ignore the boosted items usage in off hand?
 enable-boosted-items-in-offhand: true
+# Do you want to prevent crop resizing payment when placing more cactus?
+# This option is only related to: sugar_cane, cactus, kelp, bamboo
+prevent-crop-resize-payment: false
 # Allows, when losing maximum durability of item then it does not pay the player until it is repaired.
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
@@ -155,8 +164,8 @@ modify-chat:
 # With this set to true names like Stone:1 will be translated to Granite
 # Name list is in TranslatableWords.yml file
 UseCustomNames: true
-# Changes how often, in seconds, players are paid out.  Default is 5 seconds.
-# Setting this too low may cause tick lag.  Increase this to improve economy performance (at the cost of delays in payment)
+# Changes how often, in seconds, players are paid out. Default is 5 seconds.
+# Setting this too low may cause tick lag. Increase this to improve economy performance (at the cost of delays in payment)
 economy-batch-delay: 5
 # Enable async economy calls.
 # Disable this if you have issues with payments or your plugin is not thread safe.
@@ -179,8 +188,8 @@ Economy:
     MONEY: 0.0
     EXP: 0.0
     POINTS: 0.0
-  # When set to true income which is belove 0 will get bonus aplied to it
-  # In example, if you would loose 5 bucks for placing diamond block, with 100% payment bonus, that penalty disapears
+  # When set to true income which is belove 0 will get bonus applied to it
+  # In example, if you would loose 5 bucks for placing diamond block, with 100% payment bonus, that penalty disappears
   # When this left at false penalty for action will remain unchanged
   ApplyToNegativeIncome: false
   MinimumOveralPayment:
@@ -397,6 +406,9 @@ BossBar:
   # If enabled boss bar will update after each action
   # If disabled, BossBar will update only on each payment. This can save some server resources
   ShowOnEachAction: false
+  # Defines in how many parts bossbar will be split visually
+  # Valid options: 1, 6, 10, 12, 20
+  SegmentCount: 1
   # How long in sec to show BossBar for player
   # If you have disabled ShowOnEachAction, then keep this number higher than payment interval for better experience
   Timer: 6
@@ -487,6 +499,8 @@ JobsGUI:
   Rows: 5
   # Defines back button slot in GUI
   BackButtonSlot: 37
+  # Defines next button slot in GUI
+  NextButtonSlot: 45
   # Defines start position in gui from which job icons will be shown
   StartPosition: 11
   # Defines by how many jobs we need to group up
@@ -495,6 +509,8 @@ JobsGUI:
   SkipAmount: 2
   BackButton:
     Material: JACK_O_LANTERN
+  NextButton:
+    Material: ARROW
   Filler:
     Material: GREEN_STAINED_GLASS_PANE
 Commands:
@@ -516,3 +532,6 @@ Commands:
     # Specify the confirm expiry time.
     # Time in seconds.
     ConfirmExpiryTime: 10
+  JobsInfo:
+    # Open up the jobs browse action list, when your performed /jobs info command?
+    open-browse: false

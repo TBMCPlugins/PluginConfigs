@@ -1,9 +1,9 @@
-configuration_version: post_flattening
+configuration_version: v5
 worlds:
   plotworld:
     plot:
       height: 62
-      biome: FOREST
+      biome: minecraft:forest
       size: 42
       filling: stone:100
       auto_merge: false
@@ -15,11 +15,13 @@ worlds:
       block_claimed: sandstone_slab:100
       height: 62
       block: stone_slab:100
+      place_top_block: true
     misc_spawn_unowned: false
     road:
       block: quartz_block:100
       height: 62
       width: 7
+      flags: {}
     home:
       nonmembers: side
       default: side
@@ -36,6 +38,7 @@ worlds:
       use: false
     chat:
       enabled: false
+      forced: false
     limits:
       max-members: 128
     world:
