@@ -12,12 +12,12 @@ git add -f 'dynmap/configuration.txt' 'dynmap/worlds.txt' 'dynmap/templates/cust
 git add -f 'MythicMobs/*' ':!:MythicMobs/SavedData/*'
 git add -f ':(glob)Jobs/*.yml' ':!:Jobs/furnaceBrewingStands.yml'
 git add -f 'Towny/settings/*' ':!:Towny/settings/*.rej' ':!:Towny/settings/english.yml'
-git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*' ':!:PlotSquared/translations*'
+git add -f 'PlotSquared/*' ':!:PlotSquared/*storage*' ':!:PlotSquared/translations*' ':!:PlotSquared/user_cache.db'
 #git add -f 'PermissionsEx/permissions.yml'
 git add -f 'Multiverse-Core/worlds.yml'
 git add -f 'ServerRunner/config.yml' # Not a plugin
 git add -f 'DungeonsXL/dungeons' 'DungeonsXL/scripts'
-git add -f ':(glob)TerrainControl/*' 'TerrainControl/worlds/world/*'
+#git add -f ':(glob)TerrainControl/*' 'TerrainControl/worlds/world/*'
 git add -f 'Server/*' # Files are hardlinked from one above
 git add -f 'Factions/config'
 
