@@ -397,7 +397,7 @@ global_town_settings:
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
   is_nation_ally_spawning_requiring_public_status: 'true'
   # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '60'
+  teleport_warmup_time: '0'
   # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
   movement_cancels_spawn_warmup: 'false'
   # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
