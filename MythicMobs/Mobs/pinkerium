@@ -1,0 +1,67 @@
+pinkubus: 
+  Type: witch
+  Display: '&d Pink Succubus&r - &k<mob.level>'
+  Health: 500
+  Damage: 4
+  Armor: 3
+  BossBar:
+  Faction: Pinkerium
+  Mount:
+  Options:
+    AlwaysShowName: true
+	Glowing: true
+	KnockbackResistance: 0.7
+	MovementSpeed: 0.5
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - exp 125-150 1
+  DropsPerLevel:
+  DamageModifiers:
+  - FIRE -1
+  - LAVA -4
+  - FIRE_TICK 0
+  Equipment:
+  - tether:0
+  - blaze_rod:5
+  KillMessages:
+  - '<target.name> had their soul completely devoured'
+  - '<target.name><&sq>s soul was feasted upon by a Succubus'
+  LevelModifiers:
+  Disguise:
+  Skills:
+
+syncophant: 
+  Type: zombie
+  Display: '&d Pink Syncophant&r - &k<mob.level>'
+  Health: 300
+  Damage: 4
+  Armor: 3
+  BossBar:
+  Faction: Pinkerium
+  Mount:
+  Options:
+    AlwaysShowName: true
+	Glowing: true
+	KnockbackResistance: 0.7
+	MovementSpeed: 0.2
+  Modules:
+  AIGoalSelectors:
+  AITargetSelectors:
+  Drops:
+  - exp 125-150 1
+  DropsPerLevel:
+  DamageModifiers:
+  - FIRE -1
+  - LAVA +1
+  - FIRE_TICK 0
+  Equipment:
+  - stick:0
+  - blaze_rod:5
+  KillMessages:
+  - '<target.name> was crushed a Syncophant's enthusiasm.'
+  - '<target.name><&sq>s face was stomped upon by a Syncophant'
+  LevelModifiers:
+  Disguise:
+  Skills:
