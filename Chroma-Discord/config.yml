@@ -50,16 +50,18 @@ components:
         toggles: 0
         brtoggles: []
     profileURL: https://tbmcplugins.github.io/profile.html
+    enableVanillaCommands: true
   # Listens for errors from the Chroma plugins and posts them to Discord, ignoring repeating errors so it's not that spammy.
   ExceptionListenerModule:
     enabled: true
     channel: 239519012529111040
     pingRole: Coder
-  # Automatically collects roles with a certain color (the second to last in the upper row - #95a5a6).
+  # Automatically collects roles with a certain color.
   # Users can add these roles to themselves using the /role Discord command.
   GameRoleModule:
     enabled: true
     logChannel: 0
+    roleColor: '#0095a5a6'
   # Posts new posts from Reddit to the specified channel(s). It will pin the regular posts (not the mod posts).
   AnnouncerModule:
     enabled: true

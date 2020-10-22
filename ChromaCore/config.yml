@@ -41,6 +41,8 @@ components:
     red:
       enabled: true
       IDs: []
+      displayName: §cRED§f
+      color: DarkRed
     orange:
       enabled: true
       IDs: []
@@ -49,9 +51,13 @@ components:
     yellow:
       enabled: true
       IDs: []
+      displayName: §eYELLOW§f
+      color: Yellow
     green:
       enabled: true
       IDs: []
+      displayName: §aGREEN§f
+      color: Green
     blue:
       enabled: true
       IDs: []
@@ -60,6 +66,8 @@ components:
     purple:
       enabled: true
       IDs: []
+      displayName: §5PURPLE§f
+      color: DarkPurple
     tc:
       enabled: true
       IDs: []

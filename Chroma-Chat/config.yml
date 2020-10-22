@@ -16,25 +16,16 @@ components:
     useNationColors: true
     colorCount: 1
     towncolors:
-      praxis:
-      - DarkRed
-      ignatios_antonos:
-      - DarkGray
-      tmp:
-      - Gold
+      seedshire:
+      - Blue
       liria:
       - DarkPurple
-      winterforge:
-      - Aqua
-      xoll:
-      - DarkBlue
     nationcolors:
-      peoples_republic: Red
       leagueofcrafters: Gold
   # This component checks a specific Reddit thread every 10 seconds for comments such as "IGN: NorbiPeti" to link Reddit accounts and to determine their /r/thebutton flair.
   # This was the original goal of this plugin when it was made.
   FlairComponent:
-    enabled: true
+    enabled: false
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
   # Displays the configured messages at the set interval when someone is online.
   AnnouncerComponent:
@@ -62,7 +53,7 @@ components:
   AppendTextComponent:
     enabled: true
     texts:
-      ww:
+      waitwhat:
         helpText:
         - §6---- Wait what ----
         - Wait what
