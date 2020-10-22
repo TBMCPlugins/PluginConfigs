@@ -1,6 +1,0 @@
-host: 0.0.0.0
-port: 8192
-debug: false
-listener_folder: plugins/Votifier/listeners
-tokens:
-  default: kcah732f9hecgrvh42ir1dmds5
