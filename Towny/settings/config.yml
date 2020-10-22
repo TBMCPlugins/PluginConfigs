@@ -1332,7 +1332,7 @@ economy:
     # The debt has a ceiling equal to the estimated value of the town (from new town and claims costs)
     # The debt can be repaid using /t deposit x.
     # Once all debt is repaid, the town immediately returns to a normal state.
-    enabled: 'false'
+    enabled: 'true'
  
     # When using bankruptcy is enabled a Town a debtcap.
     # The debt cap is calculated by adding the following:
