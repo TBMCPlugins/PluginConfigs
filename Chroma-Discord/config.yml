@@ -10,7 +10,7 @@ global:
   # The role that allows using mod-only Discord commands.
   # If empty (''), then it will only allow for the owner.
   modRole: Moderator
-serverup: true
+serverup: false
 components:
   # Uses a bit of a hacky method of getting all broadcasted messages, including advancements and any other message that's for everyone.
   # If this component is enabled then these messages will show up on Discord.
@@ -19,15 +19,30 @@ components:
   # Provides Minecraft chat connection to Discord. Commands may be used either in a public chat (limited) or in a DM.
   MinecraftChatModule:
     enabled: true
+    # The channel to use as the public Minecraft chat - everything public gets broadcasted here
     chatChannel: 613506700099584050
+    # The plugins to exclude from fake player events used for the 'mcchat' command - some plugins may crash, add them here
     excludedPlugins:
     - ProtocolLib
     - LibsDisguises
     - JourneyMapServer
+    # If this setting is on then players logged in through the 'mcchat' command will be able to teleport using plugin commands.
+    # They can then use commands like /tpahere to teleport others to that place.<br />
+    # If this is off, then teleporting will have no effect.
     allowFakePlayerTeleports: false
+    # If this is on, each chat channel will have a player list in their description.
+    # It only gets added if there's no description yet or there are (at least) two lines of "----" following each other.
+    # Note that it will replace <b>everything</b> above the first and below the last "----" but it will only detect exactly four dashes.
+    # So if you want to use dashes for something else in the description, make sure it's either less or more dashes in one line.
     showPlayerListOnDC: true
+    # This setting controls whether custom chat connections can be <i>created</i> (existing connections will always work).
+    # Custom chat connections can be created using the channelcon command and they allow players to display town chat in a Discord channel for example.
+    # See the channelcon command for more details.
     allowCustomChat: true
+    # This setting allows you to control if players can DM the bot to log on the server from Discord.
+    # This allows them to both chat and perform any command they can in-game.
     allowPrivateChat: true
+    # A list of commands that can be used in public chats - Warning: Some plugins will treat players as OPs, always test before allowing a command!
     whitelistedCommands:
     - list
     - u
@@ -49,32 +64,50 @@ components:
         groupid: everyone
         toggles: 0
         brtoggles: []
+    # If set, message authors appearing on Discord will link to this URL. A 'type' and 'id' parameter will be added with the user's platform (Discord, Minecraft, ...) and ID.
     profileURL: https://tbmcplugins.github.io/profile.html
+    # Enables support for running vanilla commands through Discord, if you ever need it.
     enableVanillaCommands: true
+    muteRole: Muted
+    # Whether players logged on from Discord (mcchat command) should be recognised by other plugins. Some plugins might break if it's turned off.
+    # But it's really hacky.
+    addFakePlayersToBukkit: false
+    # Set by the component to report crashes.
+    serverUp: true
   # Listens for errors from the Chroma plugins and posts them to Discord, ignoring repeating errors so it's not that spammy.
   ExceptionListenerModule:
     enabled: true
+    # The channel to post the errors to.
     channel: 239519012529111040
+    # The role to ping if an error occurs. Set to empty ('') to disable.
     pingRole: Coder
   # Automatically collects roles with a certain color.
   # Users can add these roles to themselves using the /role Discord command.
   GameRoleModule:
     enabled: true
+    # The channel where the bot logs when it detects a role change that results in a new game role or one being removed.
     logChannel: 0
+    # The role color that is used by game roles.
+    # Defaults to the second to last in the upper row - #95a5a6.
     roleColor: '#0095a5a6'
   # Posts new posts from Reddit to the specified channel(s). It will pin the regular posts (not the mod posts).
   AnnouncerModule:
     enabled: true
+    # Automatically unpins all messages except the last few. Set to 0 or >50 to disable
     keepPinned: 40
     lastAnnouncementTime: 1577850597
     lastSeenTime: 1577850597
+    # Channel to post new posts.
     channel: 125813020357165056
+    # The subreddit to pull the posts from
     subredditURL: https://www.reddit.com/r/ChromaGamers
+    # Channel where distinguished (moderator) posts go.
     modChannel: 126795071927353344
   # All kinds of random things.
   # The YEEHAW event uses an emoji named :YEEHAW: if available
   FunModule:
     enabled: true
+    # Answers for a recognized question. Selected randomly.
     serverReadyAnswers:
     - In one week from now
     - Between now and the heat-death of the universe.
@@ -91,6 +124,7 @@ components:
     - After HL3 comes out
     - Next time you ask
     - When will *you* be open?
+    # Questions that the bot will choose a random answer to give to.
     serverReady:
     - when will the server be open
     - when will the server be ready
@@ -100,4 +134,5 @@ components:
     - when's the server ready
     - when's the server open
     - Vhen vill ze server be open?
+    # The channel to post the full house to.
     fullHouseChannel: 0

@@ -13,7 +13,10 @@ components:
   # This color is applied to the player names in chat and on Dynmap, if used.
   TownColorComponent:
     enabled: true
+    # If enabled, players will have a nation-defined color in addition to town colors, white by default.
+    # They can change how much of each color they want with this as well.
     useNationColors: true
+    # The amount of town colors allowed. If more than one is used, players can change how many letters to be in a specific color using /u ncolor.
     colorCount: 1
     towncolors:
       seedshire:
@@ -26,18 +29,22 @@ components:
   # This was the original goal of this plugin when it was made.
   FlairComponent:
     enabled: false
+    # The Reddit thread to check for account connections. Re-enable the component if this was empty.
     flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
   # Displays the configured messages at the set interval when someone is online.
   AnnouncerComponent:
     enabled: true
+    # The messages to display to players.
     announceMessages:
     - §eCheck out the subreddit! https://www.reddit.com/r/Chromagamers/
     - '§bJoin Discord: https://discord.gg/gxmTS8N'
     - '§bLike the server? Vote: http://goo.gl/HDRW0a'
+    # The time in milliseconds between the messages. Use /u announce settime to set minutes.
     announceTime: 900000
   # Random things I added over the years.
   FunComponent:
     enabled: true
+    # The strings that count as laughs, see unlol.
     laughStrings:
     - xd
     - lel
@@ -47,7 +54,12 @@ components:
     - hue
     - hah
     - rofl
+    # The "Press F to pay respects" meme in Minecraft. It will randomly appear on player death and keep track of how many "F"s are said in chat.
+    # You can hover over a player's name to see their respect.
     respect: true
+    # This is an inside joke on our server.
+    # It keeps track of laughs (lols and what's defined in laughStrings) and if someone does /unlol or /unlaugh it will unlaugh the last person who laughed.
+    # Which also blinds the laughing person for a few seconds. This action can only be performed once per laugh.
     unlol: true
   # Allows players to append tableflips and other things to their messages. Everything is configurable here.
   AppendTextComponent:
@@ -84,9 +96,10 @@ components:
         appendedText: ¯\\\_(ツ)\_/¯
   # This component handles the custom processing of chat messages. If this component is disabled channels won't be supported in Minecraft.
   # If you only want to disable the formatting features, set allowFormatting to false.
-  # If you're using another chat plugin, you should disable the whole component.
+  # If you're using another chat plugin, you should disable the whole component but that will make it impossible to use channels.
   FormatterComponent:
     enabled: true
+    # Determines whether Markdown formatting, name mentioning and similar features are enabled.
     allowFormatting: true
     bold:
       enabled: true
@@ -124,8 +137,13 @@ components:
       enabled: true
     someone:
       enabled: true
+    # The sound to play when a player is mentioned. Leave empty to use default.
     notificationSound: ''
+    # The pitch of the notification sound.
     notificationPitch: 1.0
     rpc:
       enabled: true
+    # The minimum time between messages in milliseconds.
     minTimeBetweenMessages: 100
+    greentext:
+      enabled: true

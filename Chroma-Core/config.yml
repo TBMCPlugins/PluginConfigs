@@ -11,9 +11,11 @@ global:
 components:
   PluginUpdaterComponent:
     enabled: true
-  # Provides commands such as /schrestart (restart after a countdown) and /primerestart (restart when nobody is online)
+  # Provides commands such as /schrestart (restart after a countdown) and /primerestart (restart when nobody is online).
+  # Also can automatically restart at a given time.
   RestartComponent:
     enabled: true
+    # Specifies the hour of day when the server should be restarted. Set to -1 to disable.
     restartAt: 12
   # Manages chat channels. If disabled, only global channels will be registered.
   ChannelComponent:
@@ -81,6 +83,8 @@ components:
     rp:
       enabled: true
       IDs: []
+      displayName: §7RP§f
+      color: Gray
   # Teleport player to random location within world border.
   # Every five players teleport to the same general area, and then a new general area is randomly selected for the next five players.
   # Author: github.com/iiegit
@@ -89,8 +93,11 @@ components:
   # Allows giving a 'member' group over some time elapsed OR played.
   MemberComponent:
     enabled: true
+    # The amount of days passed since first login
     registeredForDays: 7
+    # The amount of hours needed to play before promotion
     playedHours: 12
+    # The permission group to give to the player
     memberGroup: member
   # Automatically renames Towny players if they changed their Minecraft name
   TownyComponent:
@@ -102,4 +109,5 @@ components:
   # Provides a /spawn command that works with BungeeCord. Make sure to set up on each server.
   SpawnComponent:
     enabled: true
+    # The BungeeCord server that has the spawn. Set to empty if this server is the target.
     targetServer: ''
