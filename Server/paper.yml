@@ -10,6 +10,7 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+use-display-name-in-quit-message: false
 verbose: false
 config-version: 20
 settings:
@@ -60,6 +61,9 @@ settings:
       other items
     allow-headless-pistons-readme: This setting controls if players should be able
       to create headless pistons.
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -76,11 +80,21 @@ timings:
   - database
   - settings.bungeecord-addresses
   - settings.velocity-support.secret
+  - settings.seed
+  - settings.seed.dungeon
+  - settings.seed.end-spike
+  - server-ip
+  - worldgen.seeds.populator
   history-interval: 300
   history-length: 3600
   server-name: Unknown Server
 world-settings:
   default:
+    allow-using-signs-inside-spawn-protection: false
+    piglins-guard-chests: true
+    ender-dragons-death-always-places-dragon-egg: false
+    update-pathfinding-on-block-update: true
+    fix-wither-targeting-bug: false
     only-players-collide: false
     allow-vehicle-collisions: true
     portal-search-vanilla-dimension-scaling: true

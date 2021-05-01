@@ -14,7 +14,7 @@ config-version: 12
 settings:
   log-villager-deaths: true
   save-user-cache-on-stop-only: false
-  bungeecord: true
+  bungeecord: false
   sample-count: 12
   player-shuffle: 0
   user-cache-size: 1000
