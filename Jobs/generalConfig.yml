@@ -235,7 +235,7 @@ Economy:
     use: false
     # Username should be with Correct capitalization, it can be same as setup in server account before
     AccountName: Server
-    # Amount in percentage
+    # Amount in percentage. You can grant money and points permissions (jobs.tax.money.amount, jobs.tax.points.amount) for taxes.
     Amount: 15.0
     # Do you want to transfer taxes to server account?
     TransferToServerAccount: true
@@ -436,6 +436,8 @@ ShowChatMessage:
   OnTitleChange: true
   OnLevelChange: true
   OnEmptyServerAccount: true
+# Send title and chat message when a player reached the maximum level in a job.
+SendTitleMessageWhenMaxLevelReached: false
 # Sounds
 # Extra sounds on some events
 # All sounds can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html

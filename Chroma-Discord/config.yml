@@ -73,7 +73,7 @@ components:
     # But it's really hacky.
     addFakePlayersToBukkit: false
     # Set by the component to report crashes.
-    serverUp: true
+    serverUp: false
   # Listens for errors from the Chroma plugins and posts them to Discord, ignoring repeating errors so it's not that spammy.
   ExceptionListenerModule:
     enabled: true
@@ -95,8 +95,8 @@ components:
     enabled: true
     # Automatically unpins all messages except the last few. Set to 0 or >50 to disable
     keepPinned: 40
-    lastAnnouncementTime: 1577850597
-    lastSeenTime: 1577850597
+    lastAnnouncementTime: 1609457770
+    lastSeenTime: 1609457770
     # Channel to post new posts.
     channel: 125813020357165056
     # The subreddit to pull the posts from

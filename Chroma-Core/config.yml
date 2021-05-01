@@ -99,10 +99,9 @@ components:
     playedHours: 12
     # The permission group to give to the player
     memberGroup: member
-  # Automatically renames Towny players if they changed their Minecraft name
+  # Provides a command to remove invalid Towny residents.
   TownyComponent:
-    enabled: true
-  # Do not use (EULA)
+    enabled: false
   VotifierComponent:
     enabled: true
     rewardAmount: 0.0

@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://wiki.intellectualsites.com/FastAsyncWorldEdit/index"
-date: "Thu Dec 17 00:00:00 UTC 2020"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.16/444"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f04368d1"
+date: "Thu Feb 18 00:00:00 UTC 2021"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.16/566"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/ff094a9b"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -121,10 +121,16 @@ experimental:
   # Force re-ticking of existing blocks not edited by FAWE.
   # This will increase time taken slightly.
   allow-tick-existing: true
-  # Do not wait for a chunk's history to save before sending it
+  # [SAFE] Do not wait for a chunk's history to save before sending it
   #  - Undo/redo commands will wait until the history has been written to disk before executing
   #  - Requires combine_stages = true
   send-before-history: false
+  # Sets a maximum limit (in kb) for the size of a player's schematics directory (per-player mode only)
+  # Set to -1 to disable
+  per-player-file-size-limit: -1
+  # Sets a maximum limit for the amount of schematics in a player's schematics directory (per-player mode only)
+  # Set to -1 to disable
+  per-player-file-num-limit: -1
 
 # This relates to how FAWE places chunks
 queue:

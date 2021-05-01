@@ -1,5 +1,5 @@
 # The time of day to make backups (makes sense with daily backups)
-start-time: 03:00
+start-time: '10:00'
 backup-interval-hours: 24.0
 backup-worlds:
 - world

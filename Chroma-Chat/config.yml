@@ -7,6 +7,7 @@ global:
 components:
   # This component manages the town and nation chat. It's also needed for the TownColorComponent.
   # It provides the TC and NC channels, and posts Towny messages (global, town, nation) to the correct channels for other platforms like Discord.
+  # You can disable /tc and /nc in Chroma-Core's config if you only want to use the TownColorComponent.
   TownyComponent:
     enabled: true
   # Town colors for Towny. It allows mayors and kings to set a color for their town/nation (nation can be disabled).
@@ -16,7 +17,7 @@ components:
     # If enabled, players will have a nation-defined color in addition to town colors, white by default.
     # They can change how much of each color they want with this as well.
     useNationColors: true
-    # The amount of town colors allowed. If more than one is used, players can change how many letters to be in a specific color using /u ncolor.
+    # The amount of town colors allowed. If more than one is used (or nation colors are enabled), players can change how many letters to be in a specific color using /u ncolor.
     colorCount: 1
     towncolors:
       seedshire:
