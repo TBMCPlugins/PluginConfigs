@@ -68,7 +68,9 @@ disable-zipping: false
 delete-schedule:
   intervals:
   - 2d
+  - 2w
   interval-frequencies:
+  - 1w
   - 0
 broadcast-message: true
 backup-message: '[SimpleBackup]'
