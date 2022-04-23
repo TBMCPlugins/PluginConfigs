@@ -4,7 +4,7 @@ global:
   # The (bot) channel to use for Discord commands like /role.
   commandChannel: 209720707188260864
   # The prefix to use with Discord commands like /role. It only works in the bot channel.
-  prefix: '|'
+  prefix: /
   # The invite link to show by /discord invite. If empty, it defaults to the first invite if the bot has access.
   inviteLink: https://discord.gg/gxmTS8N
   # The role that allows using mod-only Discord commands.
@@ -95,8 +95,8 @@ components:
     enabled: true
     # Automatically unpins all messages except the last few. Set to 0 or >50 to disable
     keepPinned: 40
-    lastAnnouncementTime: 1609457770
-    lastSeenTime: 1609457770
+    lastAnnouncementTime: 1641005950
+    lastSeenTime: 1641005950
     # Channel to post new posts.
     channel: 125813020357165056
     # The subreddit to pull the posts from

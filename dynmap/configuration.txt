@@ -21,17 +21,17 @@ deftemplatesuffix: vlowres #disabled
 #  mysql: MySQL database, at hostname:port in database, accessed via userid with password
 storage:
   # Filetree storage (standard tree of image files for maps)
-  type: filetree
+  type: mysql
   # SQLite db for map storage (uses dbfile as storage location)
   #type: sqlite
   #dbfile: dynmap.db
   # MySQL DB for map storage (at 'hostname':'port' with flags "flags" in database 'database' using user 'userid' password 'password' and table prefix 'prefix')
   #type: mysql
-  #hostname: localhost
-  #port: 3306
-  #database: dynmap
-  #userid: dynmap
-  #password: dynmap
+  hostname: na05-sql.pebblehost.com
+  port: 3306
+  database: 'NOPE'
+  userid: 'NOPE'
+  password: 'NOPE'
   #prefix: ""
   #flags: "?allowReconnect=true"
   
@@ -315,7 +315,7 @@ exportpath: export
 webserver-bindaddress: 0.0.0.0
 
 # The TCP-port the webserver will listen on.
-webserver-port: 9123
+webserver-port: 8143
 
 # Maximum concurrent session on internal web server - limits resources used in Bukkit server
 max-sessions: 30

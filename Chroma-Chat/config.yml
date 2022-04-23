@@ -20,8 +20,8 @@ components:
     # The amount of town colors allowed. If more than one is used (or nation colors are enabled), players can change how many letters to be in a specific color using /u ncolor.
     colorCount: 1
     towncolors:
-      seedshire:
-      - Blue
+      tmp:
+      - Gold
       liria:
       - DarkPurple
     nationcolors:
