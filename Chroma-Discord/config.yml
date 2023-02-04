@@ -15,7 +15,7 @@ components:
   # Uses a bit of a hacky method of getting all broadcasted messages, including advancements and any other message that's for everyone.
   # If this component is enabled then these messages will show up on Discord.
   GeneralEventBroadcasterModule:
-    enabled: true
+    enabled: false
   # Provides Minecraft chat connection to Discord. Commands may be used either in a public chat (limited) or in a DM.
   MinecraftChatModule:
     enabled: true

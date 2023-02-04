@@ -1,0 +1,5 @@
+config-version: 5
+settings:
+  disable-saving: false
+  locale: en_us
+  disable-offline-access: false

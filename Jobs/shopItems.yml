@@ -16,10 +16,13 @@ Items:
       - "&eAnd one tasty apple!"
       # (Optional - default: false) Hides icon if player don't have permission to get this item
       HideWithoutPermission: true
+      # (Optional - default: false) Hides icon if player don't have enough point levels to get this icon
+      HideIfThereIsNoEnoughPoints: false
       # (Optional) When you want to use Player Head material with skin then use this
       #CustomHead:
-      #  PlayerName: playerName
-      #  Using the current player (if have job) who opened the gui. The PlayerName string is ignoring if this exist.
+      #  You can specify here valid player name or uuid.
+      #  PlayerName: playerNameOrUUID
+      #  Use the current player who opened the gui, so the head skin will be this player who opened.
       #  UseCurrentPlayer: true
     # (Optional) List of permissions required to buy this item
     RequiredPermission:
@@ -53,6 +56,11 @@ Items:
         Enchants:
         - DIG_SPEED=5
         - DURABILITY=3
+      Giving-Potion:
+        Id: potion
+        Amount: 1
+        Name: "&6Jump boost"
+        potion-type: jump
       # Can be any word
       Apple:
         # (Required) Item name
@@ -103,4 +111,3 @@ Items:
     GiveItems:
       Elytra:
         Id: elytra
-        

@@ -1,4 +1,1 @@
-#!/bin/sh
-echo This script is used to signal a restart, use ./run.sh
-touch /tmp/RestartMCServerv5
-
+echo 'true' > /home/minecraft/multicraft/servers/server294331/.reboot

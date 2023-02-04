@@ -3,7 +3,7 @@ git rm  --cached -rfq '*/*' ':!:.github/*'  # Unstage everything in folders in c
 readarray -t plugins < plugins.txt # -t removes trailing newlines
 for i in "${plugins[@]}"
 do
-	if [ -d $i -a $i != "Thorpe-Discord" -a $i != "OpenInv" ]; then
+	if [ -d $i -a $i != "OpenInv" ]; then
 		find $i -name "config.yml" -exec git add -f '{}' \; # All files are ignored, need to force add
 	fi
 done

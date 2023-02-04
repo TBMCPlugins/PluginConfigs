@@ -1,6 +1,8 @@
 sit-config:
   disabled-worlds: []
   require-empty-hand: false
+  max-distance: 2.0
+  chair-entity-type: ARROW
   stairs:
     enabled: true
     rotate: true

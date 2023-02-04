@@ -1,6 +1,4 @@
 global:
-  notificationSound: ''
-  notificationPitch: 1.0
   # If enabled, stores and displays the last 10 messages the player can see (public, their town chat etc.)
   # Can be used with the Discord plugin so players can see some of the conversation they missed that's visible on Discord anyways.
   storeChatHistory: true
@@ -17,21 +15,10 @@ components:
     # If enabled, players will have a nation-defined color in addition to town colors, white by default.
     # They can change how much of each color they want with this as well.
     useNationColors: true
-    # The amount of town colors allowed. If more than one is used (or nation colors are enabled), players can change how many letters to be in a specific color using /u ncolor.
-    colorCount: 1
-    towncolors:
-      tmp:
-      - Gold
-      liria:
-      - DarkPurple
-    nationcolors:
-      leagueofcrafters: Gold
   # This component checks a specific Reddit thread every 10 seconds for comments such as "IGN: NorbiPeti" to link Reddit accounts and to determine their /r/thebutton flair.
   # This was the original goal of this plugin when it was made.
   FlairComponent:
     enabled: false
-    # The Reddit thread to check for account connections. Re-enable the component if this was empty.
-    flairThreadURL: https://www.reddit.com/r/Chromagamers/comments/51ys94/flair_thread_for_the_mc_server/
   # Displays the configured messages at the set interval when someone is online.
   AnnouncerComponent:
     enabled: true
@@ -45,6 +32,10 @@ components:
   # Random things I added over the years.
   FunComponent:
     enabled: true
+    # This is an inside joke on our server.
+    # It keeps track of laughs (lols and what's defined in laughStrings) and if someone does /unlol or /unlaugh it will unlaugh the last person who laughed.
+    # Which also blinds the laughing person for a few seconds. This action can only be performed once per laugh.
+    unlol: true
     # The strings that count as laughs, see unlol.
     laughStrings:
     - xd
@@ -58,19 +49,10 @@ components:
     # The "Press F to pay respects" meme in Minecraft. It will randomly appear on player death and keep track of how many "F"s are said in chat.
     # You can hover over a player's name to see their respect.
     respect: true
-    # This is an inside joke on our server.
-    # It keeps track of laughs (lols and what's defined in laughStrings) and if someone does /unlol or /unlaugh it will unlaugh the last person who laughed.
-    # Which also blinds the laughing person for a few seconds. This action can only be performed once per laugh.
-    unlol: true
   # Allows players to append tableflips and other things to their messages. Everything is configurable here.
   AppendTextComponent:
     enabled: true
     texts:
-      waitwhat:
-        helpText:
-        - §6---- Wait what ----
-        - Wait what
-        appendedText: wait what
       lenny:
         helpText:
         - §6---- Lenny ----
@@ -83,6 +65,11 @@ components:
         - This command appends an unflip after your message
         - Or just unflips as you
         appendedText: ┬─┬ ノ( ゜-゜ノ)
+      waitwhat:
+        helpText:
+        - §6---- Wait what ----
+        - Wait what
+        appendedText: wait what
       tableflip:
         helpText:
         - §6---- Tableflip ----
@@ -100,25 +87,29 @@ components:
   # If you're using another chat plugin, you should disable the whole component but that will make it impossible to use channels.
   FormatterComponent:
     enabled: true
+    # The minimum time between messages in milliseconds.
+    minTimeBetweenMessages: 100
     # Determines whether Markdown formatting, name mentioning and similar features are enabled.
     allowFormatting: true
+    nickname:
+      enabled: true
+    name:
+      enabled: true
     bold:
       enabled: true
     italic:
       enabled: true
     underlined:
       enabled: true
+    italic2:
+      enabled: true
     strikethrough:
       enabled: true
     spoiler:
       enabled: true
-    escape:
-      enabled: true
     nullMention:
       enabled: true
     consolePing:
-      enabled: true
-    hashtag:
       enabled: true
     cyan:
       enabled: true
@@ -128,23 +119,9 @@ components:
       enabled: true
     url:
       enabled: true
-    entireMessage:
-      enabled: true
-    name:
-      enabled: true
-    nickname:
-      enabled: true
-    italic2:
+    hashtag:
       enabled: true
     someone:
       enabled: true
-    # The sound to play when a player is mentioned. Leave empty to use default.
-    notificationSound: ''
-    # The pitch of the notification sound.
-    notificationPitch: 1.0
-    rpc:
-      enabled: true
-    # The minimum time between messages in milliseconds.
-    minTimeBetweenMessages: 100
     greentext:
       enabled: true
