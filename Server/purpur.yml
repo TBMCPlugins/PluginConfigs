@@ -11,6 +11,7 @@
 verbose: false
 config-version: 31
 settings:
+  fix-network-serialized-items-in-creative: false
   clamp-attributes: true
   fix-projectile-looting-transfer: false
   limit-armor: true
@@ -374,12 +375,29 @@ world-settings:
     hunger:
       starvation-damage: 1.0
     mobs:
+      sniffer:
+        ridable: false
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 14.0
+        breeding-delay-ticks: 6000
       allay:
         ridable: false
         ridable-in-water: false
         controllable: true
         respect-nbt: []
       camel:
+        attributes:
+          max_health:
+            min: 32.0
+            max: 32.0
+          jump_strength:
+            min: 0.42
+            max: 0.42
+          movement_speed:
+            min: 0.09
+            max: 0.09
         breeding-delay-ticks: 6000
       frog:
         ridable: false
@@ -1256,6 +1274,7 @@ world-settings:
           max_health: 20.0
           spawn_reinforcements: 0.1
     gameplay-mechanics:
+      clamp-explosion-radius: true
       arrow:
         movement-resets-despawn-counter: true
       milk-clears-beneficial-effects: true
@@ -1332,6 +1351,8 @@ world-settings:
           explosion: []
           fire: []
         shears:
+          ignore-in-water: false
+          ignore-in-lava: false
           damage-if-sprinting: false
           sprinting-damage: 1.0
         ender-pearl:
@@ -1432,6 +1453,10 @@ world-settings:
         hunger-exhaustion-amount: 0.004999999888241291
         saturation-regen-amount: 1.0
     blocks:
+      sugar_cane:
+        affected-by-bonemeal: false
+      nether_wart:
+        affected-by-bonemeal: false
       enchantment-table:
         lapis-persists: false
       coral:
@@ -1450,6 +1475,7 @@ world-settings:
       budding_amethyst:
         silk-touch: false
       cactus:
+        affected-by-bonemeal: false
         breaks-from-solid-neighbors: true
       campfire:
         lit-when-placed: true
@@ -1590,6 +1616,7 @@ world-settings:
       piston:
         block-push-limit: 12
     ridable-settings:
+      use-dismounts-underwater-tag: true
       babies-are-ridable: true
       untamed-tamables-are-ridable: true
       use-night-vision: false

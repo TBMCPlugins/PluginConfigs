@@ -10,13 +10,13 @@
 locale-language: en
 storage:
   # storage method, can be MySQL or sqlite
-  method: sqlite
+  method: mysql
 # Requires Mysql
 mysql:
-  username: root
-  password: ''
-  hostname: localhost:3306
-  database: minecraft
+  username: NOPENOPE
+  password: 'NOPE'
+  hostname: na01-sql.pebblehost.com:3306
+  database: NOPENOPE
   table-prefix: jobs_
   verify-server-certificate: false
   use-ssl: false

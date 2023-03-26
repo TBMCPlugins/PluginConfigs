@@ -35,8 +35,8 @@ storage:
   type: mysql
   hostname: na01-sql.pebblehost.com
   port: 3306
-  database: 'NOPE'
-  userid: 'NOPE'
+  database: NOPENOPE
+  userid: NOPENOPE
   password: 'NOPE'
   prefix: "dynmap_"
   flags: "?allowReconnect=true&autoReconnect=true"
@@ -54,7 +54,7 @@ components:
   - class: org.dynmap.InternalClientUpdateComponent
     sendhealth: true
     sendposition: true
-    allowwebchat: false
+    allowwebchat: true
     webchat-interval: 5
     hidewebchatip: false
     trustclientname: false
@@ -80,11 +80,11 @@ components:
   #  # (Optional) if true, players that are crouching/sneaking will be hidden
     hideifsneaking: false
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
-    protected-player-info: true
+    protected-player-info: false
     # If true, hide players with invisibility potion effects active
     hide-if-invisiblity-potion: true
     # If true, player names are not shown on map, chat, list
-    hidenames: true
+    hidenames: false
   #- class: org.dynmap.JsonFileClientUpdateComponent
   #  writeinterval: 1
   #  sendhealth: true
@@ -143,44 +143,44 @@ components:
     showworldborder: true
     worldborderlabel: "Border"
 
-#  - class: org.dynmap.ClientComponent
-#    type: chat
-#    allowurlname: false
-#  - class: org.dynmap.ClientComponent
-#    type: chatballoon
-#    focuschatballoons: false
-#  - class: org.dynmap.ClientComponent
-#    type: chatbox
-#    showplayerfaces: true
-#    messagettl: 5
-#    # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
-#    #scrollback: 100
-#    # Optional: set maximum number of lines visible for chatbox
-#    #visiblelines: 10
-#    # Optional: send push button
-#    sendbutton: false
-#  - class: org.dynmap.ClientComponent
-#    type: playermarkers
-#    showplayerfaces: true
-#    showplayerhealth: true
-#    # If true, show player body too (only valid if showplayerfaces=true)
-#    showplayerbody: false
-#    # Option to make player faces small - don't use with showplayerhealth or largeplayerfaces
-#    smallplayerfaces: false
-#    # Option to make player faces larger - don't use with showplayerhealth or smallplayerfaces
-#    largeplayerfaces: false
-#    # Optional - make player faces layer hidden by default
-#    hidebydefault: false
-#    # Optional - ordering priority in layer menu (low goes before high - default is 0)
-#    layerprio: 0
-#    # Optional - label for player marker layer (default is 'Players')
-#    label: "Players"
+  - class: org.dynmap.ClientComponent
+    type: chat
+    allowurlname: false
+  - class: org.dynmap.ClientComponent
+    type: chatballoon
+    focuschatballoons: false
+  - class: org.dynmap.ClientComponent
+    type: chatbox
+    showplayerfaces: true
+    messagettl: 5
+    # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
+    #scrollback: 100
+    # Optional: set maximum number of lines visible for chatbox
+    #visiblelines: 10
+    # Optional: send push button
+    sendbutton: false
+  - class: org.dynmap.ClientComponent
+    type: playermarkers
+    showplayerfaces: true
+    showplayerhealth: true
+    # If true, show player body too (only valid if showplayerfaces=true)
+    showplayerbody: false
+    # Option to make player faces small - don't use with showplayerhealth or largeplayerfaces
+    smallplayerfaces: false
+    # Option to make player faces larger - don't use with showplayerhealth or smallplayerfaces
+    largeplayerfaces: false
+    # Optional - make player faces layer hidden by default
+    hidebydefault: false
+    # Optional - ordering priority in layer menu (low goes before high - default is 0)
+    layerprio: 0
+    # Optional - label for player marker layer (default is 'Players')
+    label: "Players"
 
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
   - class: org.dynmap.ClientComponent
     type: link
-
+    
   - class: org.dynmap.ClientComponent
     type: timeofdayclock
     showdigitalclock: true
@@ -192,7 +192,7 @@ components:
     hidey: false
     show-mcr: false
     show-chunk: false
-
+    
   # Note: more than one logo component can be defined
   #- class: org.dynmap.ClientComponent
   #  type: logo
@@ -207,7 +207,7 @@ components:
   #  timeout: 1800 # in seconds (1800 seconds = 30 minutes)
   #  redirecturl: inactive.html
   #  #showmessage: 'You were inactive for too long.'
-
+  
   #- class: org.dynmap.TestComponent
   #  stuff: "This is some configuration-value"
 
@@ -215,16 +215,16 @@ components:
 display-whitelist: false
 
 # How often a tile gets rendered (in seconds).
-renderinterval: 60
+renderinterval: 1
 
 # How many tiles on update queue before accelerate render interval
 renderacceleratethreshold: 60
 
 # How often to render tiles when backlog is above renderacceleratethreshold
-renderaccelerateinterval: 10
+renderaccelerateinterval: 0.2
 
 # How many update tiles to work on at once (if not defined, default is 1/2 the number of cores)
-tiles-rendered-at-once: 16
+tiles-rendered-at-once: 2
 
 # If true, use normal priority threads for rendering (versus low priority) - this can keep rendering
 # from starving on busy Windows boxes (Linux JVMs pretty much ignore thread priority), but may result
@@ -252,7 +252,7 @@ tileupdatedelay: 30
 enabletilehash: true
 
 # Optional - hide ores: render as normal stone (so that they aren't revealed by maps)
-hideores: true
+#hideores: true
 
 # Optional - enabled BetterGrass style rendering of grass and snow block sides
 #better-grass: true
@@ -269,7 +269,7 @@ use-brightness-table: true
 block-alias:
 #    "minecraft:quartz_ore": "stone"
 #    "diamond_ore": "coal_ore"
-
+  
 # Default image format for HDMaps (png, jpg, jpg-q75, jpg-q80, jpg-q85, jpg-q90, jpg-q95, jpg-q100, webp, webp-q75, webp-q80, webp-q85, webp-q90, webp-q95, webp-q100, webp-l),
 # Note: any webp format requires the presence of the 'webp command line tools' (cwebp, dwebp) (https://developers.google.com/speed/webp/download)
 #
@@ -401,7 +401,7 @@ grayplayerswhenhidden: true
 # That is, anyone with first listed permission goes before anyone with second, etc, with users with none of the nodes going last
 player-sort-permission-nodes:
   - bukkit.command.op
-
+  
 # Set sidebaropened: 'true' to pin menu sidebar opened permanently, 'pinned' to default the sidebar to pinned, but allow it to unpin
 #sidebaropened: true
 
@@ -415,7 +415,7 @@ player-sort-permission-nodes:
 trusted-proxies:
   - "127.0.0.1"
   - "0:0:0:0:0:0:0:1"
-
+  
 # Join/quit message format for web chat: set to "" to disable notice on web UI
 joinmessage: "%playername% joined"
 quitmessage: "%playername% quit"

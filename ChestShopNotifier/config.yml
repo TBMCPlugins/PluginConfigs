@@ -17,14 +17,14 @@ debugging:
 
 database:
   # Possible types: SQLite and MySQL
-  type: sqlite
-  dbname: 'database'
+  type: mysql
+  dbname: 'NOPENOPE'
   # MySQL specific settings
-  host: 'localhost'
+  host: 'na01-sql.pebblehost.com'
   port: 3306
-  username: 'dbadmin'
-  password: '123456'
-  ssl: false
+  username: 'NOPENOPE'
+  password: 'NOPE'
+  ssl: true
 
 clean-on-startup:
   enabled: false

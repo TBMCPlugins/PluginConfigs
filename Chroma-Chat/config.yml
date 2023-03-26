@@ -21,7 +21,7 @@ components:
     enabled: false
   # Displays the configured messages at the set interval when someone is online.
   AnnouncerComponent:
-    enabled: true
+    enabled: false
     # The messages to display to players.
     announceMessages:
     - §eCheck out the subreddit! https://www.reddit.com/r/Chromagamers/
